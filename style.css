@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --cor-header:#121212;
+    --cor-fundo:#1E1E1E;
+    --cor-amarelo: #ffc846;
+    --cor-amarelo-escuro:#ba9131;
+    --cor-texto: #fff;
+    --cor-secao: #181818;
+    --button-text:#0E0E10;
+    --fundo-contato: #E7E8EC;
+    --loginform-background: #181818b3;
+    --login-input: rgba(255, 255, 255, 0.05);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    margin:0px;
+    padding: 0;
+    
+}
+
+header{
+    height: 6vw;
+    align-content: center;
+    margin:0;
+    background: var(--cor-header);
+}
+
+header img{
+    width: 14vw;
+    margin-left: 3vw;
+    margin-top: 3.5vh;
+}
+/* ------------------------------- NavBar -------------------------------*/
+
+.navbar{
+    width: 50vw;
+    float:inline-end;
+    margin-right: 5vw;
+}
+
+.navbar ul{
+    float: end;
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar{
+    text-decoration: none;
+}
+
+.navbar-menu{
+    display: none;
+}
+
+.nav-link{
+    position: relative;
+    padding-bottom: 6px;
+    margin: 0.1vw;
+    color:var(--cor-texto);
+    font-size: 0.9em;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color:var(--cor-texto);
+}
+
+.nav-link:hover a{
+    color:var(--cor-amarelo)
+}
+
+.nav-link:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor-amarelo);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover:before{
+    visibility: visible ;
+    width: 120%;
+}
+
+
+.login-button {
+    background: var(--cor-amarelo);
+    width: 8vw;
+    max-width: 150px;
+    height: 3.5vw;
+    font-weight: 650;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4vw;
+    margin-bottom: 2px;
+}
+
+.login-button{
+    text-decoration: none;
+    color:var(--button-text);
+}
+.login-button:hover{
+    background: var(--cor-amarelo-escuro);
+}
+
+
+
+
+
+
+
+
+/* ------------------------------- Fim NavBar -------------------------------*/
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img{
+    width:100vw;
+    height: 70dvh;
+    filter: blur(2px) ;
+}
+
+
+
+
+/* ------------------------------- Main -------------------------------*/
+
+
+#conteudo{
+  width: 100%;  
+}
+
+.texto-sobre, .texto-historia{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--cor-amarelo);
+    clear:both;
+}
+
+.texto-sobre p, .texto-historia p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
+
+
+#sobre{
+    display: flex;
+    background-color: var(--cor-secao);
+    padding: 0px 20px;
+    margin: 40px 0;
+}
+.texto-sobre{
+    margin:0px 50px;
+}
+
+#conteudo-historia{
+    display: flex;
+    background-color: var(--cor-secao);
+    padding: 0px 20px;
+    margin: 40px 0;
+}
+
+.texto-historia{
+    margin:0px 50px;
+
+}
+
+
+/* ------------------------------- Fim Main -------------------------------*/
+
+
+
+
+/* ------------------------------- Contato -------------------------------*/
+
+#contato-section{
+    margin:0;
+    padding: 0;
+
+}
+
+.contato-header{
+    background-color: #ffc846;
+    color: #181818;
+    width: 100%;    
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-top:0;
+}
+
+.contato{
+    width: 60vw;
+    margin:0 auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+    padding-left: 30px;
+    color:var(--cor-texto)
+}
+
+
+.contato hr{
+    border: 1px solid var(--cor-amarelo-escuro);
+    padding: 0;
+    margin-left:0;
+
+}
+
+.email, .fone{
+    width:45%;
+
+}
+
+.contato h1{
+    color:var(--cor-amarelo);
+}
+
+
+/* -------------------------------  Fim Contato -------------------------------*/
+
+
+/* -------------------------------- Mapa  -------------------------------*/
+
+.secao-mapa{
+    display: flex;
+    width: 80vw;
+    height: 30vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin:30px auto;
+    background-color: #181818;
+}
+
+.mapa-texto{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+
+}
+
+.mapa-texto h1{
+    color: var(--cor-amarelo);
+}
+
+.mapa-p{
+    color: var(--cor-texto);
+    font-size: 0.9em;
+    
+}
+
+.secao-mapa iframe{
+    width: 55%;
+    border-radius: 0.5vw;
+}
+
+
+
+
+
+/* -------------------------------  Fim Endereco -------------------------------*/
+
+
+
+
+
+
+
+
+/* ------------------------------- Rodape -------------------------------*/
+
+
+
+.rodape{
+    background-color: #121212;
+    border-top: solid 2px #ffc846 ;
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+.rodape-logo{
+    width: 13vw;
+    max-width: 200px;
+    margin-left: 40px;
+    margin-top: 15px;
+    float: left;
+    position: absolute;
+    
+}
+
+
+
+.rodape-conteudo {
+    display: flex;
+    justify-content:space-around ;
+    margin: 0 auto ;
+    width: 60vw;
+
+}
+.rodape-links, .rodape-social, .rodape-contato{
+    width:40%;
+}
+.rodape-conteudo li{
+    font-size: 0.8em;
+    padding: 5px 0;
+}
+
+.rodape-links, .rodape-contato, .rodape-social{
+    margin:0 auto;
+    list-style-type: none;
+    color:var(--cor-amarelo);
+    
+}
+
+.rodape-links h3, .rodape-contato h3, .rodape-social h3{
+    color:var(--cor-amarelo);
+    margin:0 0 20 0;
+}
+
+.rodape-links li, .rodape-contato li, .rodape-social li{
+    list-style: none;
+}
+.rodape-links a, .rodape-contato a, .rodape-social a{
+    text-decoration: none;
+    color:var(--cor-amarelo);
+    font-weight: 350;
+}
+
+.rodape-links a:hover{
+    text-decoration: underline;
+    color:var(--cor-amarelo-escuro)
+}
+
+
+
+.rodape h5{
+    color:#ffc846;
+    text-align: center;
+    font-weight: 500;
+    margin:0px;
+    padding: 10px 0px 20px 0px;
+}
+/* -------------------------------  Fim Rodape -------------------------------*/
+
+
+
+
+/* -------------------------------  Login  -------------------------------*/
+
+#form-section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/layered-waves-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-container{
+    width: 35%;
+    height: 100%;
+    background-color: var(--loginform-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.303);
+
+}
+
+.user-photo{
+    width: 40%;
+    border-radius: 100%;
+    margin: 2vw 0;
+    border: solid 3px var(--cor-amarelo-escuro);
+}
+
+
+.input-user, .input-password{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    width: 75%;
+    height: 5vh;
+    margin: 2vh 0;
+    padding: 0.5vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+
+}
+
+.input-user input, .input-password input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    color: var(--cor-texto);
+    outline: none;
+    font: normal 700 1vw 'Poppins', sans-serif var(--cor-texto);
+
+}
+
+.input-user svg, .input-password svg{
+    margin: 0.7vw 1vw 0.7vw 0.7vw;
+}
+
+.login-button2{
+    background: #FFC846;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 40%;
+    height: 6vh;
+    font: normal 700 1.3vw 'Poppins', sans;
+    color: #000000;
+    margin: 4vh 0 3vh 0;
+    cursor: pointer;
+}
+
+.login-button2:hover{
+    background-color: var(--cor-amarelo-escuro);
+}
+
+
+.login-questions{
+    display: flex;
+    font: normal 1vw 'Poppins', sans;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.password-check{
+    color: var(--cor-texto);
+}
+
+.password-help{
+    color: var(--cor-amarelo);
+}
+
+.password-help:hover{
+    color: var(--cor-amarelo-escuro);
+}
+
+.background-text{
+    display: inline-block;
+    position: relative;
+    bottom: 85vh;
+    left: 65vw;
+    color: var(--cor-amarelo);
+}
+
+.welcome-text{
+    color: #FFC846;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    font: normal 700 12vh 'Oswald' ,sans-serif;
+}
+
+.secundary-text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    text-align: right;
+    color: #FFFFFF;
+    font: italic 500 2.3vh'Poppins', serif ;
+
+}
+
+.secundary-text p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------------------------  Fim Login  -------------------------------*/
+
+
+
+/* ------------------------------- Celular -------------------------------- */
+@media (max-width: 500px){
+    body{
+        font-size: 0.8rem;
+    }
+
+    .header{
+        height: 15dvh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .header img{
+        margin: 0;
+        width: 23vw;
+    }
+
+    .navbar{
+        margin: 0;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar-menu{
+        display: inline;
+        width: 7vw;
+        float: inline-end;
+    }
+
+    #sobre, #conteudo-historia{
+        text-align: center;
+        padding: 5vh 0;
+    }
+
+    #conteudo hr{
+        margin-bottom: 4dvh;
+        margin: -10px 15vw 7vw 15vw;
+    }
+
+
+    .contato-header{
+        height: 15vh ;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .contato{
+        display: grid;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .contato hr{
+        width: 90%;
+        margin: 7dvh 0;
+    }
+
+    .email, .fone{
+        width: 80%;
+        padding: 2vh 10vw;
+    }
+
+    .secao-mapa{
+        display: grid;
+        height: 90vh;
+        width: 100%;
+    }
+
+    .secao-mapa iframe{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape-logo{
+        position: static;
+        margin: 5vh auto;
+        width: 15vw;
+    }
+
+    .rodape-links, .rodape-contato{
+        display: none;
+    }
+
+    .rodape-social ul{
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
