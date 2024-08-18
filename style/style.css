@@ -120,13 +120,6 @@ header img{
     background: var(--cor-amarelo-escuro);
 }
 
-
-
-
-
-
-
-
 /* ------------------------------- Fim NavBar -------------------------------*/
 
 .banner {
@@ -139,9 +132,6 @@ header img{
     height: 70dvh;
     filter: blur(2px) ;
 }
-
-
-
 
 /* ------------------------------- Main -------------------------------*/
 
@@ -371,141 +361,6 @@ header img{
     padding: 10px 0px 20px 0px;
 }
 /* -------------------------------  Fim Rodape -------------------------------*/
-
-
-
-
-/* -------------------------------  Login  -------------------------------*/
-
-#form-section{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/layered-waves-haikei.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.form-container{
-    width: 35%;
-    height: 100%;
-    background-color: var(--loginform-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.303);
-
-}
-
-.user-photo{
-    width: 40%;
-    border-radius: 100%;
-    margin: 2vw 0;
-    border: solid 3px var(--cor-amarelo-escuro);
-}
-
-
-.input-user, .input-password{
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    width: 75%;
-    height: 5vh;
-    margin: 2vh 0;
-    padding: 0.5vw;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-
-}
-
-.input-user input, .input-password input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: none;
-    color: var(--cor-texto);
-    outline: none;
-    font: normal 700 1vw 'Poppins', sans-serif var(--cor-texto);
-
-}
-
-.input-user svg, .input-password svg{
-    margin: 0.7vw 1vw 0.7vw 0.7vw;
-}
-
-.login-button2{
-    background: #FFC846;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    width: 40%;
-    height: 6vh;
-    font: normal 700 1.3vw 'Poppins', sans;
-    color: #000000;
-    margin: 4vh 0 3vh 0;
-    cursor: pointer;
-}
-
-.login-button2:hover{
-    background-color: var(--cor-amarelo-escuro);
-}
-
-
-.login-questions{
-    display: flex;
-    font: normal 1vw 'Poppins', sans;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.password-check{
-    color: var(--cor-texto);
-}
-
-.password-help{
-    color: var(--cor-amarelo);
-}
-
-.password-help:hover{
-    color: var(--cor-amarelo-escuro);
-}
-
-.background-text{
-    display: inline-block;
-    position: relative;
-    bottom: 85vh;
-    left: 65vw;
-    color: var(--cor-amarelo);
-}
-
-.welcome-text{
-    color: #FFC846;
-    text-align: right;
-    padding: 0;
-    margin: 0;
-    font: normal 700 12vh 'Oswald' ,sans-serif;
-}
-
-.secundary-text{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
-    text-align: right;
-    color: #FFFFFF;
-    font: italic 500 2.3vh'Poppins', serif ;
-
-}
-
-.secundary-text p {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* -------------------------------  Fim Login  -------------------------------*/
-
-
 
 /* ------------------------------- Celular -------------------------------- */
 @media (max-width: 500px){
