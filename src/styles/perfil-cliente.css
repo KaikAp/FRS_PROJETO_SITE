@@ -23,6 +23,21 @@ header img{
     margin-top: 3.5vh;
 }
 
+.nav_login{
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.nav_usuario{
+    color: var(--cor-amarelo);
+    margin: 0;
+}
+
+.nav_foto{
+    width: 15%;
+    margin: 0;
+}
 
 /* ------------------------------- Perfil Usuario -------------------------------*/
 
@@ -53,20 +68,4 @@ header img{
     font-size: 20px;
     margin-top: 0.3rem;
     margin-bottom: 0;
-}
-
-.nav_login{
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-}
-
-.nav_usuario{
-    color: var(--cor-amarelo);
-    margin: 0;
-}
-
-.nav_foto{
-    width: 15%;
-    margin: 0;
 }
