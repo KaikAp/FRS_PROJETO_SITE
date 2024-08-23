@@ -1,0 +1,72 @@
+@import url('style-main.css');
+
+/* ------------------------------- Main -------------------------------*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    margin:0px;
+    padding: 0;
+    
+}
+
+header{
+    height: 6vw;
+    align-content: center;
+    margin:0;
+    background: var(--cor-header);
+}
+
+header img{
+    width: 14vw;
+    margin-left: 3vw;
+    margin-top: 3.5vh;
+}
+
+
+/* ------------------------------- Perfil Usuario -------------------------------*/
+
+.perfil{
+    border: 1px solid #000000;
+    margin: 5%;
+    border-radius: 25px;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding: 3rem;
+}
+
+.perfil_titulo{
+    color: var(--cor-amarelo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    margin-top: 0;
+}
+
+.perfil_texto{
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+.nav_login{
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.nav_usuario{
+    color: var(--cor-amarelo);
+    margin: 0;
+}
+
+.nav_foto{
+    width: 15%;
+    margin: 0;
+}
