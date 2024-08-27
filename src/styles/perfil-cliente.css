@@ -69,3 +69,37 @@ header img{
     margin-top: 0.3rem;
     margin-bottom: 0;
 }
+
+.container {
+    color: var(--cor-amarelo);
+    font-size: 38px;
+    margin-left: 9rem;
+}
+
+/* ------------------------------- Fim Perfil Usuario -------------------------------*/
+
+/* ------------------------------- Data Table -------------------------------*/
+
+table {
+    width: 93%;
+    margin-inline: auto;
+    border-spacing: 0px;
+    margin-bottom: 3rem;
+}
+
+tbody{
+    color: #FFF;
+    background-color: #191919;
+}
+
+.table_cabecalho {
+    background-color: var(--cor-amarelo);
+}
+
+.table_cabecalho_fim{
+    padding-inline: 0.8rem;
+}
+
+th {
+    border-right: 1px solid #000000;
+}
