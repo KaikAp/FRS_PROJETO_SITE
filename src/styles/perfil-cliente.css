@@ -2,26 +2,6 @@
 
 /* ------------------------------- Main -------------------------------*/
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
-    margin:0px;
-    padding: 0;
-    
-}
-
-header{
-    height: 6vw;
-    align-content: center;
-    margin:0;
-    background: var(--cor-header);
-}
-
-header img{
-    width: 14vw;
-    margin-left: 3vw;
-    margin-top: 3.5vh;
-}
 
 .nav_login{
     display: flex;
