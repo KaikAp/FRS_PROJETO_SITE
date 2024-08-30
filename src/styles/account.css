@@ -1,0 +1,191 @@
+@import url(style.css);
+:root{
+    --cor-header:#121212;
+    --cor-fundo:#1E1E1E;
+    --cor-amarelo: #ffc846;
+    --cor-amarelo-escuro:#ba9131;
+    --cor-texto: #fff;
+    --cor-secao: #181818;
+    --button-text:#0E0E10;
+    --fundo-contato: #E7E8EC;
+    --loginform-background: #181818b3;
+    --login-input: rgba(255, 255, 255, 0.05);
+    --account-section-background: #272727;
+    --navbar-background: #1F1F1F;
+
+    --cor-concluido: #5EFF56;
+    --cor-andamento: #FFCD56;
+    --cor-atraso: #FF6456;
+}
+
+
+.welcome-msg{
+    color: var(--cor-amarelo);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+
+.reports-box{
+    margin: 0 auto;
+    width: 75%;
+    height: 40vh;
+    padding: 2vh 0;
+    background-color: var(--account-section-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.reports-box > h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+}
+
+.reports{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.reports h1{
+    color: var(--cor-texto);
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reports h2{
+    font-size: 1.3rem;
+}
+
+.reports hr{
+    border: 1px solid var(--cor-amarelo);
+}
+
+.concluido, .andamento, .atraso{
+    width: 25%;
+}
+
+.concluido{
+    color: var(--cor-concluido);
+}
+
+.andamento{
+    color:var(--cor-andamento);
+}
+
+.atraso{
+    color: var(--cor-atraso);
+}
+
+
+
+.search-section{
+    background-color: var(--account-section-background);
+    width: 70%;
+    max-width: 800px;
+    padding: 1vw 3vw;
+    margin: 9vh auto;
+    font-size: 0.9rem;
+}
+
+.search-section h3{
+    color: var(--cor-amarelo);
+}
+
+.search-section p{
+    color: var(--cor-texto);
+}
+
+.search-bar{
+    background-color: #171717;
+    width: 95%;
+    margin: 3vw 0 1vw 0;
+    padding: 0.7vh;
+    border-bottom: solid 2px var(--cor-amarelo);
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5vw 0.7vw 0.5vw 1vw;
+    color:var(--cor-texto);
+    outline: none;
+}
+
+.search-bar svg{
+    padding: 0 0.7vw;
+}
+
+
+/* -------------------------- Seção Cadastros ---------------------- */
+
+.secao-cadastros{
+    width:80vw;
+    margin: 15vh auto;
+}
+
+.secao-cadastros h2{
+    color:var(--cor-amarelo);
+    margin: 5vh;
+}
+
+.cadastro-form{
+    color:var(--cor-texto);
+    background-color: #212121;    
+    padding: 1vw 2.5vw;
+    margin:2vh;
+    border-radius: 1vw;
+}
+
+.cadastro-btn{
+    background: var(--cor-amarelo);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 5vh 0 ;
+}
+
+.cadastro-form a{
+    text-decoration: none;
+    color: var(--button-text);
+}
+
+/* -------------------------- Fim Cadastros ---------------------- */
+
+/* -------------------------- Navbar Lateral ---------------------- */
+
+.lateral-navbar{
+    position: absolute;
+    left: 0;
+    width: 5vw;
+    height: 70vh;
+    background: var(--navbar-background);
+    border-right: 2px solid #FFCD56;
+    border-bottom: 2px solid #FFCD56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/* -------------------------- Fim Navbar Lateral ---------------------- */
