@@ -1,0 +1,76 @@
+@import url('style-main.css');
+@import url('style.css');
+
+.nav_login{
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.nav_usuario{
+    color: var(--cor-amarelo);
+    margin: 0;
+}
+
+.nav_foto{
+    width: 15%;
+    margin: 0;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+.perfil {
+    margin-left: 35%;
+    font-weight: 400;
+    font-size: 0.9vw;
+    background: rgb(34, 32, 32);
+    color:var(--cor-texto);
+    max-width: 600px;
+    max-height: 500px;
+    
+    
+
+}
+.cadastro {
+    margin-left: 35%;
+    margin-top: 8%;
+    font-weight: 400;
+    font-size: 0.9vw;
+    background: rgb(34, 32, 32);
+    color:var(--cor-texto);
+    max-width: 600px;
+    max-height: 500px;
+    
+}
+.pedido {
+    margin-left: 35%;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 0.9vw;
+    background: rgb(34, 32, 32);
+    color:var(--cor-texto);
+    max-width: 600px;
+    max-height: 500px;
+    
+}
+.consulta {
+    margin-left: 35%;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 0.9vw;
+    background: rgb(34, 32, 32);
+    color:var(--cor-texto);
+    max-width: 600px;
+    max-height: 500px;
+    
+}
+.perfil-funcionario{
+    color: var(--cor-amarelo);
+}
+.consulta-pedido{
+    color: var(--cor-amarelo);
+}
+.button-pedido{
+    background: var(--cor-amarelo);
+}
