@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>F.R.S. Montagens | Cadastro</title>
-    <link rel="stylesheet" href="./src/styles/cadastro.css">
+    <link rel="stylesheet" href="./src/styles/perfil-funcionario.css">
 </head>
 <body>
 
@@ -27,30 +27,31 @@
     </header>
 
     <main>
-        <div class="perfil">   
-            <h1 class="perfil-funcionario">PERFIL FUNCIONARIO</h1>
-            <p>CPF: XXX.XXX.XXX-XX </p>
-            <p>Email: exemplo@frsmontagens.com</p>
-            <p>Telefone: 99777-1122 </p>
-            <p> 99123-4567</p>
+        <section class="perfil">
+            <div>
+                <img src="./images/user.svg" alt="Foto do Usuário">
+            </div>
+            <div>
+                <h2 class="perfil_titulo">Nome Funcionario</h2>
+                <p class="perfil_texto">CPF: XXX.XXX.XXX-XX/p>
+                <p class="perfil_texto">Email: exemplo@email.com</p>
+                <p class="perfil_texto">Telefone: 17 99777-1122</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div>
+                <h4 class="container__titulo">Cadastrar um novo perfil do cliente?</h4>
+                <h7 class="container__sub">Seja redirecionado a uma página para o cadastro.</h7>
+            </div>
+            <a href="./registro-cliente.html" class="btn">Cadastrar novo Cliente</a>
         </div>
-        <div class="cadastro">
-            <h3>Cadastrar um novo perfil do cliente?</h3>
-            <h7>Seja redirecionado a uma página para o cadastro.</h7>
-            <form action="" method="post">
-                <button>
-                    Cadastrar novo cliente
-                </button>
-            </form>
-        </div>
-        <div class="pedido">
-            <h3>Cadastrar um novo pedido?</h3>
-            <h7>Seja redirecionado a uma página para o cadastro.</h7>
-            <form action="" method="post">
-                <button class"button-pedido">
-                    Cadastrar um novo pedido
-                </button>
-            </form>
+        <div class="container">
+            <div>
+                <h4 class="container__titulo">Cadastrar um novo pedido?</h4>
+                <h7 class="container__sub">Seja redirecionado a uma página para o cadastro.</h7>
+            </div>
+            <a href="#" class="btn">Cadastrar novo Pedido</a>
         </div>
         <div class="consulta">
             <h4 class="consulta-pedido">Deseja realizar a consulta de um pedido?</h4>
