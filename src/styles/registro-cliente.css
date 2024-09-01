@@ -29,27 +29,64 @@ header img{
 
 /* --------------------------------- BODY --------------------------------- */
 
-.teste{
+.formulario{
     height: 90%;
-    width: 50%;
+    width: 60%;
     margin: 50px auto ;
-    padding: 50px;
     border: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: #191919;
     display: flex;
     justify-content: center;
     flex-direction: column;
     box-shadow: 5px #FFC846;
+    padding: 1rem;
 }
-.teste h1{
+
+.formulario-titulo{
     color: #FFC846;
     align-self: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 8%;
+    margin-top: 2rem;
+}
+
+.container-fone{
+    display: flex;
+    width: 40%;
+    margin-inline: 5%;
+}
+
+.form-label {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    margin-left: 2rem;
+}
+
+.form-input{
+    background-color: #292929;
+    border: none;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-size: 30px;
+    padding-inline: 1rem;
+}
+
+.fone{
+    width: 100%;
 }
 
 .teste h2{
     color: white;
     align-self: center;
+    
 }
 .teste p {
     color: #fff;
