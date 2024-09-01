@@ -1,27 +1,5 @@
 @import url('style-main.css');
 
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
-    margin:0px;
-    padding: 0;
-    
-}
-
-header{
-    height: 6vw;
-    align-content: center;
-    margin:0;
-    background: var(--cor-header);
-}
-
-header img{
-    width: 14vw;
-    margin-left: 3vw;
-    margin-top: 3.5vh;
-}
-
 /* ------------------------------- Main -------------------------------*/
 
 #form-section{
@@ -29,7 +7,7 @@ header img{
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(images/layered-waves-haikei.svg);
+    background-image: url(../../images/layered-waves-haikei.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

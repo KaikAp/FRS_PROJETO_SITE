@@ -2,26 +2,6 @@
 
 /* ------------------------------- Main -------------------------------*/
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
-    margin:0px;
-    padding: 0;
-    
-}
-
-header{
-    height: 6vw;
-    align-content: center;
-    margin:0;
-    background: var(--cor-header);
-}
-
-header img{
-    width: 14vw;
-    margin-left: 3vw;
-    margin-top: 3.5vh;
-}
 
 .nav_login{
     display: flex;
@@ -68,4 +48,38 @@ header img{
     font-size: 20px;
     margin-top: 0.3rem;
     margin-bottom: 0;
+}
+
+.container {
+    color: var(--cor-amarelo);
+    font-size: 38px;
+    margin-left: 9rem;
+}
+
+/* ------------------------------- Fim Perfil Usuario -------------------------------*/
+
+/* ------------------------------- Data Table -------------------------------*/
+
+table {
+    width: 93%;
+    margin-inline: auto;
+    border-spacing: 0px;
+    margin-bottom: 3rem;
+}
+
+tbody{
+    color: #FFF;
+    background-color: #191919;
+}
+
+.table_cabecalho {
+    background-color: var(--cor-amarelo);
+}
+
+.table_cabecalho_fim{
+    padding-inline: 0.8rem;
+}
+
+th {
+    border-right: 1px solid #000000;
 }

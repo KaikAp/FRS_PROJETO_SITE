@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F.R.S. Montagens | Cliente</title>
-    <link rel="stylesheet" href="./src/styles/perfil-cliente.css">
+    <title>F.R.S. Montagens | Cadastro</title>
+    <link rel="stylesheet" href="./src/styles/perfil-funcionario.css">
 </head>
 <body>
+
     <header class="header">
         <img src="./images/Logo.svg" alt="Logo da FRS Montagens">
         <nav class="navbar">
@@ -32,50 +32,38 @@
                 <img src="./images/user.svg" alt="Foto do Usuário">
             </div>
             <div>
-                <h2 class="perfil_titulo">Nome Cliente</h3>
-                <p class="perfil_texto">CNPJ: XX.XXX.XXX/0001-XX</p>
+                <h2 class="perfil_titulo">Nome Funcionario</h2>
+                <p class="perfil_texto">CPF: XXX.XXX.XXX-XX/p>
                 <p class="perfil_texto">Email: exemplo@email.com</p>
                 <p class="perfil_texto">Telefone: 17 99777-1122</p>
             </div>
         </section>
 
         <div class="container">
-            <h5>Pedidos</h5>
+            <div>
+                <h4 class="container__titulo">Cadastrar um novo perfil do cliente?</h4>
+                <h7 class="container__sub">Seja redirecionado a uma página para o cadastro.</h7>
+            </div>
+            <a href="./registro-cliente.html" class="btn">Cadastrar novo Cliente</a>
         </div>
 
-        <table>
-            <thead class="table_cabecalho">
-                <tr>
-                    <th>ID PEDIDO</th>
-                    <th>PROJETO</th>
-                    <th>STATUS</th>
-                    <th>% CONCLUIDO</th>
-                    <th>DESCRIÇÃO</th>
-                    <th class="table_cabecalho_fim"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>0000312</th>
-                    <th>Dry Fiber</th>
-                    <th>Em Andamento</th>
-                    <th>78%</th>
-                    <th>Confecção de Tanques</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <th>0000387</th>
-                    <th>Manutenção Caldeira</th>
-                    <th>Concluido</th>
-                    <th>100%</th>
-                    <th>Troca dos dutos da Caldeira</th>
-                    <th></th>
-                </tr>
-            </tbody>
-        </table>
+        <div class="container">
+            <div>
+                <h4 class="container__titulo">Cadastrar um novo pedido?</h4>
+                <h7 class="container__sub">Seja redirecionado a uma página para o cadastro.</h7>
+            </div>
+            <a href="#" class="btn">Cadastrar novo Pedido</a>
+        </div>
+        
+        <div class="search-section">
+            <h3>Deseja realizar a consulta de um pedido?</h3>
+            <p>Informe o CNPJ da empresa em que ele esta vinculado: </p>
+            <div class="search-bar"><input type="text" placeholder=""><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2vw"><path fill="#ffcd56" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a></div>
+        </div>
+
     </main>
 
-    <footer class="rodape" style="margin: 0;"   >
+    <footer class="rodape" style="margin: 0;">
         <br>
         <img src="./images/Logo_txt.svg" class="rodape-logo" alt="Logo da FRS Montagens">
         <div class="rodape-conteudo">

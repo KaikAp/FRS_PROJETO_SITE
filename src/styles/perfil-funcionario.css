@@ -1,0 +1,176 @@
+@import url('style-main.css');
+
+h4{
+    margin: 0;
+}
+
+/* ------------------------------- Main -------------------------------*/
+
+.nav_login{
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.nav_usuario{
+    color: var(--cor-amarelo);
+    margin: 0;
+}
+
+.nav_foto{
+    width: 15%;
+    margin: 0;
+}
+
+/* ------------------------------- Perfil Funcionario -------------------------------*/
+
+
+.perfil {
+    border: 1px solid #000000;
+    margin: 5%;
+    background-color: #212121;
+    border-radius: 25px;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding: 3rem;
+}
+
+.perfil_titulo{
+    color: var(--cor-amarelo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    margin-top: 0;
+}
+
+.perfil_texto{
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+/* ------------------------ Fim Perfil Funcionario ---------------------*/
+
+.container {
+    margin: 8%;
+    padding-inline: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #272727;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container__titulo{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container__sub{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: var(--cor-amarelo);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+.container__pesquisa{
+    gap: 1rem;
+}
+
+.container__titulo__consulta{
+    color: #FFCD56;
+}
+
+.container__sub__consulta{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.search-section{
+    background-color: #272727;
+    margin: 8%;
+    padding: 1vw 3vw;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-section h3{
+    color: var(--cor-amarelo);
+}
+
+.search-section p{
+    color: var(--cor-texto);
+}
+
+.search-bar{
+    background-color: #171717;
+    width: 95%;
+    margin: 3vw 0 1vw 0;
+    padding: 0.7vh;
+    border-bottom: solid 2px var(--cor-amarelo);
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5vw 0.7vw 0.5vw 1vw;
+    color:var(--cor-texto);
+    outline: none;
+}
+
+.search-bar svg{
+    padding: 0 0.7vw;
+}
+
+.pesquisa{
+    background-color: #000000;
+    border-radius: 10px;
+    border: none;
+    border-bottom: var(--cor-amarelo) solid 1px;
+    color: #FFFFFF;
+    padding-inline: 2rem;
+    height: 40px;
+    font-size: 20px;
+}
+
+.perfil-funcionario{
+    color: var(--cor-amarelo);
+}
+.consulta-pedido{
+    color: var(--cor-amarelo);
+}
+.button-pedido{
+    background: var(--cor-amarelo);
+}
