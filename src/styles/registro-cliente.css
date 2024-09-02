@@ -83,6 +83,15 @@ header img{
     width: 100%;
 }
 
+.endereco-titulo{
+    align-self: center;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+}
+
 .teste h2{
     color: white;
     align-self: center;
