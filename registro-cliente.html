@@ -53,15 +53,76 @@
                 <div class="container">
                     <h5 class="form-label endereco-titulo">Endereço:</h5>
                     <div class="container-endereco">
-                        <div class="endereco">
+                        <div class="endereco item-1">
                             <label for="rua" class="form-label">Rua:</label>
                             <input type="text" name="rua" id="rua" class="form-input">
                         </div>
+                        <div class="endereco item-2">
+                            <label for="numero" class="form-label">Número:</label>
+                            <input type="text" name="numero" id="numero" class="form-input" style="width: 60%;">
+                        </div>
+                    </div>
+                    <div class="container-endereco">
+                        <div class="endereco item-3">
+                            <label for="bairro" class="form-label">Bairro:</label>
+                            <input type="text" name="bairro" id="bairro" class="form-input">
+                        </div>
+                        <div class="endereco item-2">
+                            <label for="cep" class="form-label">CEP:</label>
+                            <input type="text" name="cep" id="cep" class="form-input" style="width: 70%;">
+                        </div>
+                    </div>
+                    <div class="container-endereco">
+                        <div class="endereco">
+                            <label for="cidade" class="form-label">Cidade:</label>
+                            <input type="text" name="cidade" id="cidade" class="form-input" style="width: 90%;">
+                        </div>
+                        <div class="endereco item-2 custom-select-wrapper">
+                            <label for="uf" class="form-label">UF:</label>
+                            <select name="uf" class="form-input form-select">
+                                <option value=""></option>
+                                <option value="">AC</option>
+                                <option value="">AL</option>
+                                <option value="">AP</option>
+                                <option value="">AM</option>
+                                <option value="">BA</option>
+                                <option value="">CE</option>
+                                <option value="">DF</option>
+                                <option value="">ES</option>
+                                <option value="">GO</option>
+                                <option value="">MA</option>
+                                <option value="">MT</option>
+                                <option value="">MS</option>
+                                <option value="">MG</option>
+                                <option value="">PA</option>
+                                <option value="">PB</option>
+                                <option value="">PR</option>
+                                <option value="">PE</option>
+                                <option value="">PI</option>
+                                <option value="">RJ</option>
+                                <option value="">RN</option>
+                                <option value="">RS</option>
+                                <option value="">RO</option>
+                                <option value="">RR</option>
+                                <option value="">SC</option>
+                                <option value="">SP</option>
+                                <option value="">SE</option>
+                                <option value="">TO</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
+                <div class="container">
+                    <label for="senha" class="form-label">Criar nova Senha</label>
+                    <input type="password" name="senha" id="senha" class="form-input">
+                </div>
+                <div class="container">
+                    <label for="senha" class="form-label">Repetir Senha</label>
+                    <input type="password" name="senha" id="senha" class="form-input">
+                </div>
+                <button class="btn" type="submit">Finalizar Cadastro</button>
             </form>
         </main>
-    
 
         <footer class="rodape">
             <br>
