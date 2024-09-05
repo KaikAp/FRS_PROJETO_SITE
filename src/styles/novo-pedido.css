@@ -1,0 +1,142 @@
+@import url(./style-main.css);
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
+    padding: 0;
+    background-image: url("../../images/image.png");
+}
+
+header{
+    height: 6vw;
+    align-content: center;
+    margin:0;
+    background: var(--cor-header);
+}
+
+header img{
+    width: 14vw;
+    margin-left: 3vw;
+    margin-top: 3.5vh;
+}
+
+.banner {
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------------- BODY --------------------------------- */
+
+.teste{
+    height: 90%;
+    width: 50%;
+    margin: 50px auto ;
+    padding: 50px;
+    border: 10px;
+    border-radius: 50px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px #FFC846;
+}
+
+.teste h1{
+    color: #FFC846;
+    align-self: center;
+}
+
+.teste h3{
+    color: #FFC846;
+}
+
+
+.id{
+    margin-left: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10x;
+}
+
+.boxID{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:#000000 1px 1px 5px;
+}
+
+.boxtxtID{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.teste p {
+    color: #FFC846;
+    
+}
+.teste input{
+    background-color: #292929;
+    height: 40px;
+}
+
+select{
+    background-color: #292929;
+    color: white;
+    height: 69px;
+    appearance: none;
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+select{
+    background-color: #292929;
+    color: white;
+    height: 40px;
+    appearance: none;
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+}
+
+.descricao{
+
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    padding-top: 120px;
+}
+
+button{
+    width: 300px;
+    height: 56px;
+    border-radius: 10px;
+}
+
+.voltar{
+    color: #FFC846;
+    background-color: #000000;
+    border: 1px solid #FFC846;
+}
+
+.continuar{
+    background-color: #FFC846;
+}
+button:hover{
+    cursor: pointer;
+
+}
+input{
+    border: none;
+    color: white;
+}
