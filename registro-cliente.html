@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,70 +28,102 @@
                 </svg>
             </nav>
         </header>
-<main class="conteudo">
-    <div class="teste">   
-        <h1>REGISTRO DE UM NOVO CLIENTE</h1>
-        <p>Nome do Cliente:</p>
-        <input type="text" style="width: 95%;"/>
-        <p>CNPJ:</p>
-        <input type="text" style="width: 60%;"/>
-        <p>E-mail:</p>
-        <input type="text" style="width: 70%;"/>
-    <div class="fone" style="display: flex; width: 100%;">
-        <div style="width: 50%;"> 
-            <p>Fone:</p>
-            <input type="text" style="width: 90%;"/>
-        </div>    
-        <div style="width: 50%;"> 
-            <p>Fone Adicional:</p>
-            <input type="text" style="width: 90%;"/>
-        </div>    
-    </div>
-        <h2>Endereço:</h2>
-    <div class="Rua&num" style="display: flex; width: 100%;">
-        <div style="width: 100%;">
-            <p>Rua:</p>
-            <input type="text" style="width: 90%;"/>
-        </div>    
-        <div style="width: 30%;">    
-            <p>Nº</p>
-            <input type="text" style="width: 78%;"/>
-        </div>
-    </div>
-    <div class="Bairro&CEP" style="display: flex; width: 100%;">
-    <div style="width: 100%;">        
-        <p>Bairro:</p>
-        <input type="text" style="width: 90%;"/>
-    </div>
-    <div style="width:30%;">    
-        <p>CEP:</p>
-        <input type="text" style="width: 78%;"/>
-    </div>
-    </div>
-    <div class="cidade&UF" style="display: flex; width: 100%;">
-    <div style="width: 70%;">
-        <p>Cidade:</p>
-        <input type="text" style="width: 90%;"/>
-    </div>
-    <div style="width: 100%;">    
-        <p>UF:</p>
-        <select  style="width: 48%;" >
-            <option value="nulo"></option>
-            <option value="SP">São Paulo</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="MG">Minas Gerais</option>
-            
-        </select>
-    </div>
-    </div>
-        <p>Criar nova Senha:</p>
-        <input type="text" style="width: 95%;"/>
-        <p>Repetir Senha:</p>
-        <input type="text" style="width: 95%;"/>
-        <a href="account.html"><button>Finalizar Cadastro</button></a>
-    </div>
-  
-</main>
+
+        <main class="conteudo">
+            <form action="" class="formulario">
+                <h2 class="formulario-titulo">REGISTRO DE UM NOVO CLIENTE</h2>
+                <div class="container">
+                    <label for="nome" class="form-label">Nome do Cliente:</label>
+                    <input type="text" name="nome" id="nome" class="form-input">
+                </div>
+                <div class="container">
+                    <label for="cnpj" class="form-label">CNPJ:</label>
+                    <input type="text" name="cnpj" id="cnpj" class="form-input" style="width: 60%;">
+                </div>
+                <div class="container-fone">
+                    <div class="container fone">
+                        <label for="fone" class="form-label">Fone:</label>
+                        <input type="text" name="fone" id="fone" class="form-input">
+                    </div>
+                    <div class="container fone">
+                        <label for="foneA" class="form-label">Fone Adicional:</label>
+                        <input type="text" name="foneA" id="foneA" class="form-input">
+                    </div>
+                </div>
+                <div class="container">
+                    <h5 class="form-label endereco-titulo">Endereço:</h5>
+                    <div class="container-endereco">
+                        <div class="endereco item-1">
+                            <label for="rua" class="form-label">Rua:</label>
+                            <input type="text" name="rua" id="rua" class="form-input">
+                        </div>
+                        <div class="endereco item-2">
+                            <label for="numero" class="form-label">Número:</label>
+                            <input type="text" name="numero" id="numero" class="form-input" style="width: 60%;">
+                        </div>
+                    </div>
+                    <div class="container-endereco">
+                        <div class="endereco item-3">
+                            <label for="bairro" class="form-label">Bairro:</label>
+                            <input type="text" name="bairro" id="bairro" class="form-input">
+                        </div>
+                        <div class="endereco item-2">
+                            <label for="cep" class="form-label">CEP:</label>
+                            <input type="text" name="cep" id="cep" class="form-input" style="width: 70%;">
+                        </div>
+                    </div>
+                    <div class="container-endereco">
+                        <div class="endereco">
+                            <label for="cidade" class="form-label">Cidade:</label>
+                            <input type="text" name="cidade" id="cidade" class="form-input" style="width: 90%;">
+                        </div>
+                        <div class="endereco item-2 custom-select-wrapper">
+                            <label for="uf" class="form-label">UF:</label>
+                            <select name="uf" class="form-input form-select">
+                                <option value=""></option>
+                                <option value="">AC</option>
+                                <option value="">AL</option>
+                                <option value="">AP</option>
+                                <option value="">AM</option>
+                                <option value="">BA</option>
+                                <option value="">CE</option>
+                                <option value="">DF</option>
+                                <option value="">ES</option>
+                                <option value="">GO</option>
+                                <option value="">MA</option>
+                                <option value="">MT</option>
+                                <option value="">MS</option>
+                                <option value="">MG</option>
+                                <option value="">PA</option>
+                                <option value="">PB</option>
+                                <option value="">PR</option>
+                                <option value="">PE</option>
+                                <option value="">PI</option>
+                                <option value="">RJ</option>
+                                <option value="">RN</option>
+                                <option value="">RS</option>
+                                <option value="">RO</option>
+                                <option value="">RR</option>
+                                <option value="">SC</option>
+                                <option value="">SP</option>
+                                <option value="">SE</option>
+                                <option value="">TO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <label for="senha" class="form-label">Criar nova Senha</label>
+                    <input type="password" name="senha" id="senha" class="form-input">
+                </div>
+                <div class="container">
+                    <label for="senha" class="form-label">Repetir Senha</label>
+                    <input type="password" name="senha" id="senha" class="form-input">
+                </div>
+                <button class="btn" type="submit">Finalizar Cadastro</button>
+            </form>
+        </main>
+
         <footer class="rodape">
             <br>
             <img src="images/Logo_txt.svg" class="rodape-logo" alt="Logo da FRS Montagens">
@@ -126,6 +158,5 @@
             <hr color="#d4a639" width="70%">
             <h5>&copy; Todos os direitos reservados</h5>
         </footer>
-        <script src="https://kit.fontawesome.com/04ab88e5e7.js" crossorigin="anonymous"></script>
     </body>
 </html>
