@@ -1,4 +1,5 @@
 @import url(./style-main.css);
+@import url(style.css);
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -106,7 +107,12 @@ select{
 }
 
 .descricao{
-
+    background-color: #292929;
+    color:white;
+    font-weight: 500;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
 }
 
 .botoes{
