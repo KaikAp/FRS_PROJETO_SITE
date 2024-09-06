@@ -68,7 +68,7 @@
     height: 6vh;
     font: normal 700 1.3vw 'Poppins', sans;
     color: #000000;
-    margin: 4vh 0 3vh 0;
+    margin: 3vh 0;
     cursor: pointer;
 }
 
@@ -127,4 +127,17 @@
     padding: 0;
 }
 
+.nav-links{
+    display:flex;
+    flex-direction:column;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#FFC846;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+}
 /* ------------------------------- Fim Main -------------------------------*/
