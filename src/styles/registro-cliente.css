@@ -17,7 +17,6 @@ header{
 header img{
     width: 14vw;
     margin-left: 3vw;
-    margin-top: 3.5vh;
 }
 
 .banner {
@@ -121,13 +120,18 @@ header img{
 }
 
 .btn{
+    width: 100%;
     color: #000000;
     background-color: var(--cor-amarelo);
     border: none;
-    margin-block: 4rem;
-    margin-inline: 14%;
     font-size: 28px;
-    border-radius: 7px;
+    border-radius: 1vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    margin: 2vh auto;
+    padding: 0.5vw 2vw;
+}
+
+.btn-link{
+    margin: 2vh auto;
 }

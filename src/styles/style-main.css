@@ -28,15 +28,19 @@ body{
 
 header{
     height: 6vw;
-    align-content: center;
-    margin:0;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0;
     background: var(--cor-header);
+    border-bottom: solid 2px var(--cor-amarelo);
 }
 
 header img{
     width: 14vw;
     margin-left: 3vw;
-    margin-top: 3.5vh;
+    display:Flex;
+    align-items:center;
 }
 
 /* ------------------------------- Fim -------------------------------*/
@@ -45,21 +49,20 @@ header img{
 
 .navbar{
     width: 50vw;
-    float:inline-end;
     margin-right: 5vw;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
 }
 
 .navbar ul{
-    float: end;
+    width:100%;
     display:flex;
+    align-items: center;
     justify-content: space-around;
     list-style-type: none;
     align-items: center;
-    padding: 10px;
-}
-
-.navbar{
-    text-decoration: none;
+    margin:0;
 }
 
 .navbar-menu{
@@ -68,7 +71,7 @@ header img{
 
 .nav-link{
     position: relative;
-    padding-bottom: 6px;
+    padding-bottom: 0.7vh;
     margin: 0.1vw;
     color:var(--cor-texto);
     font-size: 0.9em;
@@ -88,7 +91,7 @@ header img{
     position: absolute;
     width: 0;
     height: 3px;
-    bottom: 5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--cor-amarelo);
@@ -124,6 +127,9 @@ header img{
 .login-button:hover{
     background: var(--cor-amarelo-escuro);
 }
+
+
+
 
 /* ------------------------------- Fim NavBar -------------------------------*/
 

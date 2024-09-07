@@ -38,6 +38,8 @@ header{
 header img{
     width: 14vw;
     margin-left: 3vw;
+    display:Flex;
+    align-items:center;
 }
 /* ------------------------------- NavBar -------------------------------*/
 
