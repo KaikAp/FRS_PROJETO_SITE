@@ -4,7 +4,10 @@ body{
     font-family: 'Poppins', sans-serif;
     margin:0px;
     padding: 0;
-    background-image: url("../../images/image.png");
+    background-image: url(../../images/layered-waves-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header{
@@ -34,7 +37,7 @@ header img{
     margin: 50px auto ;
     border: 10px;
     border-radius: 25px;
-    background-color: #191919;
+    background-color: rgba(25, 25, 25, 0.65);
     display: flex;
     justify-content: center;
     flex-direction: column;

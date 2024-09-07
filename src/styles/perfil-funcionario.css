@@ -168,9 +168,11 @@ h4{
 .perfil-funcionario{
     color: var(--cor-amarelo);
 }
+
 .consulta-pedido{
     color: var(--cor-amarelo);
 }
+
 .button-pedido{
     background: var(--cor-amarelo);
 }

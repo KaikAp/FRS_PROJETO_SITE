@@ -18,14 +18,12 @@
     --cor-atraso: #FF6456;
 }
 
-
 .welcome-msg{
     color: var(--cor-amarelo);
     font-size: 1.5rem;
     text-align: center;
     margin: 10vh 0;
 }
-
 
 .reports-box{
     margin: 0 auto;
@@ -81,8 +79,6 @@
     color: var(--cor-atraso);
 }
 
-
-
 .search-section{
     background-color: var(--account-section-background);
     width: 70%;
@@ -126,7 +122,6 @@
 .search-bar svg{
     padding: 0 0.7vw;
 }
-
 
 /* -------------------------- Seção Cadastros ---------------------- */
 
@@ -182,10 +177,5 @@
     align-items: center;
     justify-content: space-around;
 }
-
-
-
-
-
 
 /* -------------------------- Fim Navbar Lateral ---------------------- */

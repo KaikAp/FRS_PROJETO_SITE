@@ -126,10 +126,6 @@ header img{
     background: var(--cor-amarelo-escuro);
 }
 
-
-
-
-
 /* ------------------------------- Fim NavBar -------------------------------*/
 
 .banner {
@@ -144,11 +140,7 @@ header img{
     height: 70dvh;
 }
 
-
-
-
 /* ------------------------------- Main -------------------------------*/
-
 
 #conteudo{
   width: 100%;  
@@ -169,8 +161,6 @@ header img{
     color: var(--cor-texto);
     font-weight: 400;
 }
-
-
 
 #sobre{
     display: flex;
@@ -194,10 +184,7 @@ header img{
 
 }
 
-
-
 /* ------------------------------- Fim Main -------------------------------*/
-
 
 
 
@@ -291,22 +278,11 @@ header img{
     border-radius: 0.5vw;
 }
 
-
-
-
-
 /* -------------------------------  Fim Mapa -------------------------------*/
 
 
 
-
-
-
-
-
 /* ------------------------------- Rodape -------------------------------*/
-
-
 
 .rodape{
     background-color: #121212;
@@ -316,6 +292,7 @@ header img{
     width: 100%;
     clear: both;
 }
+
 .rodape-logo{
     width: 10vw;
     margin: 3vh auto;
@@ -326,8 +303,6 @@ header img{
     width: 10vw;
 }
 
-
-
 .rodape-conteudo {
     display: flex;
     justify-content:space-around ;
@@ -335,9 +310,11 @@ header img{
     width: 60vw;
 
 }
+
 .rodape-links, .rodape-social, .rodape-contato{
     width:40%;
 }
+
 .rodape-conteudo li{
     font-size: 0.8em;
     padding: 5px 0;
@@ -369,8 +346,6 @@ header img{
     color:var(--cor-amarelo-escuro)
 }
 
-
-
 .rodape h5{
     color:#ffc846;
     text-align: center;
@@ -379,7 +354,6 @@ header img{
     padding: 10px 0px 20px 0px;
 }
 /* -------------------------------  Fim Rodape -------------------------------*/
-
 
 
 
@@ -414,7 +388,6 @@ header img{
     border: solid 3px var(--cor-amarelo-escuro);
 }
 
-
 .input-user, .input-password{
     display: flex;
     align-items: center;
@@ -443,7 +416,6 @@ header img{
     margin: 0.7vw 1vw 0.7vw 0.7vw;
 }
 
-
 .login-button2{
     background-color: var(--cor-amarelo);
     width: 40%;
@@ -470,8 +442,6 @@ header img{
 .login-button2 input:hover{
     background-color: var(--cor-amarelo-escuro);
 }
-
-
 
 .login-questions{
     display: flex;
@@ -522,7 +492,6 @@ header img{
     margin: 0;
     padding: 0;
 }
-
 
 /* -------------------------------  Fim Login  -------------------------------*/
 

@@ -128,9 +128,6 @@ header img{
     background: var(--cor-amarelo-escuro);
 }
 
-
-
-
 /* ------------------------------- Fim NavBar -------------------------------*/
 
 
@@ -154,8 +151,6 @@ header img{
     position: absolute;
     
 }
-
-
 
 .rodape-conteudo {
     display: flex;
@@ -197,8 +192,6 @@ header img{
     text-decoration: underline;
     color:var(--cor-amarelo-escuro)
 }
-
-
 
 .rodape h5{
     color:#ffc846;
