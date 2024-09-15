@@ -28,3 +28,34 @@ C:\Users\KAIK\source\repos\FRS Montagens e Manutenção\FRS Montagens e Manuten�
 C:\Users\KAIK\source\repos\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.pdb
 C:\Users\KAIK\source\repos\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.genruntimeconfig.cache
 C:\Users\KAIK\source\repos\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\ref\FRS Montagens e Manutenção.dll
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\appsettings.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.staticwebassets.runtime.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.exe
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.deps.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.runtimeconfig.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.dll
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.pdb
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.AssemblyInfoInputs.cache
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.AssemblyInfo.cs
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.csproj.CoreCompileInputs.cache
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.RazorAssemblyInfo.cache
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.RazorAssemblyInfo.cs
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.sourcelink.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.FRS Montagens e Manutenção.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.build.FRS Montagens e Manutenção.props
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FRS Montagens e Manutenção.props
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FRS Montagens e Manutenção.props
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\scopedcss\bundle\FRS Montagens e Manutenção.styles.css
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\scopedcss\projectbundle\FRS Montagens e Manutenção.bundle.scp.css
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.dll
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\refint\FRS Montagens e Manutenção.dll
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.pdb
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.genruntimeconfig.cache
+C:\Users\KAIK\Desktop\facul inter\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\ref\FRS Montagens e Manutenção.dll
