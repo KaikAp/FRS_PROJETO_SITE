@@ -13,6 +13,6 @@ namespace Business
         private DateTime DataInicio { get; set; }
         private DateTime DataTermino { get; set; }
         private string Descricao { get; set; }
-        private string fk_id {  get; set; }
+        private List<Topico> FkIdTopico {  get; set; }
     }
 }
