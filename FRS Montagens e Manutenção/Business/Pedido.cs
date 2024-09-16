@@ -15,5 +15,8 @@ namespace Business
         private int Duracao { get; set; }
         private Funcionario Funcionario { get; set; }
         private Cliente Cliente { get; set; }
+        private Status Status { get; set; }
+        private List<Topico> Topico { get; set; }
+ 
     }
 }

@@ -11,5 +11,6 @@ namespace Business
         private string Id {  get; set; }
         private string Nome { get; set; }
         private List<Topico> Topico { get; set; }
+        private List<Pedido> Pedido { get; set; }
     }
 }
