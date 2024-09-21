@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KAIK\\Desktop\\facul inter\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\KAIK\\Desktop\\facul inter\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\KAIK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KAIK\\Desktop\\facul inter\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Business\\obj\\",
+      "outputPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
