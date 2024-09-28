@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IEXVyGkS6oE=",
+  "dgSpecHash": "F8J1LDKENj4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj",
+  "projectFilePath": "B:\\WorkSpace\\Visual_Code\\WS_VISUAL_STUDIO\\frs\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KAIK\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\KAIK\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
