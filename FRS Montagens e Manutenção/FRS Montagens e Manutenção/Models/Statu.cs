@@ -1,6 +1,6 @@
 ﻿namespace FRS_Montagens_e_Manutenção.Models
 {
-    public class Status
+    public class Statu
     {
         //Getters Setters
         private string Id {  get; set; }

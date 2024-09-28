@@ -4,7 +4,7 @@
     {
         //Getters Setters
         private string Id {  get; set; }
-        private Status Status { get; set; }
+        private Statu Status { get; set; }
         private DateTime DataInicio { get; set; }
         private DateTime DataTermino { get; set; }
         private string Descricao { get; set; }
