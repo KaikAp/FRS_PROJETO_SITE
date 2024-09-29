@@ -3,10 +3,10 @@
     public class Statu
     {
         //Getters Setters
-        private string Id {  get; set; }
-        private string Nome { get; set; }
-        private List<Topico> Topico { get; set; }
-        private List<Pedido> Pedido { get; set; }
+        public string Id {  get; set; }
+        public string Nome { get; set; }
+        public List<Topico> Topico { get; set; }
+        public List<Pedido> Pedido { get; set; }
         
         //Construtores
 

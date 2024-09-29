@@ -3,8 +3,8 @@
     public class Cliente : Pessoa
     {
         //Getters Setters
-        private string Cnpj {  get; set; }
-        private List<Pedido> Pedido {  get; set; }
+        public string Cnpj {  get; set; }
+        public List<Pedido> Pedido {  get; set; }
 
         //Construtores
 

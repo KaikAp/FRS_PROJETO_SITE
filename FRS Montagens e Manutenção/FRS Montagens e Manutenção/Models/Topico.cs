@@ -3,13 +3,13 @@
     public class Topico
     {
         //Getters Setters
-        private string Id {  get; set; }
-        private Statu Status { get; set; }
-        private DateTime DataInicio { get; set; }
-        private DateTime DataTermino { get; set; }
-        private string Descricao { get; set; }
-        private List<Topico> FkIdTopico {  get; set; }
-        private Pedido Pedido { get; set; }
+        public string Id {  get; set; }
+        public Statu Status { get; set; }
+        public DateTime DataInicio { get; set; }
+        public DateTime DataTermino { get; set; }
+        public string Descricao { get; set; }
+        public List<Topico> FkIdTopico {  get; set; }
+        public Pedido Pedido { get; set; }
         
         //Construtores
 

@@ -3,15 +3,15 @@
     public class Pedido
     {
         //Getters Setters
-        private int Id {  get; set; }
-        private string Descrição { get; set; }
-        private DateTime DataInicio { get; set; }
-        private DateTime DataTermino { get; set; }
-        private int Duracao { get; set; }
-        private Funcionario Funcionario { get; set; }
-        private Cliente Cliente { get; set; }
-        private Statu Status { get; set; }
-        private List<Topico> Topico { get; set; }
+        public int Id {  get; set; }
+        public string Descrição { get; set; }
+        public DateTime DataInicio { get; set; }
+        public DateTime DataTermino { get; set; }
+        public int Duracao { get; set; }
+        public Funcionario Funcionario { get; set; }
+        public Cliente Cliente { get; set; }
+        public Statu Status { get; set; }
+        public List<Topico> Topico { get; set; }
 
         //Construtores
 

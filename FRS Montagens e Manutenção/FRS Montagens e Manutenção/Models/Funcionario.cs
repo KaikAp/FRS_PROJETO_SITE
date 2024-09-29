@@ -3,9 +3,9 @@
     public class Funcionario : Pessoa
     {
         //Getters Setters
-        private string Cpf {  get; set; }
-        private bool Gerente {  get; set; }
-        private List<Pedido> Pedido {  get; set; }
+        public string Cpf {  get; set; }
+        public bool Gerente {  get; set; }
+        public List<Pedido> Pedido {  get; set; }
 
         //Construtores
 

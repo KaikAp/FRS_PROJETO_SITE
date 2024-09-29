@@ -23,25 +23,22 @@ namespace Repository.EntityFramework
                 t =>
                 {
                     t.ToTable("Pessoas");
-                    t.HasKey(t => t.Id);
                     t.Property(t => t.Id).HasColumnType("int").IsRequired().ValueGeneratedOnAdd();
+                    t.HasKey(t => t.Id);
                     t.Property(t => t.Login).HasColumnType("varchar(50)").IsRequired();
                     t.Property(t => t.Senha).HasColumnType("varchar(50)").IsRequired();
                     t.Property(t => t.Nome).HasColumnType("varchar(50)").IsRequired();
                     t.Property(t => t.Email).HasColumnType("varchar(50)").IsRequired();
-                    t.Property(t => t.DtNascimento).HasColumnType("time");
-                    t.Property(t => t.Telefone).HasColumnType("varchar(15)");
+                    t.Property(t => t.DataNascimento).HasColumnType("time");
                     t.Property(t => t.Uf).HasColumnType("char(2)").IsRequired();
                     t.Property(t => t.Cidade).HasColumnType("varchar(20)").IsRequired();
                     t.Property(t => t.Bairro).HasColumnType("varchar(30)").IsRequired();
-                    t.Property(t => t.Rua).HasColumnType("varchar(20)").IsRequired();
+                    t.Property(t => t.Rua).HasColumnType("varchar(100)").IsRequired();
                     t.Property(t => t.NResidencia).HasColumnType("varchar(10)").IsRequired();
                     t.Property(t => t.Cep).HasColumnType("varchar(10)").IsRequired();
-                    t.Property(t => t.Telefone).HasColumnType("boolean").HasDefaultValue("false");
+                    t.Property(t => t.Ativo).HasColumnType("boolean").HasDefaultValue("true");
                     t.Property(t => t.DataCadastro).HasColumnType("time").HasDefaultValue("getdate()");
-
-                }
-
+                }    
                 );
         }
     }
