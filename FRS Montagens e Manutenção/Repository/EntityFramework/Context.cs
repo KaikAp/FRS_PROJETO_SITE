@@ -40,6 +40,15 @@ namespace Repository.EntityFramework
                     t.Property(t => t.DataCadastro).HasColumnType("time").HasDefaultValue("getdate()");
                 }    
                 );
+            modelBuilder.Entity<Cliente>(
+                t =>
+                {
+                    t.ToTable("Clientes");
+                    t.Property(t => t.Cnpj).HasColumnType("varchar(20)").IsRequired();
+                    t.HasOne(t => t.IdPessoa).WithOne(t => t.clientes.First()).OnDelete(DeleteBehavior.NoAction).IsRequired();
+                    t.HasOne(t => t.IdFuncionario).WithOne(t => t.clientes.First()).OnDelete(DeleteBehavior.NoAction).IsRequired();
+                }
+                );
         }
     }
 }
