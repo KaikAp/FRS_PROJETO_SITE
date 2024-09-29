@@ -7,7 +7,7 @@
         public string Cpf {  get; set; }
         public bool Gerente {  get; set; }
         public List<Pedido> Pedido {  get; set; }
-        public virtual List<Cliente> Cliente { get; set; }
+        public virtual List<Cliente> ClienteFuncionario { get; set; }
 
         //Construtores
 

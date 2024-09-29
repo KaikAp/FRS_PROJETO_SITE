@@ -19,7 +19,8 @@
         public DateTime DataNascimento { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool Ativo { get; set; }
-        public virtual List<Cliente> clientes { get; set; }
+        public virtual List<Cliente> ClientesPessoa { get; set; }
+        public virtual List<Funcionario> FuncionarioPessoa { get; set; }
         
         //Construtores
 
