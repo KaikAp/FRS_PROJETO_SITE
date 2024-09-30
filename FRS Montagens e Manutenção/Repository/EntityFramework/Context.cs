@@ -27,7 +27,6 @@ namespace Repository.EntityFramework
                     HasColumnType("int").
                     IsRequired().
                     ValueGeneratedOnAdd();
-
                     t.HasKey(t => t.Id);
 
                     t.Property(t => t.Login).
@@ -45,6 +44,8 @@ namespace Repository.EntityFramework
                     t.Property(t => t.Email).
                     HasColumnType("varchar(50)").
                     IsRequired();
+                    t.HasIndex(t => t.Email).
+                    IsUnique();
 
                     t.Property(t => t.DataNascimento).
                     HasColumnType("date");
@@ -90,6 +91,7 @@ namespace Repository.EntityFramework
                     t.Property(t => t.Cnpj).
                     HasColumnType("varchar(14)").
                     IsRequired();
+                    t.HasIndex(t => t.Cnpj).IsUnique();
 
                     t.HasOne(t => t.IdPessoa).
                     WithMany(t => t.ClientesPessoa).
@@ -110,6 +112,7 @@ namespace Repository.EntityFramework
                     t.Property(t => t.Cpf).
                     HasColumnType("varchar(11)").
                     IsRequired();
+                    t.HasIndex(t => t.Cpf).IsUnique();
 
                     t.Property(t => t.Gerente).
                     HasColumnType("bit").
@@ -123,6 +126,58 @@ namespace Repository.EntityFramework
 
                 }
                 );
+
+            modelBuilder.Entity<Statu>(
+                t =>
+                {
+                    t.ToTable("Status");
+                    t.Property(t => t.Id).HasColumnType("int").
+                    IsRequired().
+                    ValueGeneratedOnAdd();
+                    t.HasKey(t => t.Id);
+
+                    t.Property(t => t.Nome).
+                    HasColumnType("varchar(20)").
+                    IsRequired();
+                }
+
+                );
+            modelBuilder.Entity<Pedido>(
+                t =>
+                {
+                    t.ToTable("Pedidos");
+                    t.Property(t => t.Id).
+                    HasColumnType("int").
+                    IsRequired().
+                    ValueGeneratedOnAdd();
+
+                    t.Property(t => t.DataInicio).
+                    HasColumnType("date").
+                    IsRequired().
+                    HasDefaultValue("getdate()");
+
+                    t.Property(t => t.DataTermino).
+                    HasColumnType("date");
+
+                    t.HasOne(t => t.Funcionario).
+                    WithMany(t => t.PedidoFuncionario).
+                    IsRequired().
+                    OnDelete(DeleteBehavior.NoAction);
+
+                    t.HasOne(t => t.Cliente).
+                    WithMany(t => t.PedidoCliente).
+                    IsRequired().
+                    OnDelete(DeleteBehavior.NoAction);
+
+                    t.HasOne(t => t.Status).
+                    WithMany(t => t.PedidoStatu).
+                    IsRequired().
+                    OnDelete(DeleteBehavior.NoAction);
+                }
+
+
+                );
+
         }
     }
 }

@@ -5,8 +5,8 @@
         //Getters Setters
         public string Id {  get; set; }
         public string Nome { get; set; }
-        public List<Topico> Topico { get; set; }
-        public List<Pedido> Pedido { get; set; }
+        public virtual List<Topico> Topico { get; set; }
+        public virtual List<Pedido> PedidoStatu { get; set; }
         
         //Construtores
 
