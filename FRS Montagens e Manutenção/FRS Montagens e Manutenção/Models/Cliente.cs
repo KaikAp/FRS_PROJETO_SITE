@@ -7,7 +7,6 @@
         public virtual Funcionario IdFuncionario {  get; set; } 
         public string Cnpj {  get; set; }
         public List<Pedido> PedidoCliente {  get; set; }
-        public List<Telefone> TelefoneCliente { get; set; }
 
         //Construtores
 

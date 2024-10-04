@@ -82,8 +82,27 @@ namespace Repository.EntityFramework
                     HasColumnType("date").
                     HasDefaultValue("getdate()");
 
+                    t.HasMany(t => t.TelefonePessoa).WithOne(t => t.Pessoatelefone).OnDelete(DeleteBehavior.NoAction).IsRequired();
+
                 }    
                 );
+
+            modelBuilder.Entity<Telefone>(
+                t =>
+                {
+                    t.ToTable("Telefone");
+                    t.Property(t => t.Numero).
+                    HasColumnType("varchar(15)").
+                    IsRequired();
+                    t.HasKey(t => t.Numero);
+
+                    t.HasOne(t => t.Pessoatelefone).WithMany(t => t.TelefonePessoa).OnDelete(DeleteBehavior.NoAction).IsRequired();
+                    t.HasKey(t => t.Pessoatelefone);
+                }
+
+
+            );
+
             modelBuilder.Entity<Cliente>(
                 t =>
                 {

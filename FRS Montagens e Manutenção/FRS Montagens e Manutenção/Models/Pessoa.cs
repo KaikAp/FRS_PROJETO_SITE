@@ -21,7 +21,7 @@
         public bool Ativo { get; set; }
         public virtual List<Cliente> ClientesPessoa { get; set; }
         public virtual List<Funcionario> FuncionarioPessoa { get; set; }
-        
+        public List<Telefone> TelefonePessoa { get; set; }
         //Construtores
 
 
