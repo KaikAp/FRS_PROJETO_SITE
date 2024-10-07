@@ -121,3 +121,34 @@ B:\WorkSpace\Visual_Code\WS_VISUAL_STUDIO\frs\FRS_PROJETO_SITE\FRS Montagens e M
 B:\WorkSpace\Visual_Code\WS_VISUAL_STUDIO\frs\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.pdb
 B:\WorkSpace\Visual_Code\WS_VISUAL_STUDIO\frs\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.genruntimeconfig.cache
 B:\WorkSpace\Visual_Code\WS_VISUAL_STUDIO\frs\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\ref\FRS Montagens e Manutenção.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\appsettings.Development.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\appsettings.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.staticwebassets.runtime.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.exe
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.deps.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.runtimeconfig.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\bin\Debug\net6.0\FRS Montagens e Manutenção.pdb
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.AssemblyInfoInputs.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.AssemblyInfo.cs
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.MvcApplicationPartsAssemblyInfo.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.RazorAssemblyInfo.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.RazorAssemblyInfo.cs
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.sourcelink.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets.build.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets.development.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.FRS Montagens e Manutenção.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.build.FRS Montagens e Manutenção.props
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FRS Montagens e Manutenção.props
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FRS Montagens e Manutenção.props
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\scopedcss\bundle\FRS Montagens e Manutenção.styles.css
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\scopedcss\projectbundle\FRS Montagens e Manutenção.bundle.scp.css
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\refint\FRS Montagens e Manutenção.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.pdb
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\FRS Montagens e Manutenção.genruntimeconfig.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção\obj\Debug\net6.0\ref\FRS Montagens e Manutenção.dll
