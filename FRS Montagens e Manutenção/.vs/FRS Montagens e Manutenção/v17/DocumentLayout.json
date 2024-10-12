@@ -1,29 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\",
+  "WorkspaceRootPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\desenvolvimento\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\desenvolvimento\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\views\\perfilcliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\views\\perfilcliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\desenvolvimento\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\desenvolvimento\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\controllers\\perfilclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\controllers\\perfilclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\controllers\\perfilclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\desenvolvimento\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\controllers\\perfilfuncionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91701C15-F933-4BF3-96F9-5FC46930EE3B}|Repository\\Repository.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\repository\\entityframework\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91701C15-F933-4BF3-96F9-5FC46930EE3B}|Repository\\Repository.csproj|solutionrelative:repository\\entityframework\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91701C15-F933-4BF3-96F9-5FC46930EE3B}|Repository\\Repository.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{91701C15-F933-4BF3-96F9-5FC46930EE3B}|Repository\\Repository.csproj|solutionrelative:repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\views\\perfilcliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\views\\perfilcliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\controllers\\perfilfuncionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\controllers\\perfilfuncionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\desenvolvimento\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\views\\perfilfuncionario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|c:\\users\\kaik\\desktop\\nova pasta\\frs_projeto_site\\frs montagens e manuten\u00E7\u00E3o\\frs montagens e manuten\u00E7\u00E3o\\views\\perfilfuncionario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC2F16B5-4176-4AF4-B34D-38C5545C9666}|FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o.csproj|solutionrelative:frs montagens e manuten\u00E7\u00E3o\\views\\perfilfuncionario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -39,36 +55,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
-              "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
-              "ToolTip": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
-              "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
-              "ViewState": "AgIAAKcCAAAAAAAAAAAkwLwCAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-07T19:57:37.176Z",
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Models\\Cliente.cs",
+              "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T18:47:35.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\LoginController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-07T19:57:34.457Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T18:47:30.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Repository",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\Repository\\Repository.csproj",
+              "RelativeDocumentMoniker": "Repository\\Repository.csproj",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\Repository\\Repository.csproj",
+              "RelativeToolTip": "Repository\\Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-12T18:40:17.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -88,6 +117,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
@@ -96,19 +129,54 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\Repository\\EntityFramework\\Context.cs",
+              "RelativeDocumentMoniker": "Repository\\EntityFramework\\Context.cs",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\Repository\\EntityFramework\\Context.cs",
+              "RelativeToolTip": "Repository\\EntityFramework\\Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T18:41:01.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\index.css",
+              "ViewState": "AgIAAKcCAAAAAAAAAAAkwLwCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-07T19:57:37.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-07T19:57:34.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PerfilClienteController.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilClienteController.cs",
               "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilClienteController.cs",
-              "ToolTip": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilClienteController.cs",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilClienteController.cs",
               "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilClienteController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -117,11 +185,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PerfilFuncionarioController.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilFuncionarioController.cs",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilFuncionarioController.cs",
               "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilFuncionarioController.cs",
-              "ToolTip": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilFuncionarioController.cs",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilFuncionarioController.cs",
               "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\Controllers\\PerfilFuncionarioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -130,11 +198,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilCliente\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilCliente\\Index.cshtml",
               "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilCliente\\Index.cshtml",
-              "ToolTip": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilCliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilCliente\\Index.cshtml",
               "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilCliente\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -143,11 +211,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilFuncionario\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilFuncionario\\Index.cshtml",
               "RelativeDocumentMoniker": "FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilFuncionario\\Index.cshtml",
-              "ToolTip": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilFuncionario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manuten\u00E7\u00E3o\\FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilFuncionario\\Index.cshtml",
               "RelativeToolTip": "FRS Montagens e Manuten\u00E7\u00E3o\\Views\\PerfilFuncionario\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

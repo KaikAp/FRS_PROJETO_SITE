@@ -1,6 +1,6 @@
 ﻿using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
+
 
 namespace Repository.EntityFramework
 {

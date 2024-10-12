@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj": {}
+    "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj": {
+    "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj",
+        "projectUniqueName": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj",
         "projectName": "FRS Montagens e Manutenção",
-        "projectPath": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\obj\\",
+        "projectPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj",
+        "packagesPath": "C:\\Users\\KAIK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KAIK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,21 +72,25 @@
         }
       }
     },
-    "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj": {
+    "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\KAIK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KAIK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -90,11 +98,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj": {
-                "projectPath": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj"
+              "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj": {
+                "projectPath": "C:\\Users\\KAIK\\Desktop\\Nova pasta\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção.csproj"
               }
             }
           }
@@ -111,24 +119,28 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[6.0.5, )"
             }
           },
           "imports": [
@@ -147,7 +159,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
