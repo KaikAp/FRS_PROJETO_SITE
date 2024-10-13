@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sjpQ+RRFvEiTWkg+496UuuKr1zI7MPJlYKgqPOeRxbQ=",
+  "Hash": "LZH5DuUyryEHJqVtqECGyu+mic1i8GcozLkF1iikLIU=",
   "Source": "FRS Montagens e Manutenção",
   "BasePath": "_content/FRS Montagens e Manutenção",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\wwwroot\\css\\Registros.css",
       "SourceId": "FRS Montagens e Manutenção",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\wwwroot\\",
       "BasePath": "_content/FRS Montagens e Manutenção",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/Registros.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\Registros.css"
     },
     {
       "Identity": "C:\\Desenvolvimento\\FRS_PROJETO_SITE\\FRS Montagens e Manutenção\\FRS Montagens e Manutenção\\wwwroot\\favicon.ico",

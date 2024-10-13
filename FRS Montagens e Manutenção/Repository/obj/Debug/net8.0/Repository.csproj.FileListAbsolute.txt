@@ -1,0 +1,22 @@
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\FRS Montagens e Manutenção.deps.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\FRS Montagens e Manutenção.runtimeconfig.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\appsettings.Development.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\appsettings.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\FRS Montagens e Manutenção.staticwebassets.runtime.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\FRS Montagens e Manutenção.exe
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\Repository.deps.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\Repository.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\Repository.pdb
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\FRS Montagens e Manutenção.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net8.0\FRS Montagens e Manutenção.pdb
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.sourcelink.json
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\refint\Repository.dll
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\Repository.pdb
+C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net8.0\ref\Repository.dll

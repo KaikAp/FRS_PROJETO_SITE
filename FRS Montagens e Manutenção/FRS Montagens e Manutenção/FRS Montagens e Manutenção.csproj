@@ -7,4 +7,8 @@
     <RootNamespace>FRS_Montagens_e_Manutenção</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\NovaPasta\" />
+  </ItemGroup>
+
 </Project>

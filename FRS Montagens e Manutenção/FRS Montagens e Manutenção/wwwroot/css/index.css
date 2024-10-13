@@ -15,6 +15,9 @@
     --loginform-background: #181818b3;
     --login-input: rgba(255, 255, 255, 0.05);
     --account-section-background: #272727;
+    --cor-concluido: #5EFF56;
+    --cor-andamento: #FFCD56;
+    --cor-atraso: #FF6456;
 }
 
 body {
@@ -357,7 +360,7 @@ header {
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(images/layered-waves-haikei.svg);
+    background-image: url(../img/layered-waves-haikei.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -425,7 +428,7 @@ header {
         font: normal 700 1.3vw 'Poppins', sans;
         color: #000000;
         width: 100%;
-    }
+}
 
         .login-button2 input:hover {
             background-color: var(--cor-amarelo-escuro);
@@ -639,16 +642,6 @@ header {
 
 /* --------------------------- Perfil Cliente ---------------------------------- */
 
-.perfil {
-    border: 1px solid #000000;
-    margin: 5%;
-    border-radius: 25px;
-    display: flex;
-    gap: 5rem;
-    align-items: center;
-    padding: 3rem;
-}
-
 .perfil-cliente_titulo {
     color: var(--cor-amarelo);
     font-family: "Poppins", sans-serif;
@@ -701,6 +694,173 @@ th {
 }
 
 /* ------------------------------- Fim Perfil Cliente -------------------------------*/
+
+/* ------------------------------- Perfil Gerente --------------------------------*/
+
+.welcome-msg {
+    color: var(--cor-amarelo);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+.reports-box {
+    margin: 0 auto;
+    width: 75%;
+    height: 40vh;
+    padding: 2vh 0;
+    background-color: var(--account-section-background);
+    display: flex;
+    flex-direction: column;
+}
+
+    .reports-box > h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--cor-texto);
+    }
+
+.reports {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+    .reports h1 {
+        color: var(--cor-texto);
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .reports h2 {
+        font-size: 1.3rem;
+    }
+
+    .reports hr {
+        border: 1px solid var(--cor-amarelo);
+    }
+
+.concluido, .andamento, .atraso {
+    width: 25%;
+}
+
+.concluido {
+    color: var(--cor-concluido);
+}
+
+.andamento {
+    color: var(--cor-andamento);
+}
+
+.atraso {
+    color: var(--cor-atraso);
+}
+
+.search-section {
+    background-color: var(--account-section-background);
+    width: 70%;
+    max-width: 800px;
+    padding: 1vw 3vw;
+    margin: 9vh auto;
+    font-size: 0.9rem;
+}
+
+    .search-section h3 {
+        color: var(--cor-amarelo);
+    }
+
+    .search-section p {
+        color: var(--cor-texto);
+    }
+
+.search-bar {
+    background-color: #171717;
+    width: 95%;
+    margin: 3vw 0 1vw 0;
+    padding: 0.7vh;
+    border-bottom: solid 2px var(--cor-amarelo);
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+}
+
+    .search-bar input {
+        background-color: transparent;
+        border: none;
+        width: 95%;
+        height: 100%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5vw 0.7vw 0.5vw 1vw;
+        color: var(--cor-texto);
+        outline: none;
+    }
+
+    .search-bar svg {
+        padding: 0 0.7vw;
+    }
+
+/* -------------------------- Seção Cadastros ---------------------- */
+
+.secao-cadastros {
+    width: 80vw;
+    margin: 15vh auto;
+}
+
+    .secao-cadastros h2 {
+        color: var(--cor-amarelo);
+        margin: 5vh;
+    }
+
+.cadastro-form {
+    color: var(--cor-texto);
+    background-color: #212121;
+    padding: 1vw 2.5vw;
+    margin: 2vh;
+    border-radius: 1vw;
+}
+
+.cadastro-btn {
+    background: var(--cor-amarelo);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 5vh 0;
+}
+
+.cadastro-form a {
+    text-decoration: none;
+    color: var(--button-text);
+}
+
+/* -------------------------- Fim Cadastros ---------------------- */
+
+/* -------------------------- Navbar Lateral ---------------------- */
+
+.lateral-navbar {
+    position: absolute;
+    left: 0;
+    width: 5vw;
+    height: 70vh;
+    background: var(--navbar-background);
+    border-right: 2px solid #FFCD56;
+    border-bottom: 2px solid #FFCD56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -92px;
+}
+
+/* -------------------------- Fim Navbar Lateral ---------------------- */
+
+/* ------------------------------- Fim Perfil Gerente --------------------------------*/
 
 /* ------------------------------- Celular -------------------------------- */
 @media (max-width: 500px) {

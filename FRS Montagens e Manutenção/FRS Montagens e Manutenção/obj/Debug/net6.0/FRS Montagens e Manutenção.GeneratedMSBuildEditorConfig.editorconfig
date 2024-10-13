@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Desenvolvimento\FRS_PROJETO_SITE\FRS Montagens e Manutenção\FRS Montagens e Manutenção
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Desenvolvimento/FRS_PROJETO_SITE/FRS Montagens e Manutenção/FRS Montagens e Manutenção/Views/CadastroCliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Desenvolvimento/FRS_PROJETO_SITE/FRS Montagens e Manutenção/FRS Montagens e Manutenção/Views/CadastroPedido/CadastrarTopico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9QZWRpZG9cQ2FkYXN0cmFyVG9waWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Desenvolvimento/FRS_PROJETO_SITE/FRS Montagens e Manutenção/FRS Montagens e Manutenção/Views/CadastroPedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9QZWRpZG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Desenvolvimento/FRS_PROJETO_SITE/FRS Montagens e Manutenção/FRS Montagens e Manutenção/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Desenvolvimento/FRS_PROJETO_SITE/FRS Montagens e Manutenção/FRS Montagens e Manutenção/Views/PerfilFuncionario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsRnVuY2lvbmFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Desenvolvimento/FRS_PROJETO_SITE/FRS Montagens e Manutenção/FRS Montagens e Manutenção/Views/PerfilGerente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsR2VyZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Desenvolvimento/FRS_PROJETO_SITE/FRS Montagens e Manutenção/FRS Montagens e Manutenção/Views/Shared/Error.cshtml]
