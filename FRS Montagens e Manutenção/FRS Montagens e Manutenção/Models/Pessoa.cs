@@ -12,7 +12,7 @@
         public string Telefone { get; set; }
         public char Uf {  get; set; }
         public string Cidade { get; set; }
-        public int Bairro { get; set; }
+        public string Bairro { get; set; }
         public string Rua { get; set; }
         public string NResidencia { get; set; }
         public string Cep {  get; set; }
@@ -21,7 +21,7 @@
         public bool Ativo { get; set; }
         public virtual List<Cliente> ClientesPessoa { get; set; }
         public virtual List<Funcionario> FuncionarioPessoa { get; set; }
-        public List<Telefone> TelefonePessoa { get; set; }
+        public virtual List<Telefone> Telefones { get; set; }
         //Construtores
 
 

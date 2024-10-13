@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FRS Montagens e Manutençã
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{91701C15-F933-4BF3-96F9-5FC46930EE3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaTeste", "CamadaTeste\CamadaTeste.csproj", "{D15BDA2E-5DAF-47A8-8642-4126E84E182B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaDeTeste", "CamadaDeTeste\CamadaDeTeste.csproj", "{C75F6F17-0BED-4175-BC6F-E84E014C5B2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{91701C15-F933-4BF3-96F9-5FC46930EE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91701C15-F933-4BF3-96F9-5FC46930EE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91701C15-F933-4BF3-96F9-5FC46930EE3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D15BDA2E-5DAF-47A8-8642-4126E84E182B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D15BDA2E-5DAF-47A8-8642-4126E84E182B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D15BDA2E-5DAF-47A8-8642-4126E84E182B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D15BDA2E-5DAF-47A8-8642-4126E84E182B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75F6F17-0BED-4175-BC6F-E84E014C5B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75F6F17-0BED-4175-BC6F-E84E014C5B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75F6F17-0BED-4175-BC6F-E84E014C5B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75F6F17-0BED-4175-BC6F-E84E014C5B2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,22 @@
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\FRS Montagens e Manutenção.deps.json
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\FRS Montagens e Manutenção.runtimeconfig.json
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\appsettings.json
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\FRS Montagens e Manutenção.staticwebassets.runtime.json
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\FRS Montagens e Manutenção.exe
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\Repository.deps.json
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\Repository.dll
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\Repository.pdb
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\FRS Montagens e Manutenção.dll
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\bin\Debug\net6.0\FRS Montagens e Manutenção.pdb
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.sourcelink.json
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.csproj.Up2Date
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.dll
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\refint\Repository.dll
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\Repository.pdb
+C:\Users\KAIK\Desktop\Nova pasta\FRS_PROJETO_SITE\FRS Montagens e Manutenção\Repository\obj\Debug\net6.0\ref\Repository.dll

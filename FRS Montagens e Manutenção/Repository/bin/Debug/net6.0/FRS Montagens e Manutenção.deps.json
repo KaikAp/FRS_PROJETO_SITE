@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FRS Montagens e Manutenção/1.0.0": {
+        "runtime": {
+          "FRS Montagens e Manutenção.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FRS Montagens e Manutenção/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

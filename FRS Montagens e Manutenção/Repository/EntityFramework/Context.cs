@@ -1,16 +1,16 @@
 ﻿using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
+
 
 namespace Repository.EntityFramework
 {
     public class Context : DbContext
     {
-        public Context(DbContextOptions<Context> options) : base(options){ }
+        public Context(DbContextOptions<Context> options) : base(options) { }
 
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
-        public DbSet<Pedido> Pedidos {  get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Statu> status { get; set; }
         public DbSet<Topico> Topicos { get; set; }
@@ -75,16 +75,19 @@ namespace Repository.EntityFramework
                     IsRequired();
 
                     t.Property(t => t.Ativo).
-                    HasColumnType("boolean").
+                    HasColumnType("bit").
                     HasDefaultValue("true");
 
                     t.Property(t => t.DataCadastro).
                     HasColumnType("date").
-                    HasDefaultValue("getdate()");
+                    HasDefaultValueSql("getdate()");
 
-                    t.HasMany(t => t.TelefonePessoa).WithOne(t => t.Pessoatelefone).OnDelete(DeleteBehavior.NoAction).IsRequired();
-
-                }    
+                    t.HasMany(p => p.Telefones)
+                             .WithOne(t => t.Pessoas)
+                             .HasForeignKey(t => t.Pessoaid)
+                             .OnDelete(DeleteBehavior.NoAction);
+                    
+                }
                 );
 
             modelBuilder.Entity<Telefone>(
@@ -96,8 +99,10 @@ namespace Repository.EntityFramework
                     IsRequired();
                     t.HasKey(t => t.Numero);
 
-                    t.HasOne(t => t.Pessoatelefone).WithMany(t => t.TelefonePessoa).OnDelete(DeleteBehavior.NoAction).IsRequired();
-                    t.HasKey(t => t.Pessoatelefone);
+                    modelBuilder.Entity<Telefone>()
+                        .HasOne<Pessoa>()
+                        .WithMany(p => p.Telefones)
+                        .HasForeignKey(t => t.Pessoaid);
                 }
 
 
@@ -173,7 +178,7 @@ namespace Repository.EntityFramework
                     t.Property(t => t.DataInicio).
                     HasColumnType("date").
                     IsRequired().
-                    HasDefaultValue("getdate()");
+                    HasDefaultValueSql("getdate()");
 
                     t.Property(t => t.DataTermino).
                     HasColumnType("date");
