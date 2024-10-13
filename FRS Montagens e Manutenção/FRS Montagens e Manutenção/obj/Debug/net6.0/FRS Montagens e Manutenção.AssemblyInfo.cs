@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FRS Montagens e Manutenção")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb05a66384993fda1883880ea9bc76775833b049")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b62f33544445a90276b235fe9b09ff26683565aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("FRS Montagens e Manutenção")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FRS Montagens e Manutenção")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

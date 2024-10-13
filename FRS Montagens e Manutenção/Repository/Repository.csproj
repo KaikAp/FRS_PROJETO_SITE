@@ -18,4 +18,8 @@
     <ProjectReference Include="..\FRS Montagens e Manutenção\FRS Montagens e Manutenção.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="RepositoryGenerics\" />
+  </ItemGroup>
+
 </Project>
