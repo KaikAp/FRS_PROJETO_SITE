@@ -9,13 +9,12 @@
         public string Nome { get; set; }
         public string Email { get; set; }
         public DateTime DtNascimento { get; set; }
-        public string Telefone { get; set; }
-        public char Uf {  get; set; }
+        public char Uf { get; set; }
         public string Cidade { get; set; }
         public string Bairro { get; set; }
         public string Rua { get; set; }
         public string NResidencia { get; set; }
-        public string Cep {  get; set; }
+        public string Cep { get; set; }
         public DateTime DataNascimento { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool Ativo { get; set; }

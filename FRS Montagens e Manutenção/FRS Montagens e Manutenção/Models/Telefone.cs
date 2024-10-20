@@ -2,9 +2,8 @@
 {
     public class Telefone
     {
-        public int id { get; set; }
+        public int id_pessoas {  get; set; }
         public string Numero { get; set; }
-        public int Pessoaid { get; set; }
         public Pessoa Pessoas { get; set; }
     }
 }

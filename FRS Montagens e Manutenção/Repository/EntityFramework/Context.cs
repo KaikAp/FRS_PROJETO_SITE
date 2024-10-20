@@ -76,33 +76,36 @@ namespace Repository.EntityFramework
 
                     t.Property(t => t.Ativo).
                     HasColumnType("bit").
-                    HasDefaultValue("true");
+                    HasDefaultValueSql("true");
 
                     t.Property(t => t.DataCadastro).
                     HasColumnType("date").
                     HasDefaultValueSql("getdate()");
 
-                    t.HasMany(p => p.Telefones)
-                             .WithOne(t => t.Pessoas)
-                             .HasForeignKey(t => t.Pessoaid)
-                             .OnDelete(DeleteBehavior.NoAction);
-                    
+                    t.HasMany(t => t.Telefones).
+                    WithOne(t => t.Pessoas).
+                    OnDelete(DeleteBehavior.NoAction);
                 }
                 );
 
             modelBuilder.Entity<Telefone>(
                 t =>
                 {
-                    t.ToTable("Telefone");
-                    t.Property(t => t.Numero).
-                    HasColumnType("varchar(15)").
-                    IsRequired();
-                    t.HasKey(t => t.Numero);
+                    t.Property(t => t.Numero)
+                     .HasColumnType("varchar(15)")
+                     .IsRequired();
+                    t.HasKey(t => new { t.Numero, t.id_pessoas });
 
-                    modelBuilder.Entity<Telefone>()
-                        .HasOne<Pessoa>()
-                        .WithMany(p => p.Telefones)
-                        .HasForeignKey(t => t.Pessoaid);
+                    t.HasOne(t => t.Pessoas)
+                     .WithMany(p => p.Telefones)
+                     .HasForeignKey(t => t.id_pessoas)
+                     .OnDelete(DeleteBehavior.NoAction);
+
+                    t.Property(t => t.Numero)
+                     .HasColumnType("varchar(15)")
+                     .IsRequired();
+
+                    t.HasCheckConstraint("CK_N_TELEFONE", "LEN(Numero) >= 10 AND LEN(Numero) <= 15 AND Numero LIKE '[0-9]%'");
                 }
 
 
@@ -176,12 +179,12 @@ namespace Repository.EntityFramework
                     ValueGeneratedOnAdd();
 
                     t.Property(t => t.DataInicio).
-                    HasColumnType("date").
+                    HasColumnType("DATE").
                     IsRequired().
                     HasDefaultValueSql("getdate()");
 
                     t.Property(t => t.DataTermino).
-                    HasColumnType("date");
+                    HasColumnType("DATE");
 
                     t.HasOne(t => t.Funcionario).
                     WithMany(t => t.PedidoFuncionario).
@@ -200,6 +203,39 @@ namespace Repository.EntityFramework
                 }
 
 
+                );
+            modelBuilder.Entity<Topico>(
+                t =>
+                {
+                    t.ToTable("Topicos");
+                    t.Property(t => t.Id).
+                    HasColumnType("INT").
+                    IsRequired().
+                    ValueGeneratedOnAdd();
+
+                    t.Property(t => t.DataInicio).
+                    HasColumnType("DATE").
+                    IsRequired().
+                    HasDefaultValueSql("GETDATE()");
+
+                    t.Property(t => t.DataTermino).
+                    HasColumnType("DATE");
+
+                    t.HasOne(t => t.Status).
+                    WithMany(t => t.Topicos).
+                    OnDelete(DeleteBehavior.NoAction);
+
+                    t.HasOne(t => t.Pedido).
+                    WithMany(t => t.Topico).
+                    OnDelete(DeleteBehavior.NoAction);
+                }
+                
+                
+                
+                
+                
+                
+                
                 );
 
         }
