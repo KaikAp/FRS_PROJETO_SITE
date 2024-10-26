@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F.R.S. Montagens</title>
+        <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/styles/novo-pedido.css">
+
+        <link rel="icon" href="./images/logo3-semfundo.png" type="image/png">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img src="./images/Logo_txt.svg" alt="Logo da FRS Montagens"></a>
+        </header>
+
+        <main class="d-flex flex-column align-items-center">
+            <form action="submit" class="formulario col-6 my-5">
+                <h3 class="text-center my-5">CRIAR UM NOVO PEDIDO</h3>
+                <h5 class="text-end mx-5 fs-6 mb-4">ID Pedido <span class="m-4 p-2" style="background-color: rgba(0, 0, 0, 0.112);">102.XXX.XXX</span></h5>
+                <div class="inputs w-75 m-auto">
+                    <div class="my-3">
+                        <p class="ms-4 my-2">CNPJ:</p>
+                        <input type="text" name="CNPJ" class="h-25 mb-2 px-3 py-2"> 
+                    </div>
+                    <div class="my-3">
+                        <p class="ms-4 my-2">Nome do Projeto:</p>
+                        <input type="text" name="Nome" class="h-25 mb-4 px-3 py-2"> 
+                    </div>
+                    <div class="my-3">
+                        <p class="ms-4 my-2">Descrição do Projeto:</p>
+                        <textarea rows="5" name="Descrição" class="h-75 mb-4 p-3"></textarea>
+                    </div>
+                    <div class="botoes col-12 mx-auto my-5 d-flex justify-content-around">
+                        <button class="cancelar fw-bold py-2 px-4" style="border: solid 0.7px #ffc846;">Cancelar</button>
+                        <button class="continuar fw-bold py-2 px-4 d-flex align-items-center justify-content-evenly">Continuar 
+                            <svg width="25" height="20" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L1 13" stroke="#000000" stroke-width="2"/>
+                            </svg> 
+                        </button>
+                    </div>
+                </div>
+                
+                
+                
+            </form>
+        </main>
+
+        <footer class="rodape">
+            <div class="rodape-conteudo">
+                <div class="rodape-links">
+                    <ul>
+                        <h3>LINKS</h3>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Redes</a></li>
+                    </ul>
+                </div>
+                <div class="rodape-social">
+                    <ul>
+                        <h3>REDES SOCIAIS</h3>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="rodape-contato">
+                    <ul>
+                        <h3>CONTATO</h3>
+                        <li>Av. Dra. Maria Inês Dal´Antonia Curi, 387 - Jardim Itapucu</li>
+                        <li>frsmontagens@exemplo.com</li>
+                        <li>(17)99922-6644</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr color="#ffc846" width="40%">
+            <h5>&copy; Todos os direitos reservados</h5>
+        </footer>
+        <script src="https://kit.fontawesome.com/04ab88e5e7.js" crossorigin="anonymous"></script>
+    </body>
+</html>

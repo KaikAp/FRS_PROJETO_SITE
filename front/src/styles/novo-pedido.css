@@ -31,123 +31,54 @@ header img{
 }
 
 /* --------------------------------- BODY --------------------------------- */
+main{
+    color: #FFC846;
+    padding: 0;
+    margin: 0;
+}
 
 .formulario{
-    height: 90%;
-    width: 50%;
-    margin: 50px auto ;
-    padding: 50px;
-    border: 10px;
-    border-radius: 50px;
-    background-color: rgba(25, 25, 25, 0.65);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 5px #FFC846;
-}
-
-.teste h1{
-    color: #FFC846;
-    align-self: center;
-}
-
-.teste h3{
-    color: #FFC846;
+    background-color: #191919CC;
+    border-radius: 2vw;
 }
 
 
-.id{
-    margin-left: 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10x;
-}
-
-.boxID{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow:#000000 1px 1px 5px;
-}
-
-.boxtxtID{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-.teste p {
-    color: #FFC846;
-    
-}
-
-.teste input{
+input, textarea{
     background-color: #292929;
-    height: 40px;
-}
-
-select{
-    background-color: #292929;
-    color: white;
-    height: 69px;
-    appearance: none;
-    background-position: right 10px top 50%;
-    background-repeat: no-repeat;
-    border: none;
-}
-
-select{
-    background-color: #292929;
-    color: white;
-    height: 40px;
-    appearance: none;
-    background-position: right 10px top 50%;
-    background-repeat: no-repeat;
-}
-
-.descricao{
-    background-color: #292929;
-    color:white;
-    font-weight: 500;
-    font-size: 1rem;
     outline: none;
-    resize: none;
     border: none;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.botoes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15%;
-    padding-top: 120px;
+.formulario div>p{
+    font-weight: 600;
+    margin: 0;
 }
 
-button{
-    width: 300px;
-    height: 56px;
-    border-radius: 10px;
-}
 
-.voltar{
-    color: #FFC846;
-    background-color: #000000;
-    border: 1px solid #FFC846;
+.botoes button{
+    border-radius: 0.5vw;
+    width: 40%;
 }
 
 .continuar{
-    background-color: #FFC846;
-}
-button:hover{
-    cursor: pointer;
-
-}
-input{
+    background: #FFC846;
     border: none;
-    color: white;
+}
+
+.cancelar{
+    background: #121212;
+    color: #FFC846;
+}
+
+.continuar:hover{
+    background: #e0ae37;
+}
+
+.cancelar:hover{
+    background: #141414;
+    color: #e0ae37;
+    border: #e0ae37;
 }
