@@ -2,16 +2,18 @@
 {
     public class Funcionario : Pessoa
     {
-        //Getters Setters
+        #region Getters Setters
         public virtual Pessoa IdPessoa { get; set; }
         public string Cpf {  get; set; }
         public bool Gerente {  get; set; }
         public List<Pedido> PedidoFuncionario {  get; set; }
         public virtual List<Cliente> ClienteFuncionario { get; set; }
+        #endregion
 
-        //Construtores
+        #region Construtores
+        #endregion
 
-
-        //Metodos
+        #region Metodos
+        #endregion
     }
 }

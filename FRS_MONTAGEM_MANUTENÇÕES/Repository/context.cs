@@ -231,13 +231,6 @@ namespace Repository
                         WithMany(t => t.Topico).
                         OnDelete(DeleteBehavior.NoAction);
                     }
-
-
-
-
-
-
-
                     );
 
             }

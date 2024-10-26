@@ -2,8 +2,8 @@
 {
     public class Pedido
     {
-        //Getters Setters
-        public int Id {  get; set; }
+        #region Getters Setters
+        public int Id { get; set; }
         public string Descrição { get; set; }
         public DateTime DataInicio { get; set; }
         public DateTime DataTermino { get; set; }
@@ -12,10 +12,12 @@
         public Cliente Cliente { get; set; }
         public Statu Status { get; set; }
         public List<Topico> Topico { get; set; }
+        #endregion
 
-        //Construtores
+        #region Construtores
+        #endregion
 
-
-        //Metodos
+        #region Metodos
+        #endregion
     }
 }

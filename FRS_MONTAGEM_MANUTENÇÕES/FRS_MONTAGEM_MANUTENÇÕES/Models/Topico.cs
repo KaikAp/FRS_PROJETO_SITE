@@ -2,7 +2,7 @@
 {
     public class Topico
     {
-        //Getters Setters
+        #region Getters Setters
         public int Id { get; set; }
         public Statu Status { get; set; }
         public DateTime DataInicio { get; set; }
@@ -10,11 +10,12 @@
         public string Descricao { get; set; }
         public List<Topico> FkIdTopico { get; set; }
         public Pedido Pedido { get; set; }
+        #endregion
 
-        //Construtores
+        #region Construtores
+        #endregion
 
-
-
-        //Metodos
+        #region Metodos
+        #endregion
     }
 }

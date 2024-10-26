@@ -2,7 +2,7 @@
 {
     public class Pessoa
     {
-        //Getters Setters
+        #region Getters Setters
         public int Id { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }
@@ -21,9 +21,13 @@
         public virtual List<Cliente> ClientesPessoa { get; set; }
         public virtual List<Funcionario> FuncionarioPessoa { get; set; }
         public virtual List<Telefone> Telefones { get; set; }
-        //Construtores
+        #endregion
 
+        #region Construtores
+        #endregion
 
-        //Metodos
+        #region Metodos
+        #endregion
+
     }
 }
