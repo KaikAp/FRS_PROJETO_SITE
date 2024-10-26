@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Repository
 {
-    public class context : DbContext
+    public class Context : DbContext
     {
         
-            public context(DbContextOptions<context> options) : base(options) { }
+            public Context(DbContextOptions<Context> options) : base(options) { }
 
             public DbSet<Cliente> clientes { get; set; }
             public DbSet<Funcionario> Funcionarios { get; set; }

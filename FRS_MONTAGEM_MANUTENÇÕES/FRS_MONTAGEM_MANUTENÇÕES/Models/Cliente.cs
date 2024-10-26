@@ -2,6 +2,7 @@
 {
     public class Cliente : Pessoa
     {
+
         #region Getters Setters
         public virtual Pessoa IdPessoa { get; set; }
         public virtual Funcionario IdFuncionario { get; set; }
@@ -13,6 +14,13 @@
         #endregion
 
         #region Metodos
+
+
+        public void Cadastrar()
+        {
+
+        }
+
         #endregion
     }
 }
