@@ -19,8 +19,8 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--cor-fundo) !important;
     margin:0px;
     padding: 0;
     
