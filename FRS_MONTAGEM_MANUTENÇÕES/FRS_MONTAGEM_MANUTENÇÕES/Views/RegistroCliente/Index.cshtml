@@ -1,0 +1,99 @@
+﻿@using FRS_Montagens_e_Manutenção.Models
+
+@model Cliente
+
+<form action="" class="registro-cliente__formulario">
+    <h2 class="registro-cliente__formulario-titulo">REGISTRO DE UM NOVO CLIENTE</h2>
+    <div class="registro-cliente__container">
+        <label for="nome" class="registro-cliente__form-label">Nome do Cliente:</label>
+        <input type="text" asp-for="Nome" class="registro-cliente__form-input">
+    </div>
+    <div class="registro-cliente__container">
+        <label for="nome" class="registro-cliente__form-label">E-mail:</label>
+        <input type="text" asp-for="Email" class="registro-cliente__form-input">
+    </div>
+    <div class="registro-cliente__container">
+        <label for="cnpj" class="registro-cliente__form-label">CNPJ:</label>
+        <input type="text" asp-for="Cnpj" class="registro-cliente__form-input" style="width: 60%;">
+    </div>
+    <div class="registro-cliente__container-fone">
+        <div class="registro-cliente__container registro-cliente__fone">
+            <label for="fone" class="registro-cliente__form-label">Fone:</label>
+            <input type="text" asp-for="Telefones" class="registro-cliente__form-input">
+        </div>
+        <div class="registro-cliente__container registro-cliente__fone">
+            <label for="foneA" class="registro-cliente__form-label">Fone Adicional:</label>
+            <input type="text" asp-for="Telefones" class="registro-cliente__form-input">
+        </div>
+    </div>
+    <div class="registro-cliente__container">
+        <div class="registro-cliente__container-endereco">
+            <div class="registro-cliente__endereco registro-cliente__item-1">
+                <label for="rua" class="registro-cliente__form-label">Rua:</label>
+                <input type="text" asp-for="Rua" class="registro-cliente__form-input">
+            </div>
+            <div class="registro-cliente__endereco registro-cliente__item-2">
+                <label for="numero" class="registro-cliente__form-label">Número:</label>
+                <input type="text" asp-for="NResidencia" class="registro-cliente__form-input" style="width: 60%;">
+            </div>
+        </div>
+        <div class="registro-cliente__container-endereco">
+            <div class="registro-cliente__endereco registro-cliente__item-3">
+                <label for="bairro" class="registro-cliente__form-label">Bairro:</label>
+                <input type="text" asp-for="Bairro" class="registro-cliente__form-input">
+            </div>
+            <div class="registro-cliente__endereco registro-cliente__item-2">
+                <label for="cep" class="registro-cliente__form-label">CEP:</label>
+                <input type="text" asp-for="Cep" class="registro-cliente__form-input" style="width: 70%;">
+            </div>
+        </div>
+        <div class="registro-cliente__container-endereco">
+            <div class="registro-cliente__endereco">
+                <label for="cidade" class="registro-cliente__form-label">Cidade:</label>
+                <input type="text" asp-for="Cidade" class="registro-cliente__form-input" style="width: 90%;">
+            </div>
+            <div class="registro-cliente__endereco registro-cliente__item-2 registro-cliente__custom-select-wrapper">
+                <label for="uf" class="registro-cliente__form-label">UF:</label>
+                <select asp-for="Uf" class="registro-cliente__form-input registro-cliente__form-select">
+                    <option value=""></option>
+                    <option value="">AC</option>
+                    <option value="">AL</option>
+                    <option value="">AP</option>
+                    <option value="">AM</option>
+                    <option value="">BA</option>
+                    <option value="">CE</option>
+                    <option value="">DF</option>
+                    <option value="">ES</option>
+                    <option value="">GO</option>
+                    <option value="">MA</option>
+                    <option value="">MT</option>
+                    <option value="">MS</option>
+                    <option value="">MG</option>
+                    <option value="">PA</option>
+                    <option value="">PB</option>
+                    <option value="">PR</option>
+                    <option value="">PE</option>
+                    <option value="">PI</option>
+                    <option value="">RJ</option>
+                    <option value="">RN</option>
+                    <option value="">RS</option>
+                    <option value="">RO</option>
+                    <option value="">RR</option>
+                    <option value="">SC</option>
+                    <option value="">SP</option>
+                    <option value="">SE</option>
+                    <option value="">TO</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="registro-cliente__container">
+        <label for="senha" class="registro-cliente__form-label">Criar nova Senha</label>
+        <input type="password" asp-for="Senha" class="registro-cliente__form-input">
+    </div>
+    <div class="registro-cliente__container">
+        <label for="senha" class="registro-cliente__form-label">Repetir Senha</label>
+        <input type="password" asp-for="Senha" class="registro-cliente__form-input">
+    </div>
+    <a href="account.html" class="registro-cliente__btn-link"><button class="registro-cliente__btn" type="submit">Finalizar Cadastro</button></a>
+</form>
