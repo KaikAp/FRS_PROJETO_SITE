@@ -75,11 +75,16 @@
     color: #fff !important;
 }
 
+.table tr{
+    line-height: 40px;
+}
+
 .table-icons{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .table-icons svg{
-    margin: 0 0.7vw;
+    margin: 0 0.3vw;
 }
