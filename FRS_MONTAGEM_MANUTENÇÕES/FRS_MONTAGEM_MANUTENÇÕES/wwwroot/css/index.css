@@ -639,7 +639,7 @@ header {
 
 /* --------------------------- Perfil Cliente ---------------------------------- */
 
-.perfil {
+.perfil-cliente_perfil {
     border: 1px solid #000000;
     margin: 5%;
     border-radius: 25px;
@@ -649,7 +649,7 @@ header {
     padding: 3rem;
 }
 
-.perfil-cliente_titulo {
+.perfil-cliente_titulo{
     color: var(--cor-amarelo);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -701,6 +701,7 @@ th {
 }
 
 /* ------------------------------- Fim Perfil Cliente -------------------------------*/
+
 
 /* ------------------------------- Celular -------------------------------- */
 @media (max-width: 500px) {

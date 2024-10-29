@@ -2,7 +2,7 @@
 {
     public class Pessoa
     {
-        #region Getters Setters
+        #region Atributos
         public int Id { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }
@@ -24,9 +24,18 @@
         #endregion
 
         #region Construtores
+        private Pessoa()
+        {
+            Pessoa pessoa = new Pessoa();
+        }
         #endregion
 
         #region Metodos
+
+        private void addPessoasFuncionario()
+        {
+
+        }
         #endregion
 
     }

@@ -1,0 +1,168 @@
+﻿
+/*---------------------------- Registro Pessoa --------------------------------*/
+
+.registro-cliente__formulario{
+    height: 90%;
+    width: 60%;
+    margin: 50px auto;
+    border: 10px;
+    border-radius: 25px;
+    background-color: rgba(25, 25, 25, 0.65);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px #FFC846;
+    padding: 1rem;
+}
+
+.registro-cliente__formulario-titulo {
+    color: #FFC846;
+    align-self: center;
+}
+
+.registro-cliente__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-inline: 8%;
+    margin-top: 2rem;
+}
+
+.registro-cliente__container-fone {
+    display: flex;
+    width: 40%;
+    margin-inline: 5%;
+}
+
+.registro-cliente__container-endereco {
+    display: flex;
+    gap: 4rem;
+}
+
+.registro-cliente__form-label {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.registro-cliente__form-input {
+    background-color: #292929;
+    border: none;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-size: 30px;
+    padding-inline: 1rem;
+}
+
+.registro-cliente__fone {
+    width: 100%;
+}
+
+.registro-cliente__endereco-titulo {
+    align-self: center;
+}
+
+.registro-cliente__endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.registro-cliente__item-1 {
+    flex: 2.5px;
+}
+
+.registro-cliente__item-2 {
+    flex: 1;
+}
+
+.registro-cliente__item-3 {
+    flex: 2;
+}
+
+.registro-cliente__form-select {
+    appearance: none;
+    width: 50%;
+    background-image: url('../../images/lupaAmarela.svg');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+}
+
+.registro-cliente__btn {
+    width: 100%;
+    color: #000000;
+    background-color: var(--cor-amarelo);
+    border: none;
+    font-size: 28px;
+    border-radius: 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 2vh auto;
+    padding: 0.5vw 2vw;
+}
+
+.registro-cliente__btn-link {
+    margin: 2vh auto;
+}
+
+/*---------------------------- Fim Registro Pessoa --------------------------------*/
+
+
+/*---------------------------- Registro Pedido --------------------------------*/
+
+.semi-main {
+    color: #FFC846;
+    padding: 0;
+    margin: 0;
+}
+
+.formulario {
+    background-color: #191919CC;
+    border-radius: 2vw;
+}
+
+
+input, textarea {
+    background-color: #292929;
+    outline: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.formulario div > p {
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.botoes button {
+    border-radius: 0.5vw;
+    width: 40%;
+}
+
+.continuar {
+    background: #FFC846;
+    border: none;
+}
+
+.cancelar {
+    background: #121212;
+    color: #FFC846;
+}
+
+.continuar:hover {
+    background: #e0ae37;
+}
+
+.cancelar:hover {
+    background: #141414;
+    color: #e0ae37;
+    border: #e0ae37;
+}
+
+/*---------------------------- Fim Registro Pedido --------------------------------*/
