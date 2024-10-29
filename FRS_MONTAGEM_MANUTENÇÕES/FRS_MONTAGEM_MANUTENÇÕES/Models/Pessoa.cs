@@ -24,9 +24,18 @@
         #endregion
 
         #region Construtores
+        private Pessoa()
+        {
+            Pessoa pessoa = new Pessoa();
+        }
         #endregion
 
         #region Metodos
+
+        private void addPessoasFuncionario()
+        {
+
+        }
         #endregion
 
     }
