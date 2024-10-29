@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>F.R.S. Montagens</title>
+        <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="src/styles/novo-pedido.css">
+
         <link rel="icon" href="./images/logo3-semfundo.png" type="image/png">
     </head>
     <body>
@@ -12,35 +14,42 @@
             <a href="index.html"><img src="./images/Logo_txt.svg" alt="Logo da FRS Montagens"></a>
         </header>
 
-        <main class="conteudo">
-            <form action="submit" class="formulario">
-                <div class="teste">   
-                    <h1>CRIAR UM NOVO PEDIDO</h1>
-                    <div class="id">
-                        <h3 class="boxtxtID">ID Pedido</h3>
-                        <div class="boxID">
-                            <h3>102.XXX.XXX</h3>
-                        </div>
+        <main class="d-flex flex-column align-items-center">
+            <form action="submit" class="formulario col-6 my-5">
+                <h3 class="text-center my-5">CRIAR UM NOVO PEDIDO</h3>
+                <h5 class="text-end mx-5 fs-6 mb-4">ID Pedido <span class="m-4 p-2" style="background-color: rgba(0, 0, 0, 0.112);">102.XXX.XXX</span></h5>
+                <div class="inputs w-75 m-auto">
+                    <div class="my-3">
+                        <p class="ms-4 my-2">CNPJ:</p>
+                        <input type="text" name="CNPJ" class="h-25 mb-2 px-3 py-2"> 
                     </div>
-                    <div style="width: 100%;">    
-                        <h3>CNPJ:</h3>
-                        <select  style="width: 100%; height: 40px;">
-                            <option value="nulo"></option>               
-                        </select>       
-                    <div>
-                        <h3>Nome do projeto:</h3>
-                        <input type="text" style="width: 100%;">
+                    <div class="my-3">
+                        <p class="ms-4 my-2">Nome do Projeto:</p>
+                        <input type="text" name="Nome" class="h-25 mb-4 px-3 py-2"> 
                     </div>
-                    <div>
-                        <h3>Descrição do Produto:</h3>
-                        <textarea class="descricao" name="descricao" rows="10vh" cols="85%"></textarea>
+                    <div class="my-3">
+                        <p class="ms-4 my-2">Descrição do Projeto:</p>
+                        <textarea rows="5" name="Descrição" class="h-75 mb-4 p-3"></textarea>
                     </div>
-                    <div class="botoes">
-                        <button class="voltar"><h2>Voltar</h2></button>
-                        <a href="account.html"><button class="continuar"><h2 style="color: #000000;">Continuar</h2></button></a>
-    
+                    <div class="botoes col-12 mx-auto my-5 d-flex justify-content-around flex-wrap">
+                        <button class="cancelar fw-bold py-2 px-4" style="border: solid 0.7px #ffc846;">Cancelar</button>
+                        <button class="continuar fw-bold py-2 px-4 d-flex align-items-center justify-content-evenly">Continuar 
+                            <svg width="25" height="20" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L1 13" stroke="#000000" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <button class="continuar fw-bold py-2 px-4 mt-4 d-flex align-items-center justify-content-evenly w-50">Adicionar Tópico 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6L12 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18 12L6 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                            </svg> 
+                        </button>
                     </div>
+                    
                 </div>
+                
+                
+                
             </form>
         </main>
 

@@ -139,20 +139,27 @@
     color:var(--cor-texto);
     background-color: #212121;    
     padding: 1vw 2.5vw;
-    margin:2vh;
+    margin:10vh 0;
     border-radius: 1vw;
+}
+
+.cadastro-form>div{
+    display: flex;
+    justify-content: center;
 }
 
 .cadastro-btn{
     background: var(--cor-amarelo);
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1vw;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 700;
-    font-size: 1rem;
-    margin: 5vh 0 ;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 90%;
+    height: 6vh;
+    border-radius: 0.5vw;
+    margin: 2vh 0;
 }
 
 .cadastro-form a{
