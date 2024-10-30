@@ -43,6 +43,15 @@ header img{
     align-items:center;
 }
 
+.voltar-link{
+    color: #ffc846;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 2.5vw;
+}
+
 /* ------------------------------- Fim -------------------------------*/
 
 /* ------------------------------- NavBar -------------------------------*/
