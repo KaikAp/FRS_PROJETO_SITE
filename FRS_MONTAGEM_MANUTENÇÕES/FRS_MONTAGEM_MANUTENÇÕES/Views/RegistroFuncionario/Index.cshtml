@@ -2,8 +2,8 @@
 
 @model Funcionario
 
-<form action="" class="registro-cliente__formulario">
-    <h2 class="registro-cliente__formulario-titulo">REGISTRO DE UM NOVO CLIENTE</h2>
+<form action="" class="registro-cliente__formulario" asp-controller="Registro" asp-action="CreateFuncionario">
+    <h2 class="registro-cliente__formulario-titulo">REGISTRO DE UM NOVO FUNCIONARIO</h2>
     <div class="registro-cliente__container">
         <label for="nome" class="registro-cliente__form-label">Nome do Cliente:</label>
         <input type="text" asp-for="Nome" class="registro-cliente__form-input">

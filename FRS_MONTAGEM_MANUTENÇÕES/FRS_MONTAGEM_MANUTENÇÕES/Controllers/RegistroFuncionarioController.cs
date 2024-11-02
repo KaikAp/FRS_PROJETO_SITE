@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.AspNetCore.Mvc;
 using Repository;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
-    public class CadastroController : Controller
+    public class RegistroFuncionarioController : Controller
     {
         private readonly Context _context;
 
@@ -23,12 +23,16 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
         // POST: CadastroController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Context context)
+        public ActionResult CreateFuncionario(Pessoa pessoa)
         {
-            
-            try 
+
+            try
             {
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    return View();
+                }
+                return View();
             }
             catch
             {

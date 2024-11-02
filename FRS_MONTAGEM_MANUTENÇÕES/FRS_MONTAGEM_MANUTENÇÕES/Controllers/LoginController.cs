@@ -8,5 +8,10 @@ namespace FRS_Montagens_e_Manutenção.Controllers
         {
             return View();
         }
+
+        public IActionResult Logar()
+        {
+            return View();
+        }
     }
 }

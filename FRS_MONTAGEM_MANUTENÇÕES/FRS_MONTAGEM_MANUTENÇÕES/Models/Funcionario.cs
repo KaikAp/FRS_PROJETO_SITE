@@ -1,7 +1,11 @@
-﻿namespace FRS_Montagens_e_Manutenção.Models
+﻿using Repository;
+
+namespace FRS_Montagens_e_Manutenção.Models
 {
     public class Funcionario : Pessoa
     {
+        private readonly Context _context;
+
         #region Getters Setters
         public virtual Pessoa IdPessoa { get; set; }
         public string Cpf {  get; set; }
@@ -14,6 +18,13 @@
         #endregion
 
         #region Metodos
+
+
+        private void addFuncionario(Funcionario funcionario)
+        {
+            _context.Add(funcionario);
+            _context.SaveChanges();
+        }
         #endregion
     }
 }

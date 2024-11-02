@@ -2,7 +2,7 @@
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
-    public class RegistroFuncionario : Controller
+    public class RegistroClienteController : Controller
     {
         public IActionResult Index()
         {

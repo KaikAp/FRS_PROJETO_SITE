@@ -1,4 +1,6 @@
-﻿namespace FRS_Montagens_e_Manutenção.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FRS_Montagens_e_Manutenção.Models
 {
     public class Pessoa
     {
@@ -24,10 +26,7 @@
         #endregion
 
         #region Construtores
-        private Pessoa()
-        {
-            Pessoa pessoa = new Pessoa();
-        }
+
         #endregion
 
         #region Metodos
