@@ -84,9 +84,6 @@ namespace Repository
                         HasColumnType("date").
                         HasDefaultValueSql("getdate()");
 
-                        t.HasMany(t => t.Telefones).
-                        WithOne(t => t.Pessoas).
-                        OnDelete(DeleteBehavior.NoAction);
                     }
                     );
 
