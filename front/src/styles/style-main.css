@@ -19,8 +19,8 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--cor-fundo) !important;
     margin:0px;
     padding: 0;
     
@@ -41,6 +41,15 @@ header img{
     margin-left: 3vw;
     display:Flex;
     align-items:center;
+}
+
+.voltar-link{
+    color: #ffc846;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 2.5vw;
 }
 
 /* ------------------------------- Fim -------------------------------*/
