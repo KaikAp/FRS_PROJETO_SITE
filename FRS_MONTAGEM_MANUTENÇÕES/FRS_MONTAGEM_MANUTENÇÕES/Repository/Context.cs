@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection.Emit;
+using FRS_MONTAGEM_MANUTENÇÕES.Models;
 using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -229,6 +230,14 @@ namespace Repository
                         OnDelete(DeleteBehavior.NoAction);
                     }
                     );
+
+            modelBuilder.Entity<Cargo>(
+                t =>
+                {
+
+
+
+                });
 
             }
         }
