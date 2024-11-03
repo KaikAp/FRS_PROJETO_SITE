@@ -234,7 +234,20 @@ namespace Repository
             modelBuilder.Entity<Cargo>(
                 t =>
                 {
+                    t.ToTable("Cargos");
+                    t.Property(t => t.Id).
+                    HasColumnType("INT").
+                    IsRequired().
+                    ValueGeneratedOnAdd();
 
+                    t.Property(t => t.Name).
+                    HasColumnType("VARCHAR(50)").
+                    IsRequired();
+
+                    t.HasOne(t => t.cargopessoa).
+                    WithOne(t => t.pessoaCargo).
+                    OnDelete(DeleteBehavior.NoAction).
+                    IsRequired();
 
 
                 });

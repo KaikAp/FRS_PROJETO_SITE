@@ -24,7 +24,7 @@ namespace FRS_Montagens_e_Manutenção.Models
         public virtual List<Cliente> ClientesPessoa { get; set; }
         public virtual List<Funcionario> FuncionarioPessoa { get; set; }
         public virtual List<Telefone> Telefones { get; set; }
-        public virtual Cargo pessoaCargo { get; set; }
+        public Cargo pessoaCargo { get; set; }
         #endregion
 
         #region Construtores
