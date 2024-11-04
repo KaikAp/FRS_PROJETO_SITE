@@ -4,24 +4,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root {
-    --cor-header: #121212;
-    --cor-fundo: #1E1E1E;
-    --cor-amarelo: #ffc846;
-    --cor-amarelo-escuro: #ba9131;
-    --cor-texto: #fff;
-    --cor-secao: #181818;
-    --button-text: #0E0E10;
-    --fundo-contato: #E7E8EC;
-    --loginform-background: #181818b3;
-    --login-input: rgba(255, 255, 255, 0.05);
-    --account-section-background: #272727;
+    --cor-header: #121212 !important;
+    --cor-fundo: #1E1E1E !important;
+    --cor-amarelo: #ffc846 !important;
+    --cor-amarelo-escuro: #ba9131 !important;
+    --cor-texto: #fff !important;
+    --cor-secao: #181818 !important;
+    --button-text: #0E0E10 !important;
+    --fundo-contato: #E7E8EC !important;
+    --loginform-background: #181818b3 !important;
+    --login-input: rgba(255, 255, 255, 0.05) !important;
+    --account-section-background: #272727 !important;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--cor-fundo) !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 header {

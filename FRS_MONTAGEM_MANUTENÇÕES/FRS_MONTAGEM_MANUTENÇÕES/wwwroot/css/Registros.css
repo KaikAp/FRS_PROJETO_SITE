@@ -1,4 +1,25 @@
 ﻿
+:root {
+    --cor-header: #121212 !important;
+    --cor-fundo: #1E1E1E !important;
+    --cor-amarelo: #ffc846 !important;
+    --cor-amarelo-escuro: #ba9131 !important;
+    --cor-texto: #fff !important;
+    --cor-secao: #181818 !important;
+    --button-text: #0E0E10 !important;
+    --fundo-contato: #E7E8EC !important;
+    --loginform-background: #181818b3 !important;
+    --login-input: rgba(255, 255, 255, 0.05) !important;
+    --account-section-background: #272727 !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--cor-fundo) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /*---------------------------- Registro Pessoa --------------------------------*/
 
 .registro-cliente__formulario{
@@ -114,9 +135,9 @@
 /*---------------------------- Registro Pedido --------------------------------*/
 
 .semi-main {
-    color: #FFC846;
-    padding: 0;
-    margin: 0;
+    color: #FFC846 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .formulario {
