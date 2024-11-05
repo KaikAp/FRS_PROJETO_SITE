@@ -164,9 +164,8 @@ header img{
 .rodape-conteudo {
     display: flex;
     justify-content:space-around ;
-    margin: 0 auto ;
+    margin: 3vh auto 0 auto;
     width: 60vw;
-
 }
 .rodape-links, .rodape-social, .rodape-contato{
     width:40%;
