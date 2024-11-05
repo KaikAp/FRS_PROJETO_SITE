@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FRS_Montagens_e_Manutenção.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FRS_Montagens_e_Manutenção.Controllers
 {
@@ -9,9 +10,17 @@ namespace FRS_Montagens_e_Manutenção.Controllers
             return View();
         }
 
-        public IActionResult Logar()
+        public IActionResult Logar(Pessoa _pessoa)
         {
-            return View();
+            try
+            {
+                _pessoa.Logar(_pessoa);
+
+            }
+            catch (Exception ex)
+            {
+                return View();
+            }
         }
     }
 }

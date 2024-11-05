@@ -178,6 +178,10 @@ namespace Repository
                         IsRequired().
                         ValueGeneratedOnAdd();
 
+                        t.Property(t => t.Nome).
+                        HasColumnType("VARCHAR(50)").
+                        IsRequired();
+
                         t.Property(t => t.DataInicio).
                         HasColumnType("DATE").
                         IsRequired().

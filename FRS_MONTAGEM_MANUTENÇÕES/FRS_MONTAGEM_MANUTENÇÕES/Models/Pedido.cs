@@ -4,6 +4,7 @@
     {
         #region Getters Setters
         public int Id { get; set; }
+        public string Nome { get; set; }
         public string Descrição { get; set; }
         public DateTime DataInicio { get; set; }
         public DateTime DataTermino { get; set; }
@@ -18,6 +19,10 @@
         #endregion
 
         #region Metodos
+        public void CadastrarPedidoInteiro()
+        {
+
+        }
         #endregion
     }
 }

@@ -5,7 +5,9 @@
         <div class="inputs w-75 m-auto">
             <div class="my-3">
                 <p class="ms-4 my-2">CNPJ:</p>
-                <input type="text" id="cnpj" name="CNPJ" class="h-25 mb-2 px-3 py-2">
+                <select class="form-control" asp-items="@ViewBag.Categorias">
+                    <option></option>
+                </select>
             </div>
             <div class="my-3">
                 <p class="ms-4 my-2">Nome do Projeto:</p>

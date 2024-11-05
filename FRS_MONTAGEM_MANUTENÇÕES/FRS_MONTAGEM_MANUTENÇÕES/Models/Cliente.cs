@@ -1,4 +1,6 @@
-﻿namespace FRS_Montagens_e_Manutenção.Models
+﻿using Repository;
+
+namespace FRS_Montagens_e_Manutenção.Models
 {
     public class Cliente : Pessoa
     {
@@ -21,6 +23,11 @@
 
         }
 
+        public List<Cliente> BuscarTodos(Context context)
+        {
+            List<Cliente> cliente = context.clientes.ToList();
+            return cliente;
+        }
         #endregion
     }
 }

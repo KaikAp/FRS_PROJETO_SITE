@@ -1,12 +1,28 @@
 ﻿using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Repository;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
     public class RegistroPedidoController : Controller
     {
+        private Context _context;
+
+        public RegistroPedidoController(Context context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
+
+            List<Cliente> cliente = new Cliente().BuscarTodos(_context).ToList();
+
+            var ClienteList = cliente.Select(c => new SelectListItem() { Text = c.Nome, Value = c.Id.ToString() }).ToList();
+
+            ViewBag.Categorias = ClienteList;
+
             return View();
         }
 
