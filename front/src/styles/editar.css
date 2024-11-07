@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url(style-main.css);
 
 .formulario{
@@ -151,7 +150,7 @@ section{
     border-bottom: 2px solid #FFC846;
     border-radius: 1vw;
 }
-=======
+
 @import url(style-main.css);
 
 .formulario{
@@ -268,5 +267,3 @@ input:checked + .slider:before {
     font-size: 1rem;
     color: #000000;
 }
-
->>>>>>> 5758fa008259b8032eb03ecb14076ef3d1ce5061
