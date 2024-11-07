@@ -1,7 +1,13 @@
-﻿namespace FRS_Montagens_e_Manutenção.Models
+﻿using FRS_MONTAGEM_MANUTENÇÕES.Models;
+using Repository;
+using System.ComponentModel.DataAnnotations;
+
+namespace FRS_Montagens_e_Manutenção.Models
 {
     public class Pessoa
     {
+        private readonly Context _context;
+
         #region Atributos
         public int Id { get; set; }
         public string Login { get; set; }
@@ -21,13 +27,11 @@
         public virtual List<Cliente> ClientesPessoa { get; set; }
         public virtual List<Funcionario> FuncionarioPessoa { get; set; }
         public virtual List<Telefone> Telefones { get; set; }
+        public Cargo pessoaCargo { get; set; }
         #endregion
 
         #region Construtores
-        private Pessoa()
-        {
-            Pessoa pessoa = new Pessoa();
-        }
+
         #endregion
 
         #region Metodos
@@ -36,6 +40,22 @@
         {
 
         }
+
+        public void getPessoa()
+        {
+            List<Pessoa> pessoas = _context.Pessoas.ToList();
+        }
+
+        public void Logar(Pessoa pessoa)
+        {
+            var pessoas = _context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
+            if (pessoas != null)
+            {
+                
+            }
+
+        }
+
         #endregion
 
     }

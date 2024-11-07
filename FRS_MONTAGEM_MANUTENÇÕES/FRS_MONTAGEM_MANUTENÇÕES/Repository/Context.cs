@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection.Emit;
+using FRS_MONTAGEM_MANUTENÇÕES.Models;
 using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -84,9 +85,6 @@ namespace Repository
                         HasColumnType("date").
                         HasDefaultValueSql("getdate()");
 
-                        t.HasMany(t => t.Telefones).
-                        WithOne(t => t.Pessoas).
-                        OnDelete(DeleteBehavior.NoAction);
                     }
                     );
 
@@ -180,6 +178,10 @@ namespace Repository
                         IsRequired().
                         ValueGeneratedOnAdd();
 
+                        t.Property(t => t.Nome).
+                        HasColumnType("VARCHAR(50)").
+                        IsRequired();
+
                         t.Property(t => t.DataInicio).
                         HasColumnType("DATE").
                         IsRequired().
@@ -232,6 +234,27 @@ namespace Repository
                         OnDelete(DeleteBehavior.NoAction);
                     }
                     );
+
+            modelBuilder.Entity<Cargo>(
+                t =>
+                {
+                    t.ToTable("Cargos");
+                    t.Property(t => t.Id).
+                    HasColumnType("INT").
+                    IsRequired().
+                    ValueGeneratedOnAdd();
+
+                    t.Property(t => t.Name).
+                    HasColumnType("VARCHAR(50)").
+                    IsRequired();
+
+                    t.HasOne(t => t.cargopessoa).
+                    WithOne(t => t.pessoaCargo).
+                    OnDelete(DeleteBehavior.NoAction).
+                    IsRequired();
+
+
+                });
 
             }
         }
