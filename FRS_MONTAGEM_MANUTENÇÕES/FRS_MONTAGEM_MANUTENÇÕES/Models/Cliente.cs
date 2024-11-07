@@ -25,7 +25,7 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         public List<Cliente> BuscarTodos(Context context)
         {
-            List<Cliente> cliente = context.clientes.ToList();
+            List<Cliente> cliente = context.Clientes.ToList();
             return cliente;
         }
         #endregion

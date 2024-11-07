@@ -23,11 +23,12 @@ namespace FRS_Montagens_e_Manutenção.Models
         public string Cep { get; set; }
         public DateTime DataNascimento { get; set; }
         public DateTime DataCadastro { get; set; }
-        public bool Ativo { get; set; }
+        public bool? Ativo { get; set; }
         public virtual List<Cliente> ClientesPessoa { get; set; }
         public virtual List<Funcionario> FuncionarioPessoa { get; set; }
         public virtual List<Telefone> Telefones { get; set; }
         public Cargo pessoaCargo { get; set; }
+        public int idCargo { get; set; }
         #endregion
 
         #region Construtores

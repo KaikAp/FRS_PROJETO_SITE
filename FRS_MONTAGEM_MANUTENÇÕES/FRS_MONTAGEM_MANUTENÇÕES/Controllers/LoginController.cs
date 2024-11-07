@@ -15,6 +15,7 @@ namespace FRS_Montagens_e_Manutenção.Controllers
             try
             {
                 _pessoa.Logar(_pessoa);
+                return View();
 
             }
             catch (Exception ex)

@@ -6,6 +6,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Pessoa cargopessoa { get; set; }
+        public virtual List<Pessoa> cargopessoa { get; set; }
     }
 }
