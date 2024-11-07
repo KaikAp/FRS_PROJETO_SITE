@@ -62,9 +62,9 @@
             </div>
 
             <div class="search-section">
-                <h3>Deseja realizar a consulta de um pedido?</h3>
+                <h3>Deseja realizar a consulta ou a edição de um pedido?</h3>
                 <p>Informe o código do pedido ou o CNPJ da empresa em que ele esta vinculado: </p>
-                <div class="search-bar"><input type="text" placeholder=""><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2vw"><path fill="#ffcd56" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a></div>
+                <div class="search-bar"><input type="text" placeholder=""><a href="editar-pedido.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2vw"><path fill="#ffcd56" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a></div>
             </div>
 
             <section class="secao-cadastros">
@@ -89,8 +89,15 @@
                 <div class="cadastro-form">
                     <h3>Cadastrar um novo perfil de funcionário?</h3>
                     <p>Seja redirecionado a uma página para o cadastro</p>
-                    <div>
-                        <button class="cadastro-btn">Cadastrar um Novo Funcionário</button>
+                    <div style="display: flex; justify-content: space-around">
+                        <button class="cadastro-btn" style="width: 45%;">Pesquisar Funcionário 
+                            <a href="tabela-busca-funcionario.html">
+                                <svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6582 21.6162L19.79 16.748C19.5703 16.5283 19.2725 16.4062 18.96 16.4062H18.1641C19.5117 14.6826 20.3125 12.5146 20.3125 10.1562C20.3125 4.5459 15.7666 0 10.1562 0C4.5459 0 0 4.5459 0 10.1562C0 15.7666 4.5459 20.3125 10.1562 20.3125C12.5146 20.3125 14.6826 19.5117 16.4062 18.1641V18.96C16.4062 19.2725 16.5283 19.5703 16.748 19.79L21.6162 24.6582C22.0752 25.1172 22.8174 25.1172 23.2715 24.6582L24.6533 23.2764C25.1123 22.8174 25.1123 22.0752 24.6582 21.6162ZM10.1562 16.4062C6.7041 16.4062 3.90625 13.6133 3.90625 10.1562C3.90625 6.7041 6.69922 3.90625 10.1562 3.90625C13.6084 3.90625 16.4062 6.69922 16.4062 10.1562C16.4062 13.6084 13.6133 16.4062 10.1562 16.4062Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </button>
+                        <button class="cadastro-btn" style="width: 45%;">Cadastrar um Novo Funcionário</button>
                     </div>
                 </div>
 
