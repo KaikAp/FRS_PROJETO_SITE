@@ -1,3 +1,4 @@
+using FRS_MONTAGEM_MANUTENÇÕES.Repository;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 
@@ -10,20 +11,24 @@ builder.Services.AddDbContext<Context>(options =>
 
 var app = builder.Build();
 
-// Create database if it does not exist (similar to DbInitializer logic)
+// Create database if it does not exist and initialize data
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var context = services.GetRequiredService<Context>();
-        // Sua lógica de inicialização pode ser chamada aqui, como o `DBInitializer.Initialize(context)`
-        context.Database.EnsureCreated(); // Certifique-se de ajustar conforme sua necessidade de criação ou migração do banco
+
+        // Certifique-se de usar Migrate() se estiver utilizando migrações
+        context.Database.EnsureCreated(); // Ou context.Database.Migrate(); se estiver usando migrações
+
+        // Inicialize o banco de dados com dados padrão
+        DBInitializer.Initialize(context);
     }
     catch (Exception ex)
     {
         var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "Um erro ocorreu ao tentar criar o banco de dados");
+        logger.LogError(ex, "Um erro ocorreu ao tentar criar e inicializar o banco de dados");
     }
 }
 

@@ -5,7 +5,7 @@
         <div class="inputs w-75 m-auto">
             <div class="my-3">
                 <p class="ms-4 my-2">CNPJ:</p>
-                <select class="form-control" asp-items="@ViewBag.Categorias">
+                <select class="form-control" id="Cliente" asp-items="@ViewBag.Categorias">
                     <option></option>
                 </select>
             </div>
@@ -123,6 +123,7 @@
             // Captura dados principais do pedido
             const nomePedido = document.getElementById("nomePedido").value;
             const descricaoPedido = document.getElementById("descricaoPedido").value;
+            const cliente = document.getElementById("Cliente").value;
 
             // Cria array para armazenar os tópicos
             const topicos = [];
@@ -146,6 +147,7 @@
 
             // Monta o objeto PedidoData
             const pedidoData = {
+                ClienteId: cliente,
                 nomePedido: nomePedido,
                 descricaoPedido: descricaoPedido,
                 topicos: topicos

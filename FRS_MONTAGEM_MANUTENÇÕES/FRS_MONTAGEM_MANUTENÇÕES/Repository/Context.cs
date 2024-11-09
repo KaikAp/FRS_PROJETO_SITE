@@ -10,252 +10,267 @@ namespace Repository
     {
 
         public Context(DbContextOptions<Context> options) : base(options) { }
+        public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
-        public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Topico> Topicos { get; set; }
+        public DbSet<SubTopico> SubTopicos { get; set; }
         public DbSet<Telefone> Telefones { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             //Criação do banco de dados
-            modelBuilder.Entity<Pessoa>(
-                t =>
-                {
-                    t.ToTable("Pessoas");
-                    t.Property(t => t.Id).
-                    HasColumnType("int").
-                    IsRequired().
-                    ValueGeneratedOnAdd();
-                    t.HasKey(t => t.Id);
+            // Configuração da entidade Pessoa
+            modelBuilder.Entity<Pessoa>(t =>
+            {
+                t.ToTable("Pessoas");
 
-                    t.Property(t => t.Login).
-                    HasColumnType("varchar(50)").
-                    IsRequired();
+                t.Property(p => p.Id)
+                    .HasColumnType("int")
+                    .IsRequired()
+                    .ValueGeneratedOnAdd();
+                t.HasKey(p => p.Id);
 
-                    t.Property(t => t.Senha).
-                    HasColumnType("varchar(50)").
-                    IsRequired();
+                t.Property(p => p.Email)
+                    .HasColumnType("varchar(100)")
+                    .IsRequired();
+                t.HasIndex(p => p.Email).IsUnique();
 
-                    t.Property(t => t.Nome).
-                    HasColumnType("varchar(50)").
-                    IsRequired();
+                t.Property(p => p.Nome)
+                    .HasColumnType("varchar(100)")
+                    .IsRequired();
 
-                    t.Property(t => t.Email).
-                    HasColumnType("varchar(50)").
-                    IsRequired();
-                    t.HasIndex(t => t.Email).
-                    IsUnique();
+                t.Property(p => p.Senha)
+                    .HasColumnType("varchar(100)")
+                    .IsRequired();
 
-                    t.Property(t => t.DataNascimento).
-                    HasColumnType("date");
+                t.Property(p => p.DataNascimento)
+                    .HasColumnType("date");
 
-                    t.Property(t => t.Uf).
-                    HasColumnType("char(2)").
-                    IsRequired();
+                t.Property(p => p.Uf)
+                    .HasColumnType("char(2)");
 
-                    t.Property(t => t.Cidade).
-                    HasColumnType("varchar(20)").
-                    IsRequired();
+                t.Property(p => p.Cidade)
+                    .HasColumnType("varchar(100)");
 
-                    t.Property(t => t.Bairro).
-                    HasColumnType("varchar(30)").
-                    IsRequired();
+                t.Property(p => p.Bairro)
+                    .HasColumnType("varchar(100)");
 
-                    t.Property(t => t.Rua).
-                    HasColumnType("varchar(100)").
-                    IsRequired();
+                t.Property(p => p.Rua)
+                    .HasColumnType("varchar(100)");
 
-                    t.Property(t => t.NResidencia).
-                    HasColumnType("varchar(10)").
-                    IsRequired();
+                t.Property(p => p.NResidencia)
+                    .HasColumnType("varchar(10)");
 
-                    t.Property(t => t.Cep).
-                    HasColumnType("varchar(10)").
-                    IsRequired();
+                t.Property(p => p.Cep)
+                    .HasColumnType("varchar(8)");
 
-                    t.Property(t => t.Ativo).
-                    HasColumnType("bit").
-                    HasDefaultValueSql("1");
+                t.Property(p => p.Ativo)
+                    .HasColumnType("bit")
+                    .HasDefaultValueSql("1");
 
-                    t.Property(t => t.DataCadastro).
-                    HasColumnType("date").
-                    HasDefaultValueSql("getdate()");
+                // Relacionamento com Clientes
+                t.HasMany(p => p.Clientes)
+                    .WithOne(c => c.Pessoa)
+                    .HasForeignKey(c => c.PessoaId)
+                    .OnDelete(DeleteBehavior.Cascade);
 
-                    t.HasOne(t => t.pessoaCargo).
-                    WithMany(t => t.cargopessoa).
-                    HasForeignKey(t => t.idCargo).
-                    OnDelete(DeleteBehavior.NoAction);
-                }
-                );
+                // Relacionamento com Funcionarios
+                t.HasMany(p => p.Funcionarios)
+                    .WithOne(f => f.Pessoa)
+                    .HasForeignKey(f => f.PessoaId)
+                    .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<Telefone>(
-                t =>
-                {
-                    t.Property(t => t.Numero)
-                     .HasColumnType("varchar(15)")
-                     .IsRequired();
-                    t.HasKey(t => new { t.Numero, t.id_pessoas });
-
-                    t.HasOne(t => t.Pessoas)
-                     .WithMany(p => p.Telefones)
-                     .HasForeignKey(t => t.id_pessoas)
-                     .OnDelete(DeleteBehavior.NoAction);
-
-                    t.Property(t => t.Numero)
-                     .HasColumnType("varchar(15)")
-                     .IsRequired();
-
-                    t.HasCheckConstraint("CK_N_TELEFONE", "LEN(Numero) >= 10 AND LEN(Numero) <= 15 AND Numero LIKE '[0-9]%'");
-                }
-
-
+                // Relacionamento com Telefones
+                t.HasMany(p => p.Telefones)
+                    .WithOne(tel => tel.Pessoa)
+                    .HasForeignKey(tel => tel.PessoaId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            }
             );
 
-            modelBuilder.Entity<Cliente>(
-                t =>
-                {
-                    t.ToTable("Clientes");
-                    t.Property(t => t.Cnpj).
-                    HasColumnType("varchar(14)").
-                    IsRequired();
-                    t.HasIndex(t => t.Cnpj).IsUnique();
+            modelBuilder.Entity<Telefone>(t =>
+            {
+                t.ToTable("Telefones");
 
-                    t.HasOne(t => t.IdPessoa).
-                    WithMany(t => t.ClientesPessoa).
-                    OnDelete(DeleteBehavior.NoAction).
-                    IsRequired();
+                // Define a chave primária composta usando PessoaId e NTelefone
+                t.HasKey(tel => new { tel.PessoaId, tel.NTelefone });
 
-                    t.HasOne(t => t.IdFuncionario).
-                    WithMany(t => t.ClienteFuncionario).
-                    OnDelete(DeleteBehavior.NoAction).
-                    IsRequired();
-                }
-                );
+                t.Property(tel => tel.PessoaId)
+                    .HasColumnType("int")
+                    .IsRequired();
 
-            modelBuilder.Entity<Funcionario>(
-                t =>
-                {
-                    t.ToTable("Funcionarios");
-                    t.Property(t => t.Cpf).
-                    HasColumnType("varchar(11)").
-                    IsRequired();
-                    t.HasIndex(t => t.Cpf).IsUnique();
+                t.Property(tel => tel.NTelefone)
+                    .HasColumnType("varchar(15)")
+                    .IsRequired();
 
-                    t.Property(t => t.Gerente).
-                    HasColumnType("bit").
-                    IsRequired().
-                    HasDefaultValue("false");
+                // Relacionamento com Pessoa
+                t.HasOne(tel => tel.Pessoa)
+                    .WithMany(p => p.Telefones)
+                    .HasForeignKey(tel => tel.PessoaId)
+                    .OnDelete(DeleteBehavior.NoAction);
+            });
 
-                    t.HasOne(t => t.IdPessoa).
-                    WithMany(t => t.FuncionarioPessoa).
-                    IsRequired().
-                    OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<Cliente>(t =>
+            {
+                t.ToTable("Clientes");
 
-                }
-                );
+                t.Property(c => c.Id)
+                    .HasColumnType("int")
+                    .IsRequired()
+                    .ValueGeneratedOnAdd();
+                t.HasKey(c => c.Id);
 
-            modelBuilder.Entity<Statu>(
-                t =>
-                {
-                    t.ToTable("Status");
-                    t.Property(t => t.Id).HasColumnType("int").
-                    IsRequired().
-                    ValueGeneratedOnAdd();
-                    t.HasKey(t => t.Id);
+                t.Property(c => c.Cnpj)
+                    .HasColumnType("varchar(14)")
+                    .IsRequired();
 
-                    t.Property(t => t.Nome).
-                    HasColumnType("varchar(20)").
-                    IsRequired();
-                }
+                // Relacionamento com Pessoa
+                t.HasOne(c => c.Pessoa)
+                    .WithMany(p => p.Clientes)
+                    .HasForeignKey(c => c.PessoaId)
+                    .OnDelete(DeleteBehavior.Cascade);
 
-                );
-            modelBuilder.Entity<Pedido>(
-                t =>
-                {
-                    t.ToTable("Pedidos");
-                    t.Property(t => t.Id).
-                    HasColumnType("int").
-                    IsRequired().
-                    ValueGeneratedOnAdd();
+                // Relacionamento com Pedidos
+                t.HasMany(c => c.Pedidos)
+                    .WithOne(p => p.Cliente)
+                    .HasForeignKey(p => p.ClienteId)
+                    .OnDelete(DeleteBehavior.NoAction);
+            });
 
-                    t.Property(t => t.Nome).
-                    HasColumnType("VARCHAR(50)").
-                    IsRequired();
+            modelBuilder.Entity<Funcionario>(t =>
+            {
+                t.ToTable("Funcionarios");
 
-                    t.Property(t => t.DataInicio).
-                    HasColumnType("DATE").
-                    IsRequired().
-                    HasDefaultValueSql("getdate()");
+                t.Property(f => f.Id)
+                    .HasColumnType("int")
+                    .IsRequired()
+                    .ValueGeneratedOnAdd();
+                t.HasKey(f => f.Id);
 
-                    t.Property(t => t.DataTermino).
-                    HasColumnType("DATE");
+                t.Property(f => f.Cpf)
+                    .HasColumnType("varchar(11)")
+                    .IsRequired();
 
-                    t.HasOne(t => t.Funcionario).
-                    WithMany(t => t.PedidoFuncionario).
-                    IsRequired().
-                    OnDelete(DeleteBehavior.NoAction);
+                // Relacionamento com Pessoa
+                t.HasOne(f => f.Pessoa)
+                    .WithMany(p => p.Funcionarios)
+                    .HasForeignKey(f => f.PessoaId)
+                    .OnDelete(DeleteBehavior.Cascade);
 
-                    t.HasOne(t => t.Cliente).
-                    WithMany(t => t.PedidoCliente).
-                    IsRequired().
-                    OnDelete(DeleteBehavior.NoAction);
+                // Relacionamento com Pedidos
+                t.HasMany(f => f.Pedidos)
+                    .WithOne(p => p.Funcionario)
+                    .HasForeignKey(p => p.FuncionarioId)
+                    .OnDelete(DeleteBehavior.NoAction);
+            });
 
-                    t.HasOne(t => t.Status).
-                    WithMany(t => t.PedidoStatu).
-                    IsRequired().
-                    OnDelete(DeleteBehavior.NoAction);
-                }
+            modelBuilder.Entity<Pedido>(t =>
+            {
+                t.ToTable("Pedidos");
 
+                t.Property(p => p.Id)
+                    .HasColumnType("int")
+                    .IsRequired()
+                    .ValueGeneratedOnAdd();
+                t.HasKey(p => p.Id);
 
-                );
-            modelBuilder.Entity<Topico>(
-                t =>
-                {
-                    t.ToTable("Topicos");
-                    t.Property(t => t.Id).
-                    HasColumnType("INT").
-                    IsRequired().
-                    ValueGeneratedOnAdd();
+                t.Property(p => p.Nome)
+                    .HasColumnType("varchar(100)")
+                    .IsRequired();
 
-                    t.Property(t => t.DataInicio).
-                    HasColumnType("DATE").
-                    IsRequired().
-                    HasDefaultValueSql("GETDATE()");
+                t.Property(p => p.Descricao)
+                    .HasColumnType("varchar(500)");
 
-                    t.Property(t => t.DataTermino).
-                    HasColumnType("DATE");
+                t.Property(p => p.DataInicio)
+                    .HasColumnType("date")
+                    .IsRequired();
 
-                    t.HasOne(t => t.Status).
-                    WithMany(t => t.Topicos).
-                    OnDelete(DeleteBehavior.NoAction);
+                t.Property(p => p.DataTermino)
+                    .HasColumnType("date");
 
-                    t.HasOne(t => t.Pedido).
-                    WithMany(t => t.Topico).
-                    OnDelete(DeleteBehavior.NoAction);
-                }
-                );
+                // Relacionamento com Cliente
+                t.HasOne(p => p.Cliente)
+                    .WithMany(c => c.Pedidos)
+                    .HasForeignKey(p => p.ClienteId)
+                    .OnDelete(DeleteBehavior.NoAction);
 
-            modelBuilder.Entity<Cargo>(
-                t =>
-                {
-                    t.ToTable("Cargos");
-                    t.Property(t => t.Id).
-                    HasColumnType("INT").
-                    IsRequired().
-                    ValueGeneratedOnAdd();
+                // Relacionamento com Funcionario
+                t.HasOne(p => p.Funcionario)
+                    .WithMany(f => f.Pedidos)
+                    .HasForeignKey(p => p.FuncionarioId)
+                    .OnDelete(DeleteBehavior.NoAction);
 
-                    t.Property(t => t.Name).
-                    HasColumnType("VARCHAR(50)").
-                    IsRequired();
+                // Relacionamento com Topicos
+                t.HasMany(p => p.Topicos)
+                    .WithOne(t => t.Pedido)
+                    .HasForeignKey(t => t.PedidoId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
 
-                    t.HasMany(t => t.cargopessoa).
-                    WithOne(t => t.pessoaCargo).
-                    OnDelete(DeleteBehavior.NoAction).
-                    IsRequired();
-                });
+            modelBuilder.Entity<Topico>(t =>
+            {
+                t.ToTable("Topicos");
+
+                t.Property(tp => tp.Id)
+                    .HasColumnType("int")
+                    .IsRequired()
+                    .ValueGeneratedOnAdd();
+                t.HasKey(tp => tp.Id);
+
+                t.Property(p => p.Nome)
+                  .HasColumnType("varchar(100)")
+                  .IsRequired();
+
+                t.Property(tp => tp.DataInicio)
+                    .HasColumnType("date")
+                    .IsRequired();
+
+                t.Property(tp => tp.DataTermino)
+                    .HasColumnType("date");
+
+                // Relacionamento com Pedido
+                t.HasOne(tp => tp.Pedido)
+                    .WithMany(p => p.Topicos)
+                    .HasForeignKey(tp => tp.PedidoId)
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                // Relacionamento com SubTopicos
+                t.HasMany(tp => tp.SubTopicos)
+                    .WithOne(st => st.Topico)
+                    .HasForeignKey(st => st.TopicoId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<SubTopico>(t =>
+            {
+                t.ToTable("SubTopicos");
+
+                t.Property(st => st.Id)
+                    .HasColumnType("int")
+                    .IsRequired()
+                    .ValueGeneratedOnAdd();
+                t.HasKey(st => st.Id);
+
+                t.Property(p => p.Nome)
+                  .HasColumnType("varchar(100)")
+                  .IsRequired();
+
+                t.Property(st => st.DataInicio)
+                    .HasColumnType("date")
+                    .IsRequired();
+
+                t.Property(st => st.DataTermino)
+                    .HasColumnType("date");
+
+                // Relacionamento com Topico 
+                t.HasOne(st => st.Topico)
+                    .WithMany(tp => tp.SubTopicos)
+                    .HasForeignKey(st => st.TopicoId)
+                    .OnDelete(DeleteBehavior.NoAction);  
+            });
 
         }
     }

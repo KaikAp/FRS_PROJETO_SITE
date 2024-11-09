@@ -6,29 +6,27 @@ namespace FRS_Montagens_e_Manutenção.Models
 {
     public class Pessoa
     {
-        private readonly Context _context;
-
         #region Atributos
+
         public int Id { get; set; }
-        public string Login { get; set; }
-        public string Senha { get; set; }
-        public string Nome { get; set; }
         public string Email { get; set; }
-        public DateTime DtNascimento { get; set; }
-        public char Uf { get; set; }
+        public string Nome { get; set; }
+        public string Senha { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string Uf { get; set; }
         public string Cidade { get; set; }
         public string Bairro { get; set; }
         public string Rua { get; set; }
         public string NResidencia { get; set; }
         public string Cep { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public DateTime DataCadastro { get; set; }
-        public bool? Ativo { get; set; }
-        public virtual List<Cliente> ClientesPessoa { get; set; }
-        public virtual List<Funcionario> FuncionarioPessoa { get; set; }
+        public bool Ativo { get; set; }
+        public virtual List<Cliente> Clientes { get; set; }
+
+        // Relacionamento com Funcionario
+        public virtual List<Funcionario> Funcionarios { get; set; }
+
+        // Relacionamento com Telefone
         public virtual List<Telefone> Telefones { get; set; }
-        public Cargo pessoaCargo { get; set; }
-        public int idCargo { get; set; }
         #endregion
 
         #region Construtores
@@ -42,12 +40,12 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         }
 
-        public void getPessoa()
+        public void getPessoa(Context _context)
         {
             List<Pessoa> pessoas = _context.Pessoas.ToList();
         }
 
-        public void Logar(Pessoa pessoa)
+        public void Logar(Pessoa pessoa, Context _context)
         {
             var pessoas = _context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
             if (pessoas != null)

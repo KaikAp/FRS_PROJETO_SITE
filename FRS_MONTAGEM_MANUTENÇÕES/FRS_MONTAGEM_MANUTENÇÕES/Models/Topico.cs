@@ -4,12 +4,14 @@
     {
         #region Getters Setters
         public int Id { get; set; }
-        public Statu Status { get; set; }
+        public string Nome { get; set; }
         public DateTime DataInicio { get; set; }
-        public DateTime DataTermino { get; set; }
-        public string Descricao { get; set; }
-        public List<Topico> FkIdTopico { get; set; }
-        public Pedido Pedido { get; set; }
+        public DateTime? DataTermino { get; set; }
+
+        public virtual Pedido Pedido { get; set; }
+        public int PedidoId { get; set; }
+
+        public virtual List<SubTopico> SubTopicos { get; set; }
         #endregion
 
         #region Construtores

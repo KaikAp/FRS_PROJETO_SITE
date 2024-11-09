@@ -1,15 +1,19 @@
-﻿using Repository;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository;
 
 namespace FRS_Montagens_e_Manutenção.Models
 {
-    public class Cliente : Pessoa
+    public class Cliente
     {
 
         #region Getters Setters
-        public virtual Pessoa IdPessoa { get; set; }
-        public virtual Funcionario IdFuncionario { get; set; }
+        public int Id { get; set; }
+
+        public virtual Pessoa Pessoa { get; set; }
+        public int PessoaId { get; set; }
+
         public string Cnpj { get; set; }
-        public List<Pedido> PedidoCliente { get; set; }
+        public virtual List<Pedido> Pedidos { get; set; }
         #endregion
 
         #region Construtores
@@ -25,7 +29,7 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         public List<Cliente> BuscarTodos(Context context)
         {
-            List<Cliente> cliente = context.Clientes.ToList();
+            List<Cliente> cliente = context.Clientes.Include(c => c.Pessoa).ToList();
             return cliente;
         }
         #endregion

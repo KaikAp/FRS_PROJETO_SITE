@@ -2,16 +2,16 @@
 
 namespace FRS_Montagens_e_Manutenção.Models
 {
-    public class Funcionario : Pessoa
+    public class Funcionario
     {
-        private readonly Context _context;
-
         #region Getters Setters
-        public virtual Pessoa IdPessoa { get; set; }
-        public string Cpf {  get; set; }
-        public bool Gerente {  get; set; }
-        public List<Pedido> PedidoFuncionario {  get; set; }
-        public virtual List<Cliente> ClienteFuncionario { get; set; }
+        public int Id { get; set; }
+
+        public virtual Pessoa Pessoa { get; set; }
+        public int PessoaId { get; set; }
+
+        public string Cpf { get; set; }
+        public virtual List<Pedido> Pedidos { get; set; }
         #endregion
 
         #region Construtores
@@ -20,7 +20,7 @@ namespace FRS_Montagens_e_Manutenção.Models
         #region Metodos
 
 
-        private void addFuncionario(Funcionario funcionario)
+        private void addFuncionario(Funcionario funcionario, Context _context)
         {
             _context.Add(funcionario);
             _context.SaveChanges();
