@@ -17,16 +17,29 @@
         <main class="d-flex flex-column align-items-center">
             <form action="submit" class="formulario col-6 my-5">
                 <h3 class="text-center my-5">CRIAR UM NOVO PEDIDO</h3>
-                <h5 class="text-end mx-5 fs-6 mb-4">ID Pedido <span class="m-4 p-2" style="background-color: rgba(0, 0, 0, 0.112);">102.XXX.XXX</span></h5>
+                <h5 class="text-end mx-5 fs-6 mb-5">ID Pedido <span class="m-4 p-2" style="background-color: rgba(0, 0, 0, 0.112);">102.XXX.XXX</span></h5>
                 <div class="inputs w-75 m-auto">
-                    <div class="my-3">
-                        <p class="ms-4 my-2">CNPJ:</p>
-                        <input type="text" name="CNPJ" class="h-25 mb-2 px-3 py-2"> 
+                    <div class="my-3 d-flex align-content-center justify-content-between w-100">
+                        <span style="width: 60%;">
+                            <p class="ms-4 my-2">CNPJ:</p>
+                            <input type="text" name="CNPJ" class="h-50 mb-2 px-3">
+                        </span>
+                        <span>
+                            <p class="ms-4 my-2">Date de Inicio</p>
+                            <input type="date" class="h-50 px-3">
+                        </span>
                     </div>
-                    <div class="my-3">
-                        <p class="ms-4 my-2">Nome do Projeto:</p>
-                        <input type="text" name="Nome" class="h-25 mb-4 px-3 py-2"> 
+                    <div class="my-3 d-flex align-content-center justify-content-between w-100">
+                        <span style="width: 60%;">
+                            <p class="ms-4 my-2">Nome do Projeto:</p>
+                            <input type="text" name="Nome do Projeto" class="h-50 mb-2 px-3">
+                        </span>
+                        <span>
+                            <p class="ms-4 my-2">Date de Termino</p>
+                            <input type="date" class="h-50 px-3">
+                        </span>
                     </div>
+                    <br>
                     <div class="my-3">
                         <p class="ms-4 my-2">Descrição do Projeto:</p>
                         <textarea rows="5" name="Descrição" class="h-75 mb-4 p-3"></textarea>
