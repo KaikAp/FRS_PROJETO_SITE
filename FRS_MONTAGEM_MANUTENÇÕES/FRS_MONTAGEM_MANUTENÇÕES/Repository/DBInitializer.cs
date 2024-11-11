@@ -98,6 +98,20 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
             // Adicionando clientes ao contexto
             context.Clientes.Add(cliente1);
             context.Clientes.Add(cliente2);
+
+            var telefone1 = new Telefone
+            {
+                PessoaId = pessoa1.Id,
+                NTelefone = "997536911"
+            };
+
+            var telefone2 = new Telefone
+            {
+                PessoaId = pessoa2.Id,
+                NTelefone = "992454434"
+            };
+            context.Telefones.Add(telefone1);
+            context.Telefones.Add(telefone2);
             context.SaveChanges();
         }
     }

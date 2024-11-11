@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository;
 
 namespace FRS_Montagens_e_Manutenção.Models
 {
@@ -19,6 +20,11 @@ namespace FRS_Montagens_e_Manutenção.Models
         {
             var telefones =  context.Telefones.Where(a => a.PessoaId == pessoaId).ToList();
             return telefones;
+        }
+        public void Alterar(Context context)
+        {
+            context.Entry(this).State = EntityState.Modified;
+            context.SaveChanges();
         }
         #endregion
     }

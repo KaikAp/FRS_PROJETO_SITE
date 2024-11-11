@@ -1,0 +1,103 @@
+﻿@using FRS_MONTAGEM_MANUTENÇÕES.Models.ViewModels
+
+@model ClienteTelefone
+
+<main class="container">
+    <a href="tabela-busca-cliente.html" class="voltar-link">
+        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.125 1.25L4.875 10.5L14.125 19.75" stroke="#FFC846" stroke-width="3" />
+        </svg>
+        Voltar
+    </a>
+
+    <form asp-action="ClienteEdit" class="formulario">
+        <div class="d-flex justify-content-between" style="width: 80%;">
+            <span>
+                <h3>Nome:</h3>
+                <input type="text" asp-for="Pessoa.Nome" style="width: 20vw;">
+            </span>
+
+            <span>
+                <h3>CNPJ:</h3>
+                <input type="text" asp-for="Cliente.Cnpj">
+            </span>
+        </div>
+
+        <div class="d-flex justify-content-between" style="width: 75%;">
+            <span>
+                <h3>Email:</h3>
+                <input type="email" asp-for="Pessoa.Email" style="width: 18vw;">
+            </span>
+            <input type="hidden" asp-for="PessoaId">
+            <input type="hidden" asp-for="Pessoa.Senha">
+        </div>
+
+        <div class="d-flex justify-content-between" style="width: 75%;">
+            <span>
+                <h3>Telefone 1:</h3>
+                @if (Model.Telefones.Count > 0)
+                {
+                    <input type="tel" asp-for="Telefones[0].NTelefone" class="form-control" style="width: 18vw;">
+                }
+                else
+                {
+                    <input type="tel" class="form-control" style="width: 18vw;" placeholder="Telefone 1 não disponível">
+                }
+            </span>
+            <span>
+                <h3>Telefone 2:</h3>
+                @if (Model.Telefones.Count > 1)
+                {
+                    <input type="tel" asp-for="Telefones[1].NTelefone" class="form-control" style="width: 18vw;">
+                }
+                else
+                {
+                    <input type="tel" class="form-control" style="width: 18vw;" placeholder="Telefone 2 não disponível">
+                }
+            </span>
+        </div>
+
+        <div class="d-flex justify-content-between" ; style="width: 80%;">
+            <span>
+                <h3>Rua:</h3>
+                <input type="text" asp-for="Pessoa.Rua">
+            </span>
+            <span>
+                <h3>Bairro:</h3>
+                <input type="text" asp-for="Pessoa.Bairro">
+            </span>
+            <span>
+                <h3>Numero:</h3>
+                <input type="text" asp-for="Pessoa.NResidencia" style="width: 5vw;">
+            </span>
+        </div>
+
+        <div class="d-flex justify-content-between" style="width: 70%;">
+            <span>
+                <h3>Cidade:</h3>
+                <input type="text" asp-for="Pessoa.Cidade" width="30vw">
+            </span>
+            <span>
+                <h3>UF:</h3>
+                <input type="text" asp-for="Pessoa.Uf" style="width: 5vw;">
+            </span>
+            <span>
+                <h3>CEP:</h3>
+                <input type="text" asp-for="Pessoa.Cep" style="width: 7vw;">
+            </span>
+        </div>
+
+        <div class="form-footer d-flex">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" asp-for="Pessoa.Ativo" id="Ativo">
+                <span style="color: #ffc846; margin-left: 0.5vw">Cadastro Ativo</span>
+            </div>
+
+            <div class="edit-btn">
+                <button style="background-color: #171717; color: #ffc846; border: solid 0.5px #ffc846;">Cancelar</button>
+                <button type="submit">Salvar</button>
+            </div>
+
+        </div>
+    </form>
+</main>
