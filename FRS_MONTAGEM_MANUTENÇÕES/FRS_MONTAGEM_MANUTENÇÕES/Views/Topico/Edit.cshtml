@@ -1,0 +1,70 @@
+﻿@using FRS_Montagens_e_Manutenção.Models;
+
+@model Topico
+
+<style>
+    .bottom-border-white td {
+        border-bottom: 1px solid #ffffff; /* Borda inferior branca para cada célula */
+    }
+</style>
+
+<main class="container">
+    <a href="javascript:void(0);" onclick="window.close();" class="voltar-link">
+        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.125 1.25L4.875 10.5L14.125 19.75" stroke="#FFC846" stroke-width="3" />
+        </svg>
+        Voltar
+    </a>
+
+    <form asp-action="Edit" class="formulario" style="width: 95%;">
+        <div class="d-flex justify-content-between" style="width: 80%;">
+            <span style="width: 65%;">
+                <h3>Nome do Tópico</h3>
+                <input type="text" asp-for="Nome">
+            </span>
+        </div>
+
+        <div class="d-flex justify-content-between" style="width: 45%;">
+            <span>
+                <h3>Data de Inicio</h3>
+                <input type="date" asp-for="DataInicio">
+            </span>
+            <span>
+                <h3>Data de Término</h3>
+                <input type="date" asp-action="DataFim">
+            </span>
+        </div>
+        <br>
+        <table class="tabela-topicos" width="100%">
+            <thead>
+                <tr>
+                    <th>Nome do Tópico</th>
+                    <th>Duração</th>
+                    <th>Início</th>
+                    <th>Término</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var topico in Model.SubTopicos)
+                {
+                    <tr class="nome-proj bottom-border-white">
+                        <td>@topico.Nome</td>
+                        <td>@((topico.DataTermino - topico.DataInicio)?.Days ?? 0) dias</td>
+                        <td>@topico.DataInicio.ToString("dd/MM/yy")</td>
+                        <td>@(topico.DataTermino.HasValue ? topico.DataTermino?.ToString("dd/MM/yy") : "Não definido") </td>
+                        <td>
+                            <a href="@Url.Action("Edit", "SubTopico", new { id = topico.Id })" target="_blank">Editar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="edit-btn">
+            <button onclick="window.close();" style="background-color: #171717; color: #ffc846; border: solid 0.5px #ffc846;">
+                Cancelar
+            </button>
+            <button type="submit">Salvar</button>
+        </div>
+    </form>
+</main>

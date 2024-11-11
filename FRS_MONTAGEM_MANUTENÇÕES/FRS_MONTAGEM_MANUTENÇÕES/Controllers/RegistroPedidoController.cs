@@ -32,6 +32,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
         {
             try
             {
+
                 if (ModelState.IsValid)
                 {
                     // Cria a instância de Pedido a partir da ViewModel
@@ -68,9 +69,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                         pedido.Topicos.Add(topico); // Adiciona o tópico ao pedido
                     }
 
-                    // Salva o Pedido (incluindo tópicos e passos) no banco de dados
-                    _context.Pedidos.Add(pedido);
-                    _context.SaveChanges();
+                    pedido.Salvar(_context);
 
                     return RedirectToAction("Index"); // Redireciona para a página de confirmação ou listagem
                 }
@@ -84,6 +83,8 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                 throw; // Re-throw para manter o erro, ou trate conforme necessário
             }
         }
+
+
     }
 
     public class PedidoViewModel

@@ -1,4 +1,6 @@
-﻿namespace FRS_Montagens_e_Manutenção.Models
+﻿using Repository;
+
+namespace FRS_Montagens_e_Manutenção.Models
 {
     public class Telefone
     {
@@ -13,6 +15,11 @@
         #endregion
 
         #region Metodos
+        public List<Telefone> BuscarPorIdPessoa (Context context, int pessoaId)
+        {
+            var telefones =  context.Telefones.Where(a => a.PessoaId == pessoaId).ToList();
+            return telefones;
+        }
         #endregion
     }
 }
