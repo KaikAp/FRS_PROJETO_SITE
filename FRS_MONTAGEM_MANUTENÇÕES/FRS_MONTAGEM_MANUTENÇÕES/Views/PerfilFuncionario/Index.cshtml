@@ -26,24 +26,47 @@
 </div>
 
 <div class="perfil-func_search-section">
-    <h3 class="perfil-func_search-section_titulo">Deseja realizar a consulta de um pedido?</h3>
-    <p class="perfil-func_search-section_texto">Informe o CNPJ da empresa em que ele está vinculado: </p>
+    <h3 class="perfil-func_search-section_titulo">Deseja realizar alterações em algum pedido?</h3>
+    <p class="perfil-func_search-section_texto">Selecione o nome da Empresa: </p>
     <div class="search-bar perfil-func_search-bar">
-        <select class="form-control" id="Cliente" asp-items="@ViewBag.Cliente">
+        <select class="form-control" id="ClientePedido" asp-items="@ViewBag.Cliente">
             <option></option>
         </select>
         <button type="button" onclick="consultarPedido()">Consultar Pedido</button>
     </div>
 </div>
+<div class="perfil-func_search-section">
+    <h3 class="perfil-func_search-section_titulo">Deseja editar algum usuário?</h3>
+    <p class="perfil-func_search-section_texto">Selecione o nome da Empresa que seja alterar: </p>
+    <div class="search-bar perfil-func_search-bar">
+        <select class="form-control" id="ClienteEdit" asp-items="@ViewBag.Cliente">
+            <option></option>
+        </select>
+        <button type="button" onclick="consultarUsuario()">Consultar Pedido</button>
+    </div>
+</div>
 <script>
     function consultarPedido() {
         // Captura o valor selecionado no dropdown (ID do cliente)
-        const clienteId = document.getElementById("Cliente").value;
+        const clienteId = document.getElementById("ClientePedido").value;
 
         // Verifica se um cliente foi selecionado
         if (clienteId) {
             // Redireciona para a rota Edit com o ID do cliente selecionado
             window.location.href = `/PerfilFuncionario/ClientePedidos/${clienteId}`;
+        } else {
+            alert("Por favor, selecione um cliente.");
+        }
+    }
+
+    function consultarUsuario() {
+        // Captura o valor selecionado no dropdown (ID do cliente)
+        const clienteId = document.getElementById("ClienteEdit").value;
+
+        // Verifica se um cliente foi selecionado
+        if (clienteId) {
+            // Redireciona para a rota Edit com o ID do cliente selecionado
+            window.location.href = `/PerfilFuncionario/ClienteEdit/${clienteId}`;
         } else {
             alert("Por favor, selecione um cliente.");
         }

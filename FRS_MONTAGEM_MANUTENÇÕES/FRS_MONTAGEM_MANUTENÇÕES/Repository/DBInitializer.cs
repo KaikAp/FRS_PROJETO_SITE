@@ -22,7 +22,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
                 Nome = "Master",
                 Email = "master@example.com",
                 Senha = "master123", // Considerar hash para segurança
-                DataNascimento = new DateTime(1970, 1, 1),
                 Uf = "SP",
                 Cidade = "São Paulo",
                 Bairro = "Centro",
@@ -52,7 +51,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
                 Email = "joao.silva@example.com",
                 Nome = "João Silva",
                 Senha = "senha123",  // Senha fictícia, considere criptografia
-                DataNascimento = new DateTime(1985, 5, 20),
                 Uf = "SP",
                 Cidade = "São Paulo",
                 Bairro = "Jardim Paulista",
@@ -67,7 +65,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
                 Email = "maria.santos@example.com",
                 Nome = "Maria Santos",
                 Senha = "senha456",  // Senha fictícia, considere criptografia
-                DataNascimento = new DateTime(1990, 9, 15),
                 Uf = "RJ",
                 Cidade = "Rio de Janeiro",
                 Bairro = "Copacabana",
@@ -98,6 +95,20 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
             // Adicionando clientes ao contexto
             context.Clientes.Add(cliente1);
             context.Clientes.Add(cliente2);
+
+            var telefone1 = new Telefone
+            {
+                PessoaId = pessoa1.Id,
+                NTelefone = "997536911"
+            };
+
+            var telefone2 = new Telefone
+            {
+                PessoaId = pessoa2.Id,
+                NTelefone = "992454434"
+            };
+            context.Telefones.Add(telefone1);
+            context.Telefones.Add(telefone2);
             context.SaveChanges();
         }
     }

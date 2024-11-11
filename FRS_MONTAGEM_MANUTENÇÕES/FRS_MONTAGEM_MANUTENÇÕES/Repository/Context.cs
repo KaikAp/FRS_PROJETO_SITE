@@ -34,35 +34,32 @@ namespace Repository
                 t.HasKey(p => p.Id);
 
                 t.Property(p => p.Email)
-                    .HasColumnType("varchar(100)")
+                    .HasColumnType("varchar(50)")
                     .IsRequired();
                 t.HasIndex(p => p.Email).IsUnique();
 
                 t.Property(p => p.Nome)
-                    .HasColumnType("varchar(100)")
+                    .HasColumnType("varchar(50)")
                     .IsRequired();
 
                 t.Property(p => p.Senha)
                     .HasColumnType("varchar(100)")
                     .IsRequired();
 
-                t.Property(p => p.DataNascimento)
-                    .HasColumnType("date");
-
                 t.Property(p => p.Uf)
                     .HasColumnType("char(2)");
 
                 t.Property(p => p.Cidade)
-                    .HasColumnType("varchar(100)");
+                    .HasColumnType("varchar(30)");
 
                 t.Property(p => p.Bairro)
-                    .HasColumnType("varchar(100)");
+                    .HasColumnType("varchar(30)");
 
                 t.Property(p => p.Rua)
                     .HasColumnType("varchar(100)");
 
                 t.Property(p => p.NResidencia)
-                    .HasColumnType("varchar(10)");
+                    .HasColumnType("varchar(5)");
 
                 t.Property(p => p.Cep)
                     .HasColumnType("varchar(8)");

@@ -1,4 +1,5 @@
-﻿using FRS_Montagens_e_Manutenção.Models;
+﻿using FRS_MONTAGEM_MANUTENÇÕES.Models.ViewModels;
+using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repository;

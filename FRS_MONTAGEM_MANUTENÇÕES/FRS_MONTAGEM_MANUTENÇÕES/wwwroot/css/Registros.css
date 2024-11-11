@@ -50,9 +50,6 @@ body {
 }
 
 .registro-cliente__container-fone {
-    display: flex;
-    width: 40%;
-    margin-inline: 5%;
 }
 
 .registro-cliente__container-endereco {
