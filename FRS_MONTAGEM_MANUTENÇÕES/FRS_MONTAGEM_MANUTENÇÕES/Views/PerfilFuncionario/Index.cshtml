@@ -1,12 +1,11 @@
-﻿<section class="perfil-func_perfil">
+﻿@model FRS_Montagens_e_Manutenção.Models.Pessoa
+<section class="perfil-func_perfil">
     <div>
         <img src="./img/user.svg" alt="Foto do Usuário">
     </div>
     <div>
-        <h2 class="perfil-func_perfil_titulo">Nome Funcionario</h2>
-        <p class="perfil-func_perfil_texto">CPF: XXX.XXX.XXX-XX</p>
-        <p class="perfil-func_perfil_texto">Email: exemplo@email.com</p>
-        <p class="perfil-func_perfil_texto">Telefone: 17 99777-1122</p>
+        <h2 class="perfil-func_perfil_titulo">Olá @Model.Nome</h2>
+        <p class="perfil-func_perfil_texto">Email: @Model.Email</p>
     </div>
 </section>
 
