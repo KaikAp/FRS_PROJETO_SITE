@@ -16,6 +16,11 @@ namespace FRS_Montagens_e_Manutenção.Models
         #endregion
 
         #region Metodos
+        public void Salvar(Context context)
+        {
+            context.Telefones.Add(this);
+            context.SaveChanges();
+        }
         public List<Telefone> BuscarPorIdPessoa (Context context, int pessoaId)
         {
             var telefones =  context.Telefones.Where(a => a.PessoaId == pessoaId).ToList();

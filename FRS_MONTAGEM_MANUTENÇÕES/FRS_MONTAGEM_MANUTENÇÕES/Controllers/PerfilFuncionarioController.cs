@@ -7,7 +7,7 @@ using Repository;
 
 namespace FRS_Montagens_e_Manutenção.Controllers
 {
-    [Authorize]
+
     public class PerfilFuncionarioController : Controller
     {
         private Context _context;
@@ -80,7 +80,6 @@ namespace FRS_Montagens_e_Manutenção.Controllers
                 pessoa.Cidade = clienteAlterado.Pessoa.Cidade;
                 pessoa.Email = clienteAlterado.Pessoa.Email;
                 pessoa.Nome = clienteAlterado.Pessoa.Nome;
-                pessoa.DataNascimento = clienteAlterado.Pessoa.DataNascimento;
                 pessoa.Uf = clienteAlterado.Pessoa.Uf;
                 pessoa.Rua = clienteAlterado.Pessoa.Rua;
                 pessoa.NResidencia = clienteAlterado.Pessoa.NResidencia;

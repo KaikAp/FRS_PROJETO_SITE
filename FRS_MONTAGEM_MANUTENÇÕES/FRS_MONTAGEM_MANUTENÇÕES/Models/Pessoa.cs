@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using System.ComponentModel.DataAnnotations;
+using NuGet.Protocol.Plugins;
 
 namespace FRS_Montagens_e_Manutenção.Models
 {
@@ -15,7 +16,6 @@ namespace FRS_Montagens_e_Manutenção.Models
         public string Email { get; set; }
         public string Nome { get; set; }
         public string Senha { get; set; }
-        public DateTime DataNascimento { get; set; }
         public string Uf { get; set; }
         public string Cidade { get; set; }
         public string Bairro { get; set; }
@@ -38,9 +38,51 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         #region Metodos
 
-        private void addPessoasFuncionario()
+        public Dictionary<string, string> Salvar(Context context)
         {
+            Dictionary<string, string> erros =
+                new Dictionary<string, string>();
 
+            if (Nome.Length > 50)
+            {
+                erros.Add("Nome", "Este campo deve possuir no máximo 50 caracteres");
+            }
+            if (Email.Length > 50)
+            {
+                erros.Add("Email", "Este campo deve possuir no máximo 50 caracteres");
+            }
+            if (Senha.Length > 100)
+            {
+                erros.Add("Senha", "Este campo deve possuir no máximo 100 caracteres");
+            }
+            if (Cidade.Length > 30)
+            {
+                erros.Add("Cidade", "Este campo deve possuir no máximo 30 caracteres");
+            }
+            if (Bairro.Length > 30)
+            {
+                erros.Add("Bairro", "Este campo deve possuir no máximo 30 caracteres");
+            }
+            if (Rua.Length > 100)
+            {
+                erros.Add("Rua", "Este campo deve possuir no máximo 100 caracteres");
+            }
+            if (NResidencia.Length > 5)
+            {
+                erros.Add("NResidencia", "Este campo deve possuir no máximo 5 caracteres");
+            }
+            if (Cep.Length > 8)
+            {
+                erros.Add("Cep", "Este campo deve possuir no máximo 8 caracteres");
+            }
+
+            if (erros.Count == 0)
+            {
+                context.Pessoas.Add(this);
+                context.SaveChanges();
+            }
+
+            return erros;
         }
 
         public List<Pessoa> BuscarPessoas(Context _context)
@@ -57,7 +99,7 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         public void Logar(Pessoa pessoa, Context _context)
         {
-//_context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
+            //_context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
             
             if (pessoa.Nome == "admin123" && pessoa.Senha == "admin123")
             {
