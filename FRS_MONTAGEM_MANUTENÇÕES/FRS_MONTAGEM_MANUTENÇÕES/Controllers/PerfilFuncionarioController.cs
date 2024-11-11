@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FRS_MONTAGEM_MANUTENÇÕES.Models.ViewModels;
+using FRS_Montagens_e_Manutenção.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Repository;
 
@@ -14,7 +17,7 @@ namespace FRS_Montagens_e_Manutenção.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(Pessoa pessoa)
         {
             List<Cliente> cliente = new Cliente().BuscarTodos(_context).ToList();
 
@@ -22,7 +25,7 @@ namespace FRS_Montagens_e_Manutenção.Controllers
 
             ViewBag.Cliente = ClienteList;
             
-            return View();
+            return View("index", pessoa);
         }
 
         public IActionResult ClientePedidos(int id)

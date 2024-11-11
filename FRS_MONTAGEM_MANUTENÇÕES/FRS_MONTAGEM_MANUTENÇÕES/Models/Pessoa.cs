@@ -1,8 +1,10 @@
 ﻿using FRS_MONTAGEM_MANUTENÇÕES.Models;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Repository;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 
 namespace FRS_Montagens_e_Manutenção.Models
 {
@@ -51,16 +53,6 @@ namespace FRS_Montagens_e_Manutenção.Models
         {
             var pessoa = _context.Pessoas.Where(a => a.Id == id).FirstOrDefault();
             return pessoa;
-        }
-        public void Logar(Pessoa pessoa, Context _context)
-        {
-//_context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
-            
-            if (pessoa.Nome == "admin123" && pessoa.Senha == "admin123")
-            {
-               
-            }
-
         }
 
         #endregion
