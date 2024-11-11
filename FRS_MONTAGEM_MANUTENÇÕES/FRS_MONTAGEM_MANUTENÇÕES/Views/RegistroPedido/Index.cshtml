@@ -1,4 +1,361 @@
-﻿<div class="d-flex flex-column align-items-center semi-main">
+﻿<main class="d-flex flex-column align-items-center">
+    <form action="submit" id="pedidoForm" class="formulario col-9 my-5">
+        <h3 class="text-center my-5">CRIAR UM NOVO PEDIDO</h3>
+        <div class="inputs w-75 m-auto">
+            <div class="my-3 d-flex align-content-center justify-content-between w-100">
+                <span style="width: 60%;">
+                    <p class="ms-4 my-2">CNPJ:</p>
+                    <select class="form-control" id="Cliente" asp-items="@ViewBag.Categorias">
+                        <option></option>
+                    </select>
+                </span>
+                <span>
+                    <p class="ms-4 my-2">Data de Início</p>
+                    <input type="date" id="dataInicioProjeto" class="h-50 px-3">
+                </span>
+            </div>
+            <div class="my-3 d-flex align-content-center justify-content-between w-100">
+                <span style="width: 60%;">
+                    <p class="ms-4 my-2">Nome do Projeto:</p>
+                    <input type="text" id="nomePedido" class="h-50 mb-2 px-3">
+                </span>
+                <span>
+                    <p class="ms-4 my-2">Data de Término</p>
+                    <input type="date" id="dataFimProjeto" class="h-50 px-3">
+                </span>
+            </div>
+            <br>
+            <div class="my-3">
+                <p class="ms-4 my-2">Descrição do Projeto:</p>
+                <textarea rows="5" id="descricaoPedido" class="h-75 mb-4 p-3"></textarea>
+            </div>
+
+            <!-- Container para os tópicos, logo abaixo da Descrição do Projeto -->
+            <div class="my-3" id="topicosContainer"></div>
+
+            <div class="botoes col-12 mx-auto my-5 d-flex justify-content-around flex-wrap">
+                <button class="cancelar fw-bold py-2 px-4" style="border: solid 0.7px #ffc846;">Cancelar</button>
+                <button type="submit" class="continuar fw-bold py-2 px-4 d-flex align-items-center justify-content-evenly" type="submit">
+                    Salvar
+                    <svg width="25" height="20" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L1 13" stroke="#000000" stroke-width="2" />
+                    </svg>
+                </button>
+                <!-- Botão para adicionar novos tópicos -->
+                <button type="button" class="continuar fw-bold py-2 px-4 mt-4 d-flex align-items-center justify-content-evenly btn-adicionar-topico">
+                    Adicionar Tópico
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 6L12 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                        <path d="M18 12L6 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        // Seleciona o container onde os tópicos serão adicionados
+        const topicosContainer = document.getElementById("topicosContainer");
+
+        // Inicializa o contador de tópicos
+        let topicoCount = 0;
+
+        // Função para adicionar um novo tópico
+        function adicionarTopico() {
+            topicoCount++; // Incrementa o contador de tópicos
+
+            // Cria o container do novo tópico
+            const topicoDiv = document.createElement("div");
+            topicoDiv.classList.add("my-3");
+
+            // Cria o título do tópico
+            const topicoLabel = document.createElement("p");
+            topicoLabel.classList.add("ms-4", "my-2");
+            topicoLabel.innerText = `Tópico ${topicoCount}:`;
+            topicoDiv.appendChild(topicoLabel);
+
+            // Cria o input do nome do tópico
+            const topicoInput = document.createElement("input");
+            topicoInput.type = "text";
+            topicoInput.id = `topico_${topicoCount}`;
+            topicoInput.classList.add("h-25", "mb-2", "px-3", "py-2", "w-100");
+            topicoDiv.appendChild(topicoInput);
+
+            // Cria um container para as datas de início e fim do tópico
+            const dataContainer = document.createElement("div");
+            dataContainer.classList.add("d-flex", "justify-content-between", "w-100", "mt-3");
+
+            // Adiciona o rótulo e o input para Data de Início
+            const dataInicioDiv = document.createElement("div");
+            dataInicioDiv.classList.add("w-50", "me-2");
+
+            const dataInicioLabel = document.createElement("p");
+            dataInicioLabel.classList.add("ms-4", "my-2");
+            dataInicioLabel.innerText = "Data Início";
+            dataInicioDiv.appendChild(dataInicioLabel);
+
+            const dataInicioInput = document.createElement("input");
+            dataInicioInput.type = "date";
+            dataInicioInput.id = `topico_inicio_${topicoCount}`;
+            dataInicioInput.classList.add("h-25", "mb-2", "px-3", "py-2", "w-100");
+            dataInicioDiv.appendChild(dataInicioInput);
+
+            dataContainer.appendChild(dataInicioDiv);
+
+            // Adiciona o rótulo e o input para Data de Fim
+            const dataFimDiv = document.createElement("div");
+            dataFimDiv.classList.add("w-50", "ms-2");
+
+            const dataFimLabel = document.createElement("p");
+            dataFimLabel.classList.add("ms-4", "my-2");
+            dataFimLabel.innerText = "Data Fim";
+            dataFimDiv.appendChild(dataFimLabel);
+
+            const dataFimInput = document.createElement("input");
+            dataFimInput.type = "date";
+            dataFimInput.id = `topico_fim_${topicoCount}`;
+            dataFimInput.classList.add("h-25", "mb-2", "px-3", "py-2", "w-100");
+            dataFimDiv.appendChild(dataFimInput);
+
+            dataContainer.appendChild(dataFimDiv);
+
+            // Adiciona o container de datas abaixo do input do tópico
+            topicoDiv.appendChild(dataContainer);
+
+            // Container para os subtópicos do tópico
+            const subtopicosContainer = document.createElement("div");
+            subtopicosContainer.classList.add("subtopicos-container", "my-2");
+            subtopicosContainer.id = `subtopicosContainer${topicoCount}`;
+            topicoDiv.appendChild(subtopicosContainer);
+
+            // Inicializa o contador de subtópicos para o tópico atual
+            let subtopicoCount = 1;
+
+            // Função para adicionar um subtópico ao tópico atual
+            function adicionarSubtopico() {
+                const subtopicoDiv = document.createElement("div");
+                subtopicoDiv.classList.add("my-3");
+
+                const subtopicoLabel = document.createElement("p");
+                subtopicoLabel.classList.add("ms-4", "my-2");
+                subtopicoLabel.innerText = `Subtópico ${topicoCount}.${subtopicoCount}:`;
+                subtopicoDiv.appendChild(subtopicoLabel);
+
+                const subtopicoInput = document.createElement("input");
+                subtopicoInput.type = "text";
+                subtopicoInput.id = `subtopico_${subtopicoCount}_${topicoCount}`;
+                subtopicoInput.classList.add("h-25", "mb-2", "px-3", "py-2", "w-100");
+                subtopicoDiv.appendChild(subtopicoInput);
+
+                // Cria um container para as datas de início e fim do subtópico
+                const dataSubContainer = document.createElement("div");
+                dataSubContainer.classList.add("d-flex", "justify-content-between", "w-100", "mt-3");
+
+                // Data de Início para o Subtópico
+                const dataInicioSubDiv = document.createElement("div");
+                dataInicioSubDiv.classList.add("w-50", "me-2");
+
+                const dataInicioSubLabel = document.createElement("p");
+                dataInicioSubLabel.classList.add("ms-4", "my-2");
+                dataInicioSubLabel.innerText = "Data Início";
+                dataInicioSubDiv.appendChild(dataInicioSubLabel);
+
+                const dataInicioSubInput = document.createElement("input");
+                dataInicioSubInput.type = "date";
+                dataInicioSubInput.id = `subtopico_inicio_${subtopicoCount}_${topicoCount}`;
+                dataInicioSubInput.classList.add("h-25", "mb-2", "px-3", "py-2", "w-100");
+                dataInicioSubDiv.appendChild(dataInicioSubInput);
+
+                dataSubContainer.appendChild(dataInicioSubDiv);
+
+                // Data de Fim para o Subtópico
+                const dataFimSubDiv = document.createElement("div");
+                dataFimSubDiv.classList.add("w-50", "ms-2");
+
+                const dataFimSubLabel = document.createElement("p");
+                dataFimSubLabel.classList.add("ms-4", "my-2");
+                dataFimSubLabel.innerText = "Data Fim";
+                dataFimSubDiv.appendChild(dataFimSubLabel);
+
+                const dataFimSubInput = document.createElement("input");
+                dataFimSubInput.type = "date";
+                dataFimSubInput.id = `subtopico_fim_${subtopicoCount}_${topicoCount}`;
+                dataFimSubInput.classList.add("h-25", "mb-2", "px-3", "py-2", "w-100");
+                dataFimSubDiv.appendChild(dataFimSubInput);
+
+                dataSubContainer.appendChild(dataFimSubDiv);
+
+                // Adiciona o container de datas abaixo do input do subtópico
+                subtopicoDiv.appendChild(dataSubContainer);
+
+                // Adiciona o container do subtópico ao container dos subtópicos
+                subtopicosContainer.appendChild(subtopicoDiv);
+                subtopicoCount++;
+            }
+
+            // Adiciona o primeiro subtópico ao tópico
+            adicionarSubtopico();
+
+            // Botão para adicionar novos subtópicos ao tópico
+            const addSubtopicoButton = document.createElement("button");
+            addSubtopicoButton.type = "button";
+            addSubtopicoButton.classList.add("my-2", "ms-4", "btn-adicionar-subtopico", "continuar");
+            addSubtopicoButton.innerText = "Adicionar Subtópico";
+            addSubtopicoButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                adicionarSubtopico();
+            });
+
+            // Adiciona o botão "Adicionar Subtópico" ao container do tópico
+            topicoDiv.appendChild(addSubtopicoButton);
+
+            // Adiciona o container do novo tópico ao container principal
+            topicosContainer.appendChild(topicoDiv);
+        }
+
+        // Adiciona o evento de clique ao botão "Adicionar Tópico"
+        document.querySelector(".btn-adicionar-topico").addEventListener("click", (e) => {
+            e.preventDefault();
+            adicionarTopico();
+        });
+
+        document.getElementById("pedidoForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Captura dados principais do pedido
+            const nomePedido = document.getElementById("nomePedido").value;
+            const descricaoPedido = document.getElementById("descricaoPedido").value;
+            const cliente = document.getElementById("Cliente").value;
+            const dataInicioProjeto = document.getElementById("dataInicioProjeto").value;
+            const dataFimProjeto = document.getElementById("dataFimProjeto").value;
+
+            // Cria array para armazenar os tópicos
+            const topicos = [];
+            for (let i = 1; i <= topicoCount; i++) {
+                const topicoNome = document.getElementById(`topico_${i}`);
+                const dataInicioTopico = document.getElementById(`topico_inicio_${i}`);
+                const dataFimTopico = document.getElementById(`topico_fim_${i}`);
+
+                if (topicoNome) {
+                    const subtopicos = [];
+                    const subtopicosContainer = document.getElementById(`subtopicosContainer${i}`);
+
+                    // Seleciona todos os inputs de subtópico para o tópico atual
+                    const subtopicoElements = subtopicosContainer.querySelectorAll(`input[type="text"][id^="subtopico_"]`);
+
+                    subtopicoElements.forEach((subtopicoInput) => {
+                        const subtopicoIdParts = subtopicoInput.id.split("_");
+                        const subtopicoIndex = subtopicoIdParts[1]; // Extrair o índice do subtópico
+
+                        const dataInicioSub = document.getElementById(`subtopico_inicio_${subtopicoIndex}_${i}`);
+                        const dataFimSub = document.getElementById(`subtopico_fim_${subtopicoIndex}_${i}`);
+
+                        subtopicos.push({
+                            nome: subtopicoInput.value,
+                            dataInicio: dataInicioSub ? dataInicioSub.value : null,
+                            dataFim: dataFimSub ? dataFimSub.value : null
+                        });
+                    });
+
+                    topicos.push({
+                        nome: topicoNome.value,
+                        dataInicio: dataInicioTopico ? dataInicioTopico.value : null,
+                        dataFim: dataFimTopico ? dataFimTopico.value : null,
+                        subtopicos: subtopicos
+                    });
+                }
+            }
+
+            // Monta o objeto PedidoData com todas as informações
+            const pedidoData = {
+                ClienteId: cliente,
+                nomePedido: nomePedido,
+                descricaoPedido: descricaoPedido,
+                dataInicioProjeto: dataInicioProjeto,
+                dataFimProjeto: dataFimProjeto,
+                topicos: topicos
+            };
+            
+            console.log(pedidoData);
+            
+            // Envia os dados para o backend com fetch
+            fetch("/RegistroPedido/ReceberDados", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(pedidoData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Pedido enviado com sucesso!");
+                    } else {
+                        alert("Erro ao enviar o pedido.");
+                    }
+                })
+                .catch(error => console.error("Erro:", error));
+        });
+    </script>
+</main>
+
+
+
+
+<style>
+    main {
+        color: #FFC846;
+        padding: 0;
+        margin: 0;
+    }
+
+    .formulario {
+        background-color: #191919CC;
+        border-radius: 2vw;
+        width: 60%;
+    }
+
+
+    input, textarea {
+        background-color: #292929;
+        outline: none;
+        border: none;
+        color: #fff;
+        width: 100%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .formulario p {
+        font-weight: 600;
+    }
+
+
+    .botoes button {
+        border-radius: 0.5vw;
+        width: 40%;
+    }
+
+    .continuar {
+        background: #FFC846;
+        border: none;
+    }
+
+    .cancelar {
+        background: #121212;
+        color: #FFC846;
+    }
+
+    .continuar:hover {
+        background: #e0ae37;
+    }
+
+    .cancelar:hover {
+        background: #141414;
+        color: #e0ae37;
+        border: #e0ae37;
+    }
+</style>
+@* <div class="d-flex flex-column align-items-center semi-main">
     <form id="pedidoForm" class="formulario col-6 my-5">
         <h3 class="text-center my-5">CRIAR UM NOVO PEDIDO</h3>
         <h5 class="text-end mx-5 fs-6 mb-4">ID Pedido <span class="m-4 p-2" style="background-color: rgba(0, 0, 0, 0.112);">102.XXX.XXX</span></h5>
@@ -172,4 +529,4 @@
                 .catch(error => console.error("Erro:", error));
         });
     </script>
-</div>
+</div> *@

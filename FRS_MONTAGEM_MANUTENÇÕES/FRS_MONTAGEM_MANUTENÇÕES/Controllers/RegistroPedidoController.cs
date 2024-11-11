@@ -7,7 +7,6 @@ using Repository;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
-    [Authorize]
     public class RegistroPedidoController : Controller
     {
         private Context _context;
@@ -34,49 +33,50 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
         {
             try
             {
-
-                if (ModelState.IsValid)
+                // Cria a instância de Pedido a partir da ViewModel
+                var pedido = new Pedido
                 {
-                    // Cria a instância de Pedido a partir da ViewModel
-                    var pedido = new Pedido
+                    Nome = model.NomePedido,
+                    Descricao = model.DescricaoPedido,
+                    FuncionarioId = 1,
+                    ClienteId = model.ClienteId,
+                    DataInicio = model.dataInicioProjeto,
+                    DataTermino = model.dataFimProjeto,
+                    Topicos = new List<Topico>()
+                };
+
+                // Mapeia cada Topico da ViewModel para a entidade Topico
+                foreach (var topicoViewModel in model.Topicos)
+                {
+                    var topico = new Topico
                     {
-                        Nome = model.NomePedido,
-                        Descricao = model.DescricaoPedido,
-                        FuncionarioId = 1,
-                        ClienteId = model.ClienteId,
-                        DataInicio = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day),
-                        Topicos = new List<Topico>()
+                        Nome = topicoViewModel.Nome,
+                        DataInicio = topicoViewModel.dataInicio,
+                        DataTermino = topicoViewModel.dataFim,
+                        SubTopicos = new List<SubTopico>()
                     };
 
-                    // Mapeia cada Topico da ViewModel para a entidade Topico
-                    foreach (var topicoViewModel in model.Topicos)
+                    // Mapeia cada Passo da ViewModel para a entidade Passo
+                    foreach (var passoViewModel in topicoViewModel.SubTopicos)
                     {
-                        var topico = new Topico
+                        var passo = new SubTopico
                         {
-                            Nome = topicoViewModel.Nome,
-                            SubTopicos = new List<SubTopico>()
+                            Nome = passoViewModel.Nome,
+                            DataInicio = passoViewModel.dataInicio,
+                            DataTermino = passoViewModel.dataFim
                         };
 
-                        // Mapeia cada Passo da ViewModel para a entidade Passo
-                        foreach (var passoViewModel in topicoViewModel.Passos)
-                        {
-                            var passo = new SubTopico
-                            {
-                                Nome = passoViewModel.Nome
-                            };
-
-                            topico.SubTopicos.Add(passo); // Adiciona o passo ao tópico
-                        }
-
-                        pedido.Topicos.Add(topico); // Adiciona o tópico ao pedido
+                        topico.SubTopicos.Add(passo); // Adiciona o passo ao tópico
                     }
 
-                    pedido.Salvar(_context);
-
-                    return RedirectToAction("Index"); // Redireciona para a página de confirmação ou listagem
+                    pedido.Topicos.Add(topico); // Adiciona o tópico ao pedido
                 }
 
-                return View(model); // Retorna a view com erros de validação, se houver
+                pedido.Salvar(_context);
+
+                return RedirectToAction("Index", "PerfilFuncionario");
+                // Redireciona para a página de confirmação ou listagem
+
             }
             catch (DbUpdateException ex)
             {
@@ -93,6 +93,8 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
     {
         public int ClienteId { get; set; }
         public string NomePedido { get; set; }
+        public DateTime dataInicioProjeto { get; set; }
+        public DateTime dataFimProjeto { get; set; }
         public string DescricaoPedido { get; set; }
         public List<TopicoViewModel> Topicos { get; set; }
     }
@@ -100,11 +102,15 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
     public class TopicoViewModel
     {
         public string Nome { get; set; }
-        public List<SubTopicoViewModel> Passos { get; set; }
+        public DateTime dataInicio { get; set; }
+        public DateTime? dataFim { get; set; }
+        public List<SubTopicoViewModel> SubTopicos { get; set; }
     }
 
     public class SubTopicoViewModel
     {
         public string Nome { get; set; }
+        public DateTime dataInicio { get; set; }
+        public DateTime? dataFim { get; set; }
     }
 }

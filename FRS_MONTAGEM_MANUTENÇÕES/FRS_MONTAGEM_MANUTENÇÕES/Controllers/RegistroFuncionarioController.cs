@@ -8,7 +8,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
     [Authorize]
     public class RegistroFuncionarioController : Controller
     {
-        private readonly Context _context;
 
         // GET: CadastroController
         public ActionResult Index()

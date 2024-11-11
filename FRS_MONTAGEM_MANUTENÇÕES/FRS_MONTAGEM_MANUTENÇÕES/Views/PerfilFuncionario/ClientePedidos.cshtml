@@ -39,23 +39,27 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
-        @foreach (var pedido in Model.Pedidos)
-        {
-            var duracao = (DateTime.Now - pedido.DataInicio).Days;
-            var descricaoCurta = pedido.Descricao.Length > 30 ? pedido.Descricao.Substring(0, 30) + "..." : pedido.Descricao;
+    @if(Model.Pedidos.Count > 0)
+    {
+        <tbody>
+            @foreach (var pedido in Model.Pedidos)
+            {
+                var duracao = (DateTime.Now - pedido.DataInicio).Days;
+                var descricaoCurta = pedido.Descricao.Length > 30 ? pedido.Descricao.Substring(0, 30) + "..." : pedido.Descricao;
 
-            <tr>
-                <td class="table-cell" style="text-align: center;">@pedido.Id</td>
-                <td class="table-cell">@pedido.Nome</td>
-                <td class="table-cell">@descricaoCurta</td>
-                <td class="table-cell">@pedido.DataInicio.ToString("dd/MM/yyyy")</td>
-                <td class="table-cell">@(pedido.DataTermino.HasValue ? pedido.DataTermino.Value.ToString("dd/MM/yyyy") : "Não definido")</td>
-                <td style="padding-left: 10px;">@duracao dias</td>
-                <td class="table-cell">
-                    <a href="@Url.Action("Edit", "Pedido", new { id = pedido.Id })" target="_blank">Editar</a>
-                </td>
-            </tr>
-        }
-    </tbody>
+                <tr>
+                    <td class="table-cell" style="text-align: center;">@pedido.Id</td>
+                    <td class="table-cell">@pedido.Nome</td>
+                    <td class="table-cell">@descricaoCurta</td>
+                    <td class="table-cell">@pedido.DataInicio.ToString("dd/MM/yyyy")</td>
+                    <td class="table-cell">@(pedido.DataTermino.HasValue ? pedido.DataTermino.Value.ToString("dd/MM/yyyy") : "Não definido")</td>
+                    <td class="table-cell" >@duracao dias</td>
+                    <td style="padding-left: 10px;">
+                        <a href="@Url.Action("Edit", "Pedido", new { id = pedido.Id })" target="_blank">Editar</a>
+                        <a href="@Url.Action("ConfirmDelete", "Pedido", new { id = pedido.Id })" target="_blank">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    }
 </table>

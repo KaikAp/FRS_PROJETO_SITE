@@ -31,7 +31,7 @@ namespace FRS_Montagens_e_Manutenção.Controllers
         public IActionResult ClientePedidos(int id)
         {
             Pessoa pessoa = new Pessoa().BuscarPorId(_context, id);
-            Cliente cliente = new Cliente().BuscarPorId(_context, pessoa.Id);
+            Cliente cliente = new Cliente().BuscarPorIdPessoa(_context, pessoa.Id);
             List<Telefone> telefones = new Telefone().BuscarPorIdPessoa(_context, pessoa.Id);
             List<Pedido> pedidos = new Pedido().BuscarTodosPorIdCliente(_context, cliente.Id);
 
