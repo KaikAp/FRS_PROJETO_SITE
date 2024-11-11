@@ -1,4 +1,5 @@
 ﻿using FRS_Montagens_e_Manutenção.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using Repository;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
+    [Authorize]
     public class RegistroPedidoController : Controller
     {
         private Context _context;

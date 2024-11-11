@@ -1,9 +1,15 @@
-using FRS_MONTAGEM_MANUTENÇÕES.Repository;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Service authenticate
+builder.Services
+    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie((Option) =>
+    {
+        Option.LoginPath = "/login";
+    });
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>(options =>
@@ -11,7 +17,7 @@ builder.Services.AddDbContext<Context>(options =>
 
 var app = builder.Build();
 
-// Create database if it does not exist and initialize data
+// Create database if it does not exist (similar to DbInitializer logic)
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;

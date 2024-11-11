@@ -1,6 +1,6 @@
 ﻿using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.AspNetCore.Mvc;
-using Repository;
+using System.Security.Claims;
 
 namespace FRS_Montagens_e_Manutenção.Controllers
 {
@@ -21,9 +21,9 @@ namespace FRS_Montagens_e_Manutenção.Controllers
         {
             try
             {
-                _pessoa.Logar(_pessoa, _context);
-                return View();
-
+              
+                
+                List<Claim> claims = [new ]
             }
             catch (Exception ex)
             {

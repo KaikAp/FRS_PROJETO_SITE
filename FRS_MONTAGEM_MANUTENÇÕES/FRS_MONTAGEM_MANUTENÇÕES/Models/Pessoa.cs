@@ -48,9 +48,9 @@ namespace FRS_Montagens_e_Manutenção.Models
         public void Logar(Pessoa pessoa, Context _context)
         {
             var pessoas = _context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
-            if (pessoas != null)
+            if (pessoas == null)
             {
-                
+                return
             }
 
         }

@@ -1,9 +1,11 @@
 ﻿using FRS_Montagens_e_Manutenção.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repository;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
+    [Authorize]
     public class RegistroFuncionarioController : Controller
     {
         private readonly Context _context;
