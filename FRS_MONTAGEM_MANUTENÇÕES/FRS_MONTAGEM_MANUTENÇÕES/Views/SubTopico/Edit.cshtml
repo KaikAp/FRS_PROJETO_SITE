@@ -1,0 +1,36 @@
+﻿@using FRS_Montagens_e_Manutenção.Models;
+
+@model SubTopico
+
+<main class="container">
+    <a href="javascript:void(0);" onclick="window.close();" class="voltar-link">
+        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.125 1.25L4.875 10.5L14.125 19.75" stroke="#FFC846" stroke-width="3" />
+        </svg>
+        Voltar
+    </a>
+
+    <form class="formulario" asp-action="Edit" style="width: 95%;">
+        <div class="d-flex justify-content-between" style="width: 80%;">
+            <span style="width: 65%;">
+                <h3>Nome do Passo</h3>
+                <input type="text" asp-for="Nome">
+            </span>
+        </div>
+
+        <div class="d-flex justify-content-between" style="width: 45%;">
+            <span>
+                <h3>Data de Inicio</h3>
+                <input type="date" asp-for="DataInicio">
+            </span>
+            <span>
+                <h3>Data de Término</h3>
+                <input type="date" asp-for="DataTermino">
+            </span>
+        </div>
+        <div class="edit-btn">
+            <button style="background-color: #171717; color: #ffc846; border: solid 0.5px #ffc846;">Cancelar</button>
+            <button type="submit">Salvar</button>
+        </div>
+    </form>
+</main>

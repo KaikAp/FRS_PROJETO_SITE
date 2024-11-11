@@ -1,4 +1,7 @@
-﻿namespace FRS_Montagens_e_Manutenção.Models
+﻿using Microsoft.EntityFrameworkCore;
+using Repository;
+
+namespace FRS_Montagens_e_Manutenção.Models
 {
     public class Topico
     {
@@ -18,6 +21,23 @@
         #endregion
 
         #region Metodos
+        public List<Topico> BusccarPorIdPedido(Context context, int id)
+        {
+            List<Topico> topicos = context.Topicos.Where(a => a.PedidoId == id).ToList();
+            return topicos;
+        }
+
+        public Topico BuscarPorId(Context context, int Id)
+        {
+            Topico topico = context.Topicos.Where(a => a.Id == Id).FirstOrDefault();
+            return topico;
+        }
+
+        public void Alterar(Context context)
+        {
+            context.Entry(this).State = EntityState.Modified;
+            context.SaveChanges();
+        }
         #endregion
     }
 }

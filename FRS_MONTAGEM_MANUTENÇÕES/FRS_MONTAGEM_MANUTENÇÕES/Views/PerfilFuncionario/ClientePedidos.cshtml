@@ -1,0 +1,61 @@
+﻿@using FRS_MONTAGEM_MANUTENÇÕES.Models.ViewModels
+
+@model ClientePedido
+<style>
+    .table-cell {
+        border-right: 1px solid white;
+        padding-left: 10px; /* Ajuste o valor para a margem desejada */
+    }
+</style>
+<section class="perfil-cliente_perfil"
+         style="border: 1px solid #000000;
+        margin: 5%;
+        border-radius: 25px;
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        padding: 3rem;">
+    <div>
+        <h2 class="perfil-cliente_titulo">@Model.Pessoa.Nome</h2>
+        <p class="perfil-cliente_texto">CNPJ: @Model.Cliente.Cnpj</p>
+        <p class="perfil-cliente_texto">Email: @Model.Pessoa.Email</p>
+
+    </div>
+</section>
+
+<div class="perfil-cliente_container">
+    <h5>Pedidos</h5>
+</div>
+
+<table>
+    <thead class="perfil-cliente_table_cabecalho">
+        <tr>
+            <th>ID PEDIDO</th>
+            <th>PROJETO</th>
+            <th>Descrição</th>
+            <th>Data Inicio</th>
+            <th>Data Fim</th>
+            <th>Duracao</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pedido in Model.Pedidos)
+        {
+            var duracao = (DateTime.Now - pedido.DataInicio).Days;
+            var descricaoCurta = pedido.Descricao.Length > 30 ? pedido.Descricao.Substring(0, 30) + "..." : pedido.Descricao;
+
+            <tr>
+                <td class="table-cell" style="text-align: center;">@pedido.Id</td>
+                <td class="table-cell">@pedido.Nome</td>
+                <td class="table-cell">@descricaoCurta</td>
+                <td class="table-cell">@pedido.DataInicio.ToString("dd/MM/yyyy")</td>
+                <td class="table-cell">@(pedido.DataTermino.HasValue ? pedido.DataTermino.Value.ToString("dd/MM/yyyy") : "Não definido")</td>
+                <td style="padding-left: 10px;">@duracao dias</td>
+                <td class="table-cell">
+                    <a href="@Url.Action("Edit", "Pedido", new { id = pedido.Id })" target="_blank">Editar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

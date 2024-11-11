@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F.R.S. Montagens e manutenção</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/Registros.css" />
-    <link rel="icon" href="./img/logo3-semfundo.png" type="image/png">
-    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="@Url.Content("~/css/index.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/Registros.css")" />
+    <link rel="icon" href="@Url.Content("~/img/logo3-semfundo.png")" type="image/png">
+    <link rel="stylesheet" href="@Url.Content("~/css/Edit.css")" />
+    <link href="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.min.css")" rel="stylesheet" />
 </head>
 <body style="background-color: #1E1E1E !important">
         <header class="header">
-            <a href="index.html"><img src="./img/Logo_txt.svg" alt="Logo da FRS Montagens"></a>
+        <a href="index.html"><img src="@Url.Content("~/img/Logo_txt.svg")" alt="Logo da FRS Montagens"></a>
             <nav class="navbar">
                 <ul>
                 <li class="nav-link"><a asp-controller="home" asp-action="Index">Inicio</a></li>
@@ -71,9 +72,9 @@
         <h5>&copy; Todos os direitos reservados</h5>
     </footer>
     <script src="https://kit.fontawesome.com/04ab88e5e7.js" crossorigin="anonymous"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/jquery/dist/jquery.min.js")"></script>
+    <script src="@Url.Content("~/lib/bootstrap/dist/js/bootstrap.bundle.min.js")"></script>
+    <script src="@Url.Content("~/js/site.js")" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -21,7 +21,7 @@ namespace FRS_Montagens_e_Manutenção.Models
         public string Rua { get; set; }
         public string NResidencia { get; set; }
         public string Cep { get; set; }
-        public bool Ativo { get; set; }
+        public bool? Ativo { get; set; }
         public virtual List<Cliente> Clientes { get; set; }
 
         // Relacionamento com Funcionario
@@ -47,6 +47,11 @@ namespace FRS_Montagens_e_Manutenção.Models
             List<Pessoa> pessoas = _context.Pessoas.ToList();
         }
 
+        public Pessoa BuscarPorIdCliente(Context _context, int id)
+        {
+            var pessoa = _context.Pessoas.Where(a => a.Id == id).FirstOrDefault();
+            return pessoa;
+        }
         public void Logar(Pessoa pessoa, Context _context)
         {
 //_context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();

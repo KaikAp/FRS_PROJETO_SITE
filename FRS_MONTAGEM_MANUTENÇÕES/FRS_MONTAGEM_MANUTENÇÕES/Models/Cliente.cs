@@ -32,6 +32,20 @@ namespace FRS_Montagens_e_Manutenção.Models
             List<Cliente> cliente = context.Clientes.Include(c => c.Pessoa).ToList();
             return cliente;
         }
+
+        public Cliente BuscarPorId(Context context, int id)
+        {
+            Cliente cliente = context.Clientes.Where(a => a.Id.Equals(id)).FirstOrDefault();
+            return cliente;
+        }
+
+        public void FormatarCnpj()
+        {
+            if (!string.IsNullOrEmpty(Cnpj) || Cnpj.Length == 14)
+            {
+                this.Cnpj = $"{Cnpj.Substring(0, 2)}.{Cnpj.Substring(2, 3)}.{Cnpj.Substring(5, 3)}/{Cnpj.Substring(8, 4)}-{Cnpj.Substring(12, 2)}";
+            }
+        }
         #endregion
     }
 }
