@@ -1,3 +1,5 @@
+using FRS_MONTAGEM_MANUTENÇÕES.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 
@@ -6,10 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Service authenticate
 builder.Services
     .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie((Option) =>
+    .AddCookie(options =>
     {
-        Option.LoginPath = "/login";
+        options.LoginPath = "/login";
     });
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>(options =>
@@ -47,6 +50,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+// Adicione o middleware de autenticação
+app.UseAuthentication();
+
+// Adicione o middleware de autorização
 app.UseAuthorization();
 
 app.MapControllerRoute(

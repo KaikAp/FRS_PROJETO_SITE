@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using FRS_Montagens_e_Manutenção.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FRS_Montagens_e_Manutenção.Controllers
@@ -8,7 +9,7 @@ namespace FRS_Montagens_e_Manutenção.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("index");
         }
     }
 }
