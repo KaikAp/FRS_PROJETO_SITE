@@ -1,11 +1,10 @@
-﻿using FRS_MONTAGEM_MANUTENÇÕES.Models.ViewModels;
-using FRS_Montagens_e_Manutenção.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Repository;
 
 namespace FRS_Montagens_e_Manutenção.Controllers
 {
+    [Authorize]
     public class PerfilFuncionarioController : Controller
     {
         private Context _context;

@@ -1,4 +1,6 @@
 ﻿using FRS_MONTAGEM_MANUTENÇÕES.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using System.ComponentModel.DataAnnotations;
@@ -55,10 +57,11 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         public void Logar(Pessoa pessoa, Context _context)
         {
-            var pessoas = _context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
-            if (pessoas != null)
+//_context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
+            
+            if (pessoa.Nome == "admin123" && pessoa.Senha == "admin123")
             {
-                
+               
             }
 
         }
