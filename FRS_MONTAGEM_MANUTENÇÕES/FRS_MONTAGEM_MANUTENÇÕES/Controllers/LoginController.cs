@@ -41,7 +41,7 @@ namespace FRS_Montagens_e_Manutenção.Controllers
                 var principal = new ClaimsPrincipal(identity);
                 await HttpContext.SignInAsync(authSchema, principal);
 
-                return  View("~/Views/PerfilCliente/Index.cshtml", pessoa);
+                return RedirectToAction("Index", "PerfilCliente");
             }
             else if (_context.Funcionarios.Any(c => c.Cpf == nome) && _context.Pessoas.Any(c => c.Senha == senha))
             {
@@ -56,7 +56,7 @@ namespace FRS_Montagens_e_Manutenção.Controllers
                 var principal = new ClaimsPrincipal(identity);
                 await HttpContext.SignInAsync (authSchema, principal);
 
-                return View("~/Views/PerfilFuncionario/Index.cshtml", pessoa);
+                return RedirectToAction("Index", "PerfilFuncionario");
             }
             else
             {

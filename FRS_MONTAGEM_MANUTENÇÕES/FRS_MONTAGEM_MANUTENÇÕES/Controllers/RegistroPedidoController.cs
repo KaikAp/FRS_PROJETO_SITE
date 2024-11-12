@@ -29,24 +29,24 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
         }
 
         [HttpPost]
-        public IActionResult ReceberDados([FromBody] PedidoViewModel model)
+        public IActionResult ReceberDados([FromBody] PedidoViewModel pedidoData)
         {
             try
             {
                 // Cria a instância de Pedido a partir da ViewModel
                 var pedido = new Pedido
                 {
-                    Nome = model.NomePedido,
-                    Descricao = model.DescricaoPedido,
+                    Nome = pedidoData.NomePedido,
+                    Descricao = pedidoData.DescricaoPedido,
                     FuncionarioId = 1,
-                    ClienteId = model.ClienteId,
-                    DataInicio = model.dataInicioProjeto,
-                    DataTermino = model.dataFimProjeto,
+                    ClienteId = pedidoData.ClienteId,
+                    DataInicio = pedidoData.dataInicioProjeto,
+                    DataTermino = pedidoData.dataFimProjeto,
                     Topicos = new List<Topico>()
                 };
 
                 // Mapeia cada Topico da ViewModel para a entidade Topico
-                foreach (var topicoViewModel in model.Topicos)
+                foreach (var topicoViewModel in pedidoData.Topicos)
                 {
                     var topico = new Topico
                     {

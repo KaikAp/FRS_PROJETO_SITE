@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Repository;
+using System.Security.Claims;
 
 namespace FRS_Montagens_e_Manutenção.Controllers
 {
@@ -17,9 +18,11 @@ namespace FRS_Montagens_e_Manutenção.Controllers
             _context = context;
         }
 
-        public IActionResult Index(Pessoa pessoa)
+        public IActionResult Index()
         {
-            List<Cliente> cliente = new Cliente().BuscarTodos(_context).ToList();
+            int id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            Pessoa pessoa = new Pessoa().BuscarPorId(_context, id);
+            List <Cliente> cliente = new Cliente().BuscarTodos(_context).ToList();
 
             var ClienteList = cliente.Select(c => new SelectListItem() { Text = c.Pessoa.Nome, Value = c.Pessoa.Id.ToString() }).ToList();
 

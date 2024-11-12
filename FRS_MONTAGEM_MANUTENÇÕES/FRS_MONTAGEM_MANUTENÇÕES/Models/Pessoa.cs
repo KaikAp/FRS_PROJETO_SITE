@@ -86,15 +86,9 @@ namespace FRS_Montagens_e_Manutenção.Models
             return erros;
         }
 
-        public List<Pessoa> BuscarPessoas(Context _context)
+        public Pessoa BuscarPorId(Context context, int id)
         {
-             List<Pessoa> pessoas = _context.Pessoas.ToList();
-            return pessoas;
-        }
-
-        public Pessoa BuscarPorId(Context _context, int id)
-        {
-            var pessoa = _context.Pessoas.Where(a => a.Id == id).FirstOrDefault();
+            var pessoa = context.Pessoas.Where(a => a.Id == id).FirstOrDefault();
             return pessoa;
         }
 

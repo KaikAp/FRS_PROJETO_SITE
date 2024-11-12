@@ -1,4 +1,7 @@
-﻿@model FRS_Montagens_e_Manutenção.Models.Pessoa
+﻿@using FRS_MONTAGEM_MANUTENÇÕES.Models.ViewModels
+
+@model ClientePedido
+
 
 <section class="perfil-cliente_perfil" 
     style="border: 1px solid #000000;
@@ -12,8 +15,8 @@
         <img src="./images/user.svg" alt="Foto do Usuário">
     </div>
     <div>
-        <h2 class="perfil-cliente_titulo">Olá @Model.Nome</h2>
-        <p class="perfil-cliente_texto">Email @Model.Email</p>
+        <h2 class="perfil-cliente_titulo">Olá @Model.Pessoa.Nome</h2>
+        <p class="perfil-cliente_texto">Email @Model.Pessoa.Email</p>
     </div>
 </section>
 
@@ -24,30 +27,28 @@
 <table>
     <thead class="perfil-cliente_table_cabecalho">
         <tr>
-            <th>ID PEDIDO</th>
-            <th>PROJETO</th>
-            <th>STATUS</th>
-            <th>% CONCLUIDO</th>
-            <th>DESCRIÇÃO</th>
-            <th></th>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Data de Início</th>
+            <th>Data de Término</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th>0000312</th>
-            <th>Dry Fiber</th>
-            <th>Em Andamento</th>
-            <th>78%</th>
-            <th>Confecção de Tanques</th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>0000387</th>
-            <th>Manutenção Caldeira</th>
-            <th>Concluido</th>
-            <th>100%</th>
-            <th>Troca dos dutos da Caldeira</th>
-            <th></th>
-        </tr>
+        @foreach (var pedido in Model.Pedidos)
+        {
+            <tr>
+                <td>@pedido.Id</td>
+                <td>@pedido.Nome</td>
+                <td>@pedido.Descricao</td>
+                <td>@pedido.DataInicio.ToString("dd/MM/yyyy")</td>
+                <td>@pedido.DataTermino?.ToString("dd/MM/yyyy") ?? "Em andamento"</td>
+                <td>
+                    <!-- Link para expandir o pedido, chamando a ação Detalhes do PedidoController -->
+                    <a href="@Url.Action("Detalhes", "Pedido", new { id = pedido.Id })" class="btn btn-primary">Expandir</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
