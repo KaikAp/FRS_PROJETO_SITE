@@ -78,5 +78,13 @@ namespace FRS_Montagens_e_Manutenção.Controllers
                 return View("~/Views/PerfilFuncionario/Index.cshtml", pessoa);
             }
         }
+
+        public async Task<IActionResult> logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Index", "Login");
+        }
+
+
     }
 }
