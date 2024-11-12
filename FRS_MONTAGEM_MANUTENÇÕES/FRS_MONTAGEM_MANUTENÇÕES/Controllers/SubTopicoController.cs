@@ -1,5 +1,6 @@
 ﻿using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Repository;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
@@ -40,6 +41,38 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
             }
             catch
             {
+                return View();
+            }
+        }
+
+        public IActionResult ConfirmDelete(int id)
+        {
+            var Subtopicos = _context.SubTopicos.FirstOrDefault(p => p.Id == id);
+            if (Subtopicos == null)
+            {
+                return NotFound();
+            }
+
+            return View(Subtopicos);
+        }
+
+        [HttpPost]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            try
+            {
+                var subTopico = _context.SubTopicos.FirstOrDefault(t => t.Id == id);
+                if (subTopico != null)
+                {
+                    subTopico.Remover(_context);
+
+                    _context.SaveChanges();
+                }
+                return RedirectToAction("Index", "PerfilFuncionario");
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine("Erro ao salvar alterações: " + ex.InnerException?.Message);
                 return View();
             }
         }

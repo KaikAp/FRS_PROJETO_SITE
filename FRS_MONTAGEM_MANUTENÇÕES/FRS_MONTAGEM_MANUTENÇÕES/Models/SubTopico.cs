@@ -30,5 +30,11 @@ namespace FRS_Montagens_e_Manutenção.Models
             context.Entry(this).State = EntityState.Modified;
             context.SaveChanges();
         }
+
+        public void Remover(Context context)
+        {
+            context.SubTopicos.Remove(this);
+            context.SaveChanges();
+        }
     }
 }

@@ -1,0 +1,14 @@
+﻿@using FRS_Montagens_e_Manutenção.Models
+
+@model SubTopico
+<main class="d-flex flex-column align-items-center">
+    <form asp-action="DeleteConfirmed" asp-controller="SubTopico" method="post" id="pedidoForm" class="formulario col-9 my-5">
+        <h2 style="color: #ffc846">Confirmação de Exclusão</h2>
+        <p style="color: #ffc846">Você tem certeza de que deseja excluir o pedido <strong>@Model.Nome</strong>?</p>
+        <div>
+            <input type="hidden" asp-for="Id" />
+            <button class="continuar fw-bold py-2 px-4 d-flex align-items-center justify-content-evenly" type="submit">Confirmar Exclusão</button>
+        </div>
+    </form>
+</main>
+
