@@ -83,13 +83,15 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
             var cliente1 = new Cliente
             {
                 PessoaId = pessoa1.Id,
-                Cnpj = "12345678000101"
+                Cnpj = "12345678000101",
+                FuncionarioId = funcionarioMaster.Id
             };
 
             var cliente2 = new Cliente
             {
                 PessoaId = pessoa2.Id,
-                Cnpj = "98765432000199"
+                Cnpj = "98765432000199",
+                FuncionarioId = funcionarioMaster.Id
             };
 
             // Adicionando clientes ao contexto

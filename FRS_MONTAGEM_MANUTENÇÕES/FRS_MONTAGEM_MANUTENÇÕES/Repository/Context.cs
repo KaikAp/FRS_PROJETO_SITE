@@ -135,6 +135,11 @@ namespace Repository
                     .WithOne(p => p.Cliente)
                     .HasForeignKey(p => p.ClienteId)
                     .OnDelete(DeleteBehavior.NoAction);
+
+                t.HasOne(c => c.Funcionario)
+                    .WithMany()
+                    .HasForeignKey(c => c.FuncionarioId)
+                    .OnDelete(DeleteBehavior.NoAction);
             });
 
             modelBuilder.Entity<Funcionario>(t =>

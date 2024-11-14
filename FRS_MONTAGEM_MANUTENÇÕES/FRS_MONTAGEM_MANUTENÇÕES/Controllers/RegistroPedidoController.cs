@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Repository;
+using System.Security.Claims;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
@@ -33,11 +34,13 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
         {
             try
             {
+                int id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+                Funcionario funcionario = new Funcionario().BuscarPorIdPessoa(_context, id);
                 var pedido = new Pedido
                 {
                     Nome = pedidoData.NomePedido,
                     Descricao = pedidoData.DescricaoPedido,
-                    FuncionarioId = 1,
+                    FuncionarioId = funcionario.Id,
                     ClienteId = pedidoData.ClienteId,
                     DataInicio = pedidoData.dataInicioProjeto,
                     DataTermino = pedidoData.dataFimProjeto,

@@ -93,6 +93,16 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                 return View();
             }
         }
+
+        public IActionResult Detalhes(int id)
+        {
+            var pedido = _context.Pedidos
+                .Include(p => p.Topicos)
+                .ThenInclude(t => t.SubTopicos)
+                .FirstOrDefault(p => p.Id == id);
+
+            return View(pedido);
+        }
     }
 }
 

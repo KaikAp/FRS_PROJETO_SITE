@@ -9,7 +9,7 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         public virtual Pessoa Pessoa { get; set; }
         public int PessoaId { get; set; }
-
+        public virtual List<Cliente> Clientes { get; set; }
         public string Cpf { get; set; }
         public virtual List<Pedido> Pedidos { get; set; }
         #endregion

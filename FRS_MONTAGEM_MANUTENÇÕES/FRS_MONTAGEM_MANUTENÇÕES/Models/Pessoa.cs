@@ -56,7 +56,7 @@ namespace FRS_Montagens_e_Manutenção.Models
         {
             var pessoa = context.Pessoas.Where(a => a.Email == email).FirstOrDefault();
 
-            if (pessoa.Senha == senha)
+            if (pessoa.Senha == senha && pessoa.Ativo == true)
             {
                 return pessoa;
             }

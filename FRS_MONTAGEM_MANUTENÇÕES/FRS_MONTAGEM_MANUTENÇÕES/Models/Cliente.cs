@@ -13,7 +13,8 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         public virtual Pessoa Pessoa { get; set; }
         public int PessoaId { get; set; }
-
+        public virtual Funcionario Funcionario { get; set; }
+        public int FuncionarioId { get; set; }
         public string Cnpj { get; set; }
         public virtual List<Pedido> Pedidos { get; set; }
         #endregion
@@ -55,7 +56,7 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         public Cliente BuscarPorIdPessoa(Context context, int id)
         {
-            Cliente cliente = context.Clientes.Where(a => a.PessoaId.Equals(id)).FirstOrDefault();
+            Cliente cliente = context.Clientes.Where(a => a.PessoaId == id).FirstOrDefault();
             return cliente;
         }
 

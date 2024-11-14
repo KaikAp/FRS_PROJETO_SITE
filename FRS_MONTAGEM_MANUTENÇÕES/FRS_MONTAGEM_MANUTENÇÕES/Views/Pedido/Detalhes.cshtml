@@ -1,0 +1,89 @@
+﻿@using FRS_Montagens_e_Manutenção.Models;
+@model Pedido
+
+<main class="container">
+    <div asp-action="Edit" class="formulario" style="width: 95%; margin-top: 3rem">
+        <a href="@Url.Action("Index", "PerfilCliente")" class="btn btn-warning mt-2 mb-2">
+            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.125 1.25L4.875 10.5L14.125 19.75" stroke="#000000" stroke-width="3" />
+            </svg>
+            Voltar
+        </a>
+        <h2 style="font-size: 1.3rem;color: white;">Pedido: @Model.Id</h2>
+        <div style="width: 65%;">
+            <span>
+                <h3>Nome do Projeto:</h3>
+                <input type="text" asp-for="Nome" readonly /> <!-- Bloqueado para edição -->
+            </span>
+        </div>
+        <div>
+            <span>
+                <h3>Descrição do Projeto</h3>
+                <textarea rows="3" class="h-75 mb-4 p-3" asp-for="Descricao" readonly></textarea> <!-- Bloqueado para edição -->
+            </span>
+        </div>
+        <div class="d-flex justify-content-between" style="width: 50%;">
+            <span>
+                <h3>Data de Inicio</h3>
+                <input type="date" asp-for="DataInicio" disabled /> <!-- Bloqueado para edição -->
+            </span>
+            <span>
+                <h3>Data de Término</h3>
+                <input type="date" asp-for="DataTermino" disabled /> <!-- Bloqueado para edição -->
+            </span>
+        </div>
+
+        <div class="tabela-topicos table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome do Tópico</th>
+                        <th>Duração</th>
+                        <th>Início</th>
+                        <th>Término</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                @if (Model.Topicos.Count > 0)
+                {
+                    <tbody>
+                        @{
+                            int topicoId = 1; // Contador para os IDs dos tópicos
+                        }
+                        @foreach (var topico in Model.Topicos)
+                        {
+                            <tr class="nome-proj">
+                                <!-- Exibindo ID do tópico -->
+                                <td>@topicoId</td>
+
+                                <td>@topico.Nome</td>
+                                <td>@((topico.DataTermino - topico.DataInicio)?.Days ?? 0) dias</td>
+                                <td>@topico.DataInicio.ToString("dd/MM/yy")</td>
+                                <td>@(topico.DataTermino.HasValue ? topico.DataTermino?.ToString("dd/MM/yy") : "Não definido") </td>
+                            </tr>
+
+                            int subTopicoId = 1; // Contador para os IDs dos sub-tópicos, reinicia para cada tópico
+
+                            @foreach (var subTopico in topico.SubTopicos)
+                            {
+                                <tr class="nome-proj">
+                                    <!-- Exibindo ID do sub-tópico com recuo -->
+                                    <td style="padding-left: 20px;">@($"{topicoId}.{subTopicoId}")</td>
+
+                                    <td>@subTopico.Nome</td>
+                                    <td>@((subTopico.DataTermino - subTopico.DataInicio)?.Days ?? 0) dias</td>
+                                    <td>@subTopico.DataInicio.ToString("dd/MM/yy")</td>
+                                    <td>@(subTopico.DataTermino.HasValue ? subTopico.DataTermino?.ToString("dd/MM/yy") : "Não definido") </td>
+                                </tr>
+                                subTopicoId++; // Incrementa o ID do sub-tópico
+                            }
+
+                            topicoId++; // Incrementa o ID do tópico
+                        }
+                    </tbody>
+                }
+            </table>
+        </div>
+    </div>
+</main>

@@ -3,6 +3,7 @@ using FRS_Montagens_e_Manutenção.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repository;
+using System.Security.Claims;
 
 namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 {
@@ -25,6 +26,9 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
         {
             try
             {
+                int id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+                Funcionario funcionario = new Funcionario().BuscarPorIdPessoa(_context, id);
+
                 Pessoa pessoa = new Pessoa();
                 pessoa.Nome = clienteNovo.Nome;
                 pessoa.Email = clienteNovo.Email;
@@ -41,6 +45,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                 Cliente cliente = new Cliente();
                 cliente.Cnpj = clienteNovo.Cnpj;
                 cliente.PessoaId = pessoa.Id;
+                cliente.FuncionarioId = funcionario.Id;
                 cliente.Salvar(_context);
 
                 foreach (var telefoneViewModel in clienteNovo.Telefones)
