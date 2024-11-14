@@ -25,21 +25,21 @@
 <div class="perfil-func_search-section">
     <h3 class="perfil-func_search-section_titulo">Deseja realizar alterações em algum pedido?</h3>
     <p class="perfil-func_search-section_texto">Selecione o nome da Empresa: </p>
-    <div class="search-bar perfil-func_search-bar">
-        <select class="form-control" id="ClientePedido" asp-items="@ViewBag.Cliente">
+    <div class="container-select-botao">
+        <select class="select-estilizado" id="ClientePedido" asp-items="@ViewBag.Cliente">
             <option></option>
         </select>
-        <button type="button" onclick="consultarPedido()">Consultar Pedido</button>
+        <button type="button" onclick="consultarPedido()" class="botao-estilizado">Consultar Pedido</button>
     </div>
 </div>
 <div class="perfil-func_search-section">
     <h3 class="perfil-func_search-section_titulo">Deseja editar algum usuário?</h3>
     <p class="perfil-func_search-section_texto">Selecione o nome da Empresa que seja alterar: </p>
-    <div class="search-bar perfil-func_search-bar">
-        <select class="form-control" id="ClienteEdit" asp-items="@ViewBag.Cliente">
+    <div class="container-select-botao">
+        <select class="select-estilizado" id="ClienteEdit" asp-items="@ViewBag.Cliente">
             <option></option>
         </select>
-        <button type="button" onclick="consultarUsuario()">Consultar Pedido</button>
+        <button type="button" onclick="consultarUsuario()" class="botao-estilizado">Consultar Pedido</button>
     </div>
 </div>
 <script>
@@ -69,3 +69,75 @@
         }
     }
 </script>
+<style>
+    /* Contêiner para alinhar o select e o botão */
+    .container-select-botao {
+        display: flex;
+        align-items: center; /* Centraliza o botão verticalmente em relação ao select */
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    /* Estilo para o select com seta amarela */
+    .select-estilizado {
+        background-color: #1c1c1c; /* Cor de fundo escura */
+        color: #ffc846; /* Cor do texto */
+        border: 1px solid #ffc846; /* Cor da borda */
+        border-radius: 10px; /* Arredondamento das bordas */
+        padding: 10px 40px 10px 15px; /* Espaçamento interno */
+        appearance: none; /* Remove o estilo padrão do select */
+        outline: none; /* Remove o contorno ao focar */
+        flex-grow: 1; /* Faz o select ocupar o espaço restante */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para efeito de elevação */
+        font-size: 16px; /* Tamanho da fonte */
+        position: relative; /* Para posicionar o ícone */
+        margin-right: 10px; /* Espaçamento entre o select e o botão */
+    }
+
+        /* Remove a seta padrão do select */
+        .select-estilizado::-ms-expand {
+            display: none;
+        }
+
+        /* Adiciona a seta amarela */
+        .select-estilizado::after {
+            content: '\25BC'; /* Unicode para seta para baixo */
+            color: #ffc846; /* Cor da seta */
+            position: absolute;
+            right: 15px; /* Posição à direita do select */
+            top: 50%;
+            transform: translateY(-50%); /* Centraliza verticalmente */
+            font-size: 18px;
+            pointer-events: none; /* Evita que a seta seja clicável */
+            transition: transform 0.3s ease; /* Transição suave para a rotação */
+        }
+
+        /* Altera a seta para cima quando o select está focado */
+        .select-estilizado:focus::after {
+            transform: translateY(-50%) rotate(180deg); /* Rotaciona a seta */
+        }
+
+    /* Estilo para o botão amarelo */
+    .botao-estilizado {
+        background-color: #ffc846; /* Cor de fundo amarelo */
+        color: #1c1c1c; /* Cor do texto escura */
+        border: none; /* Remove a borda padrão */
+        border-radius: 8px; /* Arredondamento das bordas */
+        padding: 10px 20px; /* Espaçamento interno */
+        font-size: 16px; /* Tamanho da fonte */
+        cursor: pointer; /* Ícone de cursor para clique */
+        font-weight: bold; /* Deixa o texto em negrito */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Transições para hover */
+    }
+
+        /* Efeito de hover para o botão */
+        .botao-estilizado:hover {
+            background-color: #e0b33c; /* Cor de fundo amarela mais escura */
+            transform: scale(1.05); /* Leve aumento no tamanho */
+        }
+
+        /* Efeito de clique para o botão */
+        .botao-estilizado:active {
+            transform: scale(0.95); /* Leve redução no tamanho */
+        }
+
+</style>

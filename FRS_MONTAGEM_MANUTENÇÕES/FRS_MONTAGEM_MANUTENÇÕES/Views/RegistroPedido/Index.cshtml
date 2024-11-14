@@ -275,9 +275,9 @@
                 dataFimProjeto: dataFimProjeto,
                 topicos: topicos
             };
-            
+
             console.log(pedidoData);
-            
+
             // Envia os dados para o backend com fetch
             fetch("/RegistroPedido/ReceberDados", {
                 method: "POST",
@@ -301,6 +301,28 @@
 </main>
 
 <style>
+    #Cliente {
+        background-color: #1c1c1c; /* Cor de fundo escura */
+        color: #ffc846; /* Cor do texto */
+        border: 1px solid #ffc846; /* Cor da borda */
+        border-radius: 10px; /* Arredondamento das bordas */
+        padding: 10px 40px 10px 15px; /* Espaçamento interno */
+        appearance: none; /* Remove o estilo padrão do select */
+        outline: none; /* Remove o contorno ao focar */
+        width: 100%; /* Largura total */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para efeito de elevação */
+        font-size: 16px; /* Tamanho da fonte */
+    }
+
+        #Cliente option {
+            background-color: #1c1c1c; /* Cor de fundo das opções */
+            color: #ffc846; /* Cor do texto das opções */
+        }
+
+        #Cliente::-ms-expand {
+            display: none; /* Remove o ícone padrão no IE */
+        }
+
     main {
         color: #FFC846;
         padding: 0;
