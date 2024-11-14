@@ -24,7 +24,7 @@ namespace FRS_Montagens_e_Manutenção.Models
         #region Metodos
 
 
-        public Dictionary<string, string> Salvar(Context context)
+        public void Salvar(Context context)
         {
             Dictionary<string, string> erros =
                 new Dictionary<string, string>();
@@ -39,8 +39,6 @@ namespace FRS_Montagens_e_Manutenção.Models
                 context.Clientes.Add(this);
                 context.SaveChanges();
             }
-
-            return erros;
         }
 
         public List<Cliente> BuscarTodos(Context context)

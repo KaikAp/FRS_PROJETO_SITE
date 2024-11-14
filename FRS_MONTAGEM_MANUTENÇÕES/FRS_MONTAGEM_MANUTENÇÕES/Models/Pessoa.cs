@@ -39,51 +39,11 @@ namespace FRS_Montagens_e_Manutenção.Models
 
         #region Metodos
 
-        public Dictionary<string, string> Salvar(Context context)
+        public void Salvar(Context context)
         {
-            Dictionary<string, string> erros =
-                new Dictionary<string, string>();
-
-            if (Nome.Length > 50)
-            {
-                erros.Add("Nome", "Este campo deve possuir no máximo 50 caracteres");
-            }
-            if (Email.Length > 50)
-            {
-                erros.Add("Email", "Este campo deve possuir no máximo 50 caracteres");
-            }
-            if (Senha.Length > 100)
-            {
-                erros.Add("Senha", "Este campo deve possuir no máximo 100 caracteres");
-            }
-            if (Cidade.Length > 30)
-            {
-                erros.Add("Cidade", "Este campo deve possuir no máximo 30 caracteres");
-            }
-            if (Bairro.Length > 30)
-            {
-                erros.Add("Bairro", "Este campo deve possuir no máximo 30 caracteres");
-            }
-            if (Rua.Length > 100)
-            {
-                erros.Add("Rua", "Este campo deve possuir no máximo 100 caracteres");
-            }
-            if (NResidencia.Length > 5)
-            {
-                erros.Add("NResidencia", "Este campo deve possuir no máximo 5 caracteres");
-            }
-            if (Cep.Length > 8)
-            {
-                erros.Add("Cep", "Este campo deve possuir no máximo 8 caracteres");
-            }
-
-            if (erros.Count == 0)
-            {
-                context.Pessoas.Add(this);
-                context.SaveChanges();
-            }
-
-            return erros;
+            context.Pessoas.Add(this);
+            context.SaveChanges();
+       
         }
 
         public Pessoa BuscarPorId(Context context, int id)
@@ -92,15 +52,16 @@ namespace FRS_Montagens_e_Manutenção.Models
             return pessoa;
         }
 
-        public void Logar(Pessoa pessoa, Context _context)
+        public Pessoa Logar(Context context, string email, string senha)
         {
-            //_context.Pessoas.AsQueryable().Where(a => a.Nome == pessoa.Nome && a.Senha == pessoa.Senha).FirstOrDefault();
-            
-            if (pessoa.Nome == "admin123" && pessoa.Senha == "admin123")
+            var pessoa = context.Pessoas.Where(a => a.Email == email).FirstOrDefault();
+
+            if (pessoa.Senha == senha)
             {
-               
+                return pessoa;
             }
 
+            return null;
         }
         public void Alterar(Context context)
         {

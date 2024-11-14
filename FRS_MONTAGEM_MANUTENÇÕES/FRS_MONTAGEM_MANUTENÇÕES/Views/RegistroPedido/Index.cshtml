@@ -287,9 +287,10 @@
                 body: JSON.stringify(pedidoData)
             })
                 .then(response => response.json())
-                .then(data => {
+                .then(data => { // Depuração: verifica a resposta completa
                     if (data.success) {
                         alert("Pedido enviado com sucesso!");
+                        window.location.href = "/PerfilFuncionario/Index"; // Ajuste para a URL correta
                     } else {
                         alert("Erro ao enviar o pedido.");
                     }

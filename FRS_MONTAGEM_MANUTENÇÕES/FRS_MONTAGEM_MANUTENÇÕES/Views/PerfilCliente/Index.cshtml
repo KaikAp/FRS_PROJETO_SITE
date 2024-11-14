@@ -38,15 +38,20 @@
     <tbody>
         @foreach (var pedido in Model.Pedidos)
         {
+            var descricaoCurta = pedido.Descricao.Length > 20
+            ? pedido.Descricao.Substring(0, Math.Min(30, pedido.Descricao.Length)) + "..."
+            : pedido.Descricao;
             <tr>
                 <td>@pedido.Id</td>
                 <td>@pedido.Nome</td>
-                <td>@pedido.Descricao</td>
+                <td>
+                    @descricaoCurta
+                </td>
                 <td>@pedido.DataInicio.ToString("dd/MM/yyyy")</td>
-                <td>@pedido.DataTermino?.ToString("dd/MM/yyyy") ?? "Em andamento"</td>
+                <td>@(pedido.DataTermino.HasValue ? pedido.DataTermino.Value.ToString("dd/MM/yyyy") : "Em andamento")</td>
                 <td>
                     <!-- Link para expandir o pedido, chamando a ação Detalhes do PedidoController -->
-                    <a href="@Url.Action("Detalhes", "Pedido", new { id = pedido.Id })" class="btn btn-primary">Expandir</a>
+                    <a href="@Url.Action("Detalhes", "Pedido", new { id = pedido.Id })">Expandir</a>
                 </td>
             </tr>
         }

@@ -1,4 +1,13 @@
-﻿<div>
+﻿<style>
+    .background-text {
+        display: inline-block;
+        position: relative;
+        bottom: 45vh;
+        left: 65vw;
+        color: var(--cor-amarelo);
+    }
+</style>
+<div>
     <form asp-controller="Login" asp-action="index" method="post">
         <div class="form-container">
             <img src="./img/user.svg" class="user-photo" alt="User Photo">
@@ -20,7 +29,7 @@
 
         </div>
     </form>
-    <div class="background-text">
+    <div class="background-text" style="margin-top: 20px">
         <h2 class="welcome-text">
             BEM - VINDO!
         </h2>

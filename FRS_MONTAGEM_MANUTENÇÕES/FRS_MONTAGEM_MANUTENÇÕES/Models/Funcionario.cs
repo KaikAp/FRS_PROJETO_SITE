@@ -20,11 +20,11 @@ namespace FRS_Montagens_e_Manutenção.Models
         #region Metodos
 
 
-        private void addFuncionario(Funcionario funcionario, Context _context)
+        public Funcionario BuscarPorIdPessoa(Context context, int id)
         {
-            _context.Add(funcionario);
-            _context.SaveChanges();
-        }
+            var funcionario = context.Funcionarios.Where(a => a.Id == id).FirstOrDefault();
+            return funcionario;
+        }        
         #endregion
     }
 }

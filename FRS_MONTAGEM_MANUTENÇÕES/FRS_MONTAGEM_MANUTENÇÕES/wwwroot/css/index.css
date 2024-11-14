@@ -450,14 +450,6 @@ header {
         color: var(--cor-amarelo-escuro);
     }
 
-.background-text {
-    display: inline-block;
-    position: relative;
-    bottom: 85vh;
-    left: 65vw;
-    color: var(--cor-amarelo);
-}
-
 .welcome-text {
     color: #FFC846;
     text-align: right;

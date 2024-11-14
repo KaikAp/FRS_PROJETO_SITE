@@ -36,7 +36,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                 pessoa.Uf = clienteNovo.Uf;
                 pessoa.Senha = clienteNovo.Senha;
 
-                Dictionary<string, string> erros = pessoa.Salvar(_context);
+                pessoa.Salvar(_context);
 
                 Cliente cliente = new Cliente();
                 cliente.Cnpj = clienteNovo.Cnpj;
@@ -54,20 +54,10 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                     telefone.Salvar(_context);
                     i++;
                 }
-                if (erros.Count == 0)
-                {
-                    //Salvo com sucesso, sem erros
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    foreach (var erro in erros)
-                    {
-                        ModelState.AddModelError(erro.Key, erro.Value);
-                    }
-                    return RedirectToAction("Index", "PerfilFuncionario");
-                }
 
+                //Salvo com sucesso, sem erros
+                return RedirectToAction(nameof(Index));
+                
             }
             catch
             {

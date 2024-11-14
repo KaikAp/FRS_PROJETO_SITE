@@ -27,40 +27,56 @@ namespace FRS_Montagens_e_Manutenção.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(string nome, string senha)
         {
-            var authSchema = CookieAuthenticationDefaults.AuthenticationScheme;
-
-            if (_context.Clientes.Any(c => c.Cnpj == nome) && _context.Pessoas.Any(c => c.Senha == senha))
+            try
             {
-                var cliente = _context.Clientes.FirstOrDefault(c => c.Cnpj == nome);
-                var pessoa = _context.Pessoas.FirstOrDefault(c => c.Id == cliente.PessoaId);
-                var claims = new List<Claim>{
+                var authSchema = CookieAuthenticationDefaults.AuthenticationScheme;
+                Pessoa pessoa = new Pessoa().Logar(_context, nome, senha);
+                Cliente cliente = new Cliente().BuscarPorIdPessoa(_context, pessoa.Id);
+                Funcionario funcionario = new Funcionario().BuscarPorIdPessoa(_context, pessoa.Id);
+
+                if (cliente is not null)
+                {
+                    var claims = new List<Claim>{
                     new Claim(ClaimTypes.NameIdentifier, pessoa.Id.ToString()),
                     new Claim(ClaimTypes.Name, pessoa.Nome)
                 };
-                var identity = new ClaimsIdentity(claims, authSchema);
-                var principal = new ClaimsPrincipal(identity);
-                await HttpContext.SignInAsync(authSchema, principal);
+                    var identity = new ClaimsIdentity(claims, authSchema);
+                    var principal = new ClaimsPrincipal(identity);
+                    var authProperties = new AuthenticationProperties
+                    {
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddHours(4),
+                        IsPersistent = true
+                    };
+                    await HttpContext.SignInAsync(authSchema, principal, authProperties);
 
-                return RedirectToAction("Index", "PerfilCliente");
-            }
-            else if (_context.Funcionarios.Any(c => c.Cpf == nome) && _context.Pessoas.Any(c => c.Senha == senha))
-            {
-                var funcionario = _context.Funcionarios.FirstOrDefault(c => c.Cpf == nome);
-                var pessoa = _context.Pessoas.FirstOrDefault(c => c.Id == funcionario.PessoaId);
-                var claims = new List<Claim>{
+                    return RedirectToAction("Index", "PerfilCliente");
+                }
+                else if (funcionario is not null)
+                {
+                    var claims = new List<Claim>{
                     new Claim(ClaimTypes.NameIdentifier, pessoa.Id.ToString()),
                     new Claim(ClaimTypes.Name, pessoa.Nome),
                     new Claim(ClaimTypes.Email, pessoa.Email)
                 };
-                var identity = new ClaimsIdentity (claims, authSchema);
-                var principal = new ClaimsPrincipal(identity);
-                await HttpContext.SignInAsync (authSchema, principal);
+                    var identity = new ClaimsIdentity(claims, authSchema);
+                    var principal = new ClaimsPrincipal(identity);
+                    var authProperties = new AuthenticationProperties
+                    {
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddHours(4),
+                        IsPersistent = true
+                    };
+                    await HttpContext.SignInAsync(authSchema, principal, authProperties);
 
-                return RedirectToAction("Index", "PerfilFuncionario");
+                    return RedirectToAction("Index", "PerfilFuncionario");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Nome de usuário ou senha inválidos");
+                    return View("Index");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError("", "Nome de usuário ou senha inválidos");
                 return View("Index");
             }
         }

@@ -33,7 +33,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
         {
             try
             {
-                // Cria a instância de Pedido a partir da ViewModel
                 var pedido = new Pedido
                 {
                     Nome = pedidoData.NomePedido,
@@ -45,7 +44,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                     Topicos = new List<Topico>()
                 };
 
-                // Mapeia cada Topico da ViewModel para a entidade Topico
                 foreach (var topicoViewModel in pedidoData.Topicos)
                 {
                     var topico = new Topico
@@ -56,7 +54,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                         SubTopicos = new List<SubTopico>()
                     };
 
-                    // Mapeia cada Passo da ViewModel para a entidade Passo
                     foreach (var passoViewModel in topicoViewModel.SubTopicos)
                     {
                         var passo = new SubTopico
@@ -66,23 +63,21 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                             DataTermino = passoViewModel.dataFim
                         };
 
-                        topico.SubTopicos.Add(passo); // Adiciona o passo ao tópico
+                        topico.SubTopicos.Add(passo);
                     }
 
-                    pedido.Topicos.Add(topico); // Adiciona o tópico ao pedido
+                    pedido.Topicos.Add(topico);
                 }
 
                 pedido.Salvar(_context);
 
-                return RedirectToAction("Index", "PerfilFuncionario");
-                // Redireciona para a página de confirmação ou listagem
+                return Json(new { success = true });
 
             }
             catch (DbUpdateException ex)
             {
-                // Exibe a mensagem da exceção interna para obter mais detalhes
                 Console.WriteLine(ex.InnerException?.Message);
-                throw; // Re-throw para manter o erro, ou trate conforme necessário
+                return Json(new { success = false, error = "Erro ao salvar o pedido" });
             }
         }
 
