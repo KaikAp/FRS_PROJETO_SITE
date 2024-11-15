@@ -94,9 +94,9 @@ namespace FRS_Montagens_e_Manutenção.Controllers
 
                 pessoa.Alterar(_context);
                 cliente.Alterar(_context);
+                int numero = 0;
                 foreach(var telefone in telefones)
                 {
-                    int numero = 0;
                     telefone.NTelefone = clienteAlterado.Telefones[numero].NTelefone;
                     telefone.Alterar(_context);
                     numero++;

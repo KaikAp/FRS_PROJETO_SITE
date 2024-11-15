@@ -50,19 +50,18 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
 
                 foreach (var telefoneViewModel in clienteNovo.Telefones)
                 {
-                    int i = 0;
                     var telefone = new Telefone
                     {
                         PessoaId = pessoa.Id,
-                        NTelefone = clienteNovo.Telefones[i].NTelefone,
+                        NTelefone = telefoneViewModel.NTelefone,
+                        Pessoa = pessoa,
                     };
                     telefone.Salvar(_context);
-                    i++;
                 }
 
                 //Salvo com sucesso, sem erros
-                return RedirectToAction(nameof(Index));
-                
+                return RedirectToAction("Index", "PerfilFuncionario", new { id = funcionario.Id });
+
             }
             catch
             {
