@@ -20,8 +20,8 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
             var pessoaMaster = new Pessoa
             {
                 Nome = "Master",
-                Email = "master@example.com",
-                Senha = "master123", // Considerar hash para segurança
+                Email = "master@exemplo.com",
+                Senha = "senha123", // Considerar hash para segurança
                 Uf = "SP",
                 Cidade = "São Paulo",
                 Bairro = "Centro",
@@ -48,7 +48,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
 
             var pessoa1 = new Pessoa
             {
-                Email = "joao.silva@example.com",
+                Email = "joao@exemplo.com",
                 Nome = "João Silva",
                 Senha = "senha123",  // Senha fictícia, considere criptografia
                 Uf = "SP",
@@ -62,9 +62,9 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
 
             var pessoa2 = new Pessoa
             {
-                Email = "maria.santos@example.com",
+                Email = "maria@exemplo.com",
                 Nome = "Maria Santos",
-                Senha = "senha456",  // Senha fictícia, considere criptografia
+                Senha = "senha123",  // Senha fictícia, considere criptografia
                 Uf = "RJ",
                 Cidade = "Rio de Janeiro",
                 Bairro = "Copacabana",

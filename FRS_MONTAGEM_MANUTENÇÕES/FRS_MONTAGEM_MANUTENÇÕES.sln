@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRS_MONTAGEM_MANUTENÇÕES", "FRS_MONTAGEM_MANUTENÇÕES\FRS_MONTAGEM_MANUTENÇÕES.csproj", "{CF8A3ED7-BF25-4ECF-B187-83CEE15C74F8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{A3845541-9918-4104-8270-31B1C3F4318D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FRS_MONTAGEM_MANUTENÇÕES", "FRS_MONTAGEM_MANUTENÇÕES\FRS_MONTAGEM_MANUTENÇÕES.csproj", "{CF8A3ED7-BF25-4ECF-B187-83CEE15C74F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{CF8A3ED7-BF25-4ECF-B187-83CEE15C74F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF8A3ED7-BF25-4ECF-B187-83CEE15C74F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF8A3ED7-BF25-4ECF-B187-83CEE15C74F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3845541-9918-4104-8270-31B1C3F4318D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3845541-9918-4104-8270-31B1C3F4318D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3845541-9918-4104-8270-31B1C3F4318D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3845541-9918-4104-8270-31B1C3F4318D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
