@@ -58,10 +58,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
                     };
                     telefone.Salvar(_context);
                 }
-
-                //Salvo com sucesso, sem erros
                 return RedirectToAction("Index", "PerfilFuncionario", new { id = funcionario.Id });
-
             }
             catch
             {

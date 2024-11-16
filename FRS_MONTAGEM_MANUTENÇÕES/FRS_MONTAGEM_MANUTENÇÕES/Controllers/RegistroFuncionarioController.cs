@@ -9,19 +9,15 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
     public class RegistroFuncionarioController : Controller
     {
 
-        // GET: CadastroController
         public ActionResult Index()
         {
             return View();
         }
-
-        // GET: CadastroController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: CadastroController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult CreateFuncionario(Pessoa pessoa)

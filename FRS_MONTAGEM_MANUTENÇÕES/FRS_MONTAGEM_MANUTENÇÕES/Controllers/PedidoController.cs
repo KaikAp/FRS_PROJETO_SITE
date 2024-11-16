@@ -44,7 +44,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
             }
         }
 
-        // Ação para exibir a view de confirmação de exclusão
         public IActionResult ConfirmDelete(int id)
         {
             var pedido = _context.Pedidos.FirstOrDefault(p => p.Id == id);
@@ -56,7 +55,6 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
             return View(pedido);
         }
 
-        // Ação para realizar a exclusão
         [HttpPost]
         public IActionResult DeleteConfirmed(int id)
         {
@@ -64,31 +62,25 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
             {
                 var pedido = _context.Pedidos
                    .Include(p => p.Topicos)
-                   .ThenInclude(t => t.SubTopicos) // Inclui os Subtopicos de cada Topico
+                   .ThenInclude(t => t.SubTopicos)
                    .FirstOrDefault(p => p.Id == id);
                 if (pedido != null)
                 {
-                    // Para cada Topico, remova todos os Subtopicos associados
                     foreach (var topico in pedido.Topicos)
                     {
-                        topico.RemoveRangeSubTopicos(_context); // Remove todos os Subtopicos do Topico
+                        topico.RemoveRangeSubTopicos(_context); 
                     }
 
-                    // Remova todos os Topicos do Pedido
                     pedido.RemoveRangeTopicos(_context);
 
-
-                    // Remova o Pedido
                     pedido.Remover(_context);
 
-                    // Salva as mudanças no banco de dados
                     _context.SaveChanges();
                 }
                 return RedirectToAction("Index", "PerfilFuncionario");
             }
             catch (DbUpdateException ex)
             {
-                // Loga a exceção e exibe uma mensagem de erro personalizada
                 Console.WriteLine("Erro ao salvar alterações: " + ex.InnerException?.Message);
                 return View();
             }

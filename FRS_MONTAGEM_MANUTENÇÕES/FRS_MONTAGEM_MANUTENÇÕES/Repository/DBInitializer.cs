@@ -50,7 +50,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
             {
                 Email = "joao.silva@example.com",
                 Nome = "João Silva",
-                Senha = "senha123",  // Senha fictícia, considere criptografia
+                Senha = "senha123", 
                 Uf = "SP",
                 Cidade = "São Paulo",
                 Bairro = "Jardim Paulista",
@@ -64,7 +64,7 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Repository
             {
                 Email = "maria.santos@example.com",
                 Nome = "Maria Santos",
-                Senha = "senha456",  // Senha fictícia, considere criptografia
+                Senha = "senha456",
                 Uf = "RJ",
                 Cidade = "Rio de Janeiro",
                 Bairro = "Copacabana",

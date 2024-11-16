@@ -56,34 +56,29 @@ namespace FRS_MONTAGEM_MANUTENÇÕES.Controllers
             return View(topico);
         }
 
-        // Ação para realizar a exclusão
         [HttpPost]
         public IActionResult DeleteConfirmed(int id)
         {
             try
             {
                 var topico = _context.Topicos
-                    .Include(t => t.SubTopicos) // Inclui os Subtopicos do Topico
+                    .Include(t => t.SubTopicos)
                     .FirstOrDefault(t => t.Id == id);
                 if (topico != null)
                 {
-                    // Remove todos os Subtopicos associados ao Topico
                     if (topico.SubTopicos != null)
                     {
                         topico.RemoveRangeSubTopicos(_context);
                     }
 
-                    // Remove o Topico
                     topico.Remover(_context);
 
-                    // Salva as mudanças no banco de dados
                     _context.SaveChanges();
                 }
                 return RedirectToAction("Index", "PerfilFuncionario");
             }
             catch (DbUpdateException ex)
             {
-                // Loga a exceção e exibe uma mensagem de erro personalizada
                 Console.WriteLine("Erro ao salvar alterações: " + ex.InnerException?.Message);
                 return View();
             }
